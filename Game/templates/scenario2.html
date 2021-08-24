@@ -1,0 +1,15 @@
+{% extends 'base.html' %}{% load static %} {% block header %}
+<script
+  type="module"
+  src="{% static '/js/scenario/scenario2-game.js' %}"
+></script>
+{% endblock %}{% block content %}
+<form method="POST" name="scenarioForm" action="{% url 'scenario3' %}">
+  {% csrf_token %}
+  <input type="hidden" name="uid" id="uid" value="{{user_id}}" />
+  <input type="hidden" name="playTime" id="playTime" value="" />
+  <input type="hidden" name="selectTweet" id="selectTweet" value="" />
+  <input type="hidden" name="scenario1" id="scenario1" value="{{scenario1}}" />
+  <input type="hidden" name="scenario2" id="scenario2" value="0" />
+</form>
+{% endblock %}

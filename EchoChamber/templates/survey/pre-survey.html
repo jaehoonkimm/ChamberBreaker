@@ -1,0 +1,233 @@
+{% load static %}
+<form method="POST" name="presurvey" action="{% url 'scenario1' %}">
+  {% csrf_token %} {% include 'survey/news.html' %}
+  <input type="hidden" name="isAgree" id="isAgree" value="{{isAgree}}" />
+  <input type="hidden" name="startTime" id="startTime" value="{{startTime}}" />
+  <input type="hidden" name="surveyId" id="surveyId" value="0" />
+  <div id="demographic1" class="survey-container-div" style="display: none">
+    <div>
+      <p class="survey-p">Gender</p>
+      <div class="survey-div" id="gender">
+        <div class="radio-box">
+          <input type="radio" name="gender" id="gen1" value="Male" />
+          <label for="gen1"><span></span>Male</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="gender" id="gen2" value="Female" />
+          <label for="gen2"><span></span>Female</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="gender" id="gen3" value="Other" />
+          <label for="gen3"><span></span>Other</label>
+        </div>
+      </div>
+
+      <p class="survey-p">Age</p>
+      <div class="survey-div" id="age">
+        <div class="radio-box">
+          <input type="radio" name="age" id="age1" value="UNDER 18" />
+          <label for="age1"><span></span>Under 18</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="age" id="age2" value="19~29" />
+          <label for="age2"><span></span>19~29</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="age" id="age3" value="30~39" />
+          <label for="age3"><span></span>30~39</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="age" id="age4" value="40~49" />
+          <label for="age4"><span></span>40~49</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="age" id="age5" value="50+" />
+          <label for="age5"><span></span>50+</label>
+        </div>
+      </div>
+
+      <p class="survey-p">Highest Education Completed</p>
+      <div class="survey-div" id="edu">
+        <div class="radio-box">
+          <input
+            type="radio"
+            name="edu"
+            id="edu1"
+            value="High school or less"
+          />
+          <label for="edu1"><span></span>High school or less</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="edu" id="edu2" value="Some college" />
+          <label for="edu2"><span></span>Some college</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="edu" id="edu3" value="Higher degree" />
+          <label for="edu3"><span></span>Higher degree</label>
+        </div>
+      </div>
+
+      <p class="survey-p">Ethnicity</p>
+      <div class="survey-div" id="ethnicity">
+        <div class="radio-box">
+          <input type="radio" name="ethnicity" id="eth1" value="Caucasian" />
+          <label for="eth1"><span></span>Caucasian</label>
+        </div>
+        <div class="radio-box">
+          <input
+            type="radio"
+            name="ethnicity"
+            id="eth2"
+            value="African American"
+          />
+          <label for="eth2"><span></span>African American</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="ethnicity" id="eth3" value="Asian" />
+          <label for="eth3"><span></span>Asian</label>
+        </div>
+        <div class="radio-box">
+          <input
+            type="radio"
+            name="ethnicity"
+            id="eth4"
+            value="Hispanic/Latino"
+          />
+          <label for="eth4"><span></span>Hispanic/Latino</label>
+        </div>
+        <div class="radio-box">
+          <input
+            type="radio"
+            name="ethnicity"
+            id="eth5"
+            value="Native American/Pacific/Islander/Native Alaskan"
+          />
+          <label for="eth5"
+            ><span></span>Native American/Pacific/ Islander/Native
+            Alaskan</label
+          >
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="ethnicity" id="eth6" value="Others" />
+          <label for="eth6"><span></span>Others</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="demographic2" class="survey-container-div" style="display: none">
+    <div>
+      <p class="survey-p">Political Interest</p>
+      <p class="survey-p-guide">How interested are you in politics?</p>
+      <div class="survey-div" id="inter">
+        <div class="radio-box">
+          <input type="radio" name="inter" id="inter1" value="1" />
+          <label for="inter1"><span></span>Not at all</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="inter" id="inter2" value="2" />
+          <label for="inter2"><span></span>Not quite interested</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="inter" id="inter3" value="3" />
+          <label for="inter3"><span></span>Neutral</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="inter" id="inter4" value="4" />
+          <label for="inter4"><span></span>Quite interested</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="inter" id="inter5" value="5" />
+          <label for="inter5"><span></span>Very interested</label>
+        </div>
+      </div>
+
+      <p class="survey-p">Political Stance</p>
+      <p class="survey-p-guide">You recognize your political stance as</p>
+      <div class="survey-div" id="stance">
+        <div class="radio-box">
+          <input type="radio" name="stance" id="stance1" value="1" />
+          <label for="stance1"><span></span>Very liberal</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="stance" id="stance2" value="2" />
+          <label for="stance2"><span></span>Somewhat liberal</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="stance" id="stance3" value="3" />
+          <label for="stance3"><span></span>Neutral</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="stance" id="stance4" value="4" />
+          <label for="stance4"><span></span>Somewhat conservative</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="stance" id="stance5" value="5" />
+          <label for="stance5"><span></span>Very conservative</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="demographic3" class="survey-container-div" style="display: none">
+    <div>
+      <p class="survey-p">Media Use</p>
+      <p class="survey-p-guide">
+        When looking for information about
+        <span class="highlight">POLITICAL</span> news, how often do you go to a
+        conservative media (e.g., Fox News, The Times)?
+      </p>
+      <div class="survey-div" id="md-fox">
+        <div class="radio-box">
+          <input type="radio" name="md-fox" id="md-fox1" value="1" />
+          <label for="md-fox1"><span></span>Never</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="md-fox" id="md-fox2" value="2" />
+          <label for="md-fox2"><span></span>Rarely</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="md-fox" id="md-fox3" value="3" />
+          <label for="md-fox3"><span></span>Sometimes</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="md-fox" id="md-fox4" value="4" />
+          <label for="md-fox4"><span></span>Often</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="md-fox" id="md-fox5" value="5" />
+          <label for="md-fox5"><span></span>Very often</label>
+        </div>
+      </div>
+
+      <p class="survey-p-guide">
+        When looking for information about
+        <span class="highlight">POLITICAL</span> news, how often do you go to a
+        liberal media (e.g., CNN, The Guardian)?
+      </p>
+      <div class="survey-div" id="md-cnn">
+        <div class="radio-box">
+          <input type="radio" name="md-cnn" id="md-cnn1" value="1" />
+          <label for="md-cnn1"><span></span>Never</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="md-cnn" id="md-cnn2" value="2" />
+          <label for="md-cnn2"><span></span>Rarely</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="md-cnn" id="md-cnn3" value="3" />
+          <label for="md-cnn3"><span></span>Sometimes</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="md-cnn" id="md-cnn4" value="4" />
+          <label for="md-cnn4"><span></span>Often</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" name="md-cnn" id="md-cnn5" value="5" />
+          <label for="md-cnn5"><span></span>Very often</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include 'survey/echo.html' %}
+</form>

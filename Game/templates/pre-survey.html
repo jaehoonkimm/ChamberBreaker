@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %} {% load sass_tags %}
+<html lang="en">
+  <head>
+    <link rel="icon" href="{% static './favicon.ico' %}" />
+    <meta charset="utf-8" />
+    <title>ChamberBreaker Game</title>
+    <link
+      href="{% sass_src 'css/survey/style.scss' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="module"
+      src="{% static '/js/survey/pre-survey.js' %}"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="content"></div>
+      {% include 'survey/pre-survey.html' %}
+    </main>
+    <nav>
+      <button class="basic-button" id="next-button">Next ＞</button>
+      <button class="basic-button" id="back-button">＜ Back</button>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+body { font-family: 'Helvetica'; }
+
+table { border-collapse: collapse; text-align: center; line-height: 1.5; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin-top: 100px; }
+
+table thead th { width: 150px; padding: 10px; font-weight: bold; vertical-align: top; color: #fff; background: #00214d; margin: 20px 10px; }
+
+table tbody th { width: 150px; padding: 10px; }
+
+table td { width: 350px; padding: 10px; vertical-align: top; }
+
+.even { background: #b9d7ff; }
+
+h1 { text-align: center; margin-bottom: -36px; }
+
+button { width: auto; padding: 15px 30px 15px 30px; position: fixed; font-size: 38px; color: #fff; text-align: center; border: none; box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.151); background-color: #237fbc; cursor: pointer; left: 50%; transform: translate(-50%, 0%); }
+
+.guide-box { margin: 25px 25px 0px 25px; border: none; height: 94vh; }
+
+.guide-content-div { position: absolute; height: 600px; width: 1000px; margin: -300px 0px 0px -500px; top: 50%; left: 50%; }
+
+.highlight { color: red; }
+
+.survey-code-p { font-size: 36px; }
+
+.highlight-rank { background-color: #b9d7ff; }
+
+/*# sourceMappingURL=rank.css.map */

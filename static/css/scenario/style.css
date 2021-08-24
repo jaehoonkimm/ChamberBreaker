@@ -1,0 +1,121 @@
+html, body { font-family: 'Helvetica'; display: flex; width: 100%; height: 100%; margin: 0px; }
+
+.basic-button { width: auto; height: 100px; padding: 15px 30px 15px 30px; font-size: 38px; text-align: center; color: white; border: none; box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.151); background-color: #237fbc; cursor: pointer; }
+
+.basic-button:hover { background-color: #104e77; }
+
+span { color: #237fbc; font-weight: bold; }
+
+p { font-size: 36px; }
+
+.score-content { min-width: 360px; width: 360px; background-color: black; }
+
+.gauge-box { float: left; height: 520px; width: 180px; margin-top: 30px; }
+
+.gauge-p { height: 81px; font-size: 24px; font-style: bold; color: white; text-align: center; }
+
+.gauge-p-black { height: 81px; font-size: 24px; font-style: bold; text-align: center; float: right; margin-top: 12px; margin-right: 100px; }
+
+.gauge-bar { width: 50px; height: 500px; float: left; margin-top: 15px; }
+
+.gauge-info { color: white; font-size: 16px; border-radius: 50%; border: 2px solid white; background-color: black; }
+
+.gauge-info-black { font-size: 16px; border-radius: 50%; border: 2px solid black; }
+
+.echo-color { background: linear-gradient(to bottom, #ff0911 0%, #e79038 50%, #ffda65 100%); }
+
+.reliability-color { background: linear-gradient(to bottom, #0500cc 0%, #4986e9 50%, #9fc5e8 100%); margin-left: 65px; }
+
+.bar-pointer-right { float: left; width: 0px; height: 0px; border-top: 15px solid transparent; border-right: 30px solid white; border-bottom: 15px solid transparent; position: relative; }
+
+.bar-pointer-left { float: left; width: 0px; height: 0px; border-top: 15px solid transparent; border-left: 30px solid white; border-bottom: 15px solid transparent; position: relative; margin-left: 30px; }
+
+.remain-box { border: gray dashed 10px; margin: 30px 50px 0px 50px; padding: 20px; height: 30px; }
+
+.score-700 { padding-top: 113px; }
+
+.score-350 { padding-top: 68px; }
+
+.echo-gauge-title { margin-bottom: 12px; }
+
+.reliability-gauge-title { padding-top: 12px; }
+
+.pop-up { display: none; position: absolute; width: 400px; height: 170px; top: 30px; left: 135px; background-color: #fffbc6; border: 6px solid skyblue; padding: 10px 20px 15px 20px; }
+
+.pop-up p { font-size: 20px; }
+
+.strong-pop-up { display: none; position: absolute; width: 900px; top: 60px; left: 340px; background-color: #fffbc6; border: 6px solid skyblue; padding: 10px 20px 15px 20px; }
+
+.strong-pop-up p { font-size: 28px; }
+
+.strong-pop-up .bold-p { font-size: 32px; font-weight: bold; }
+
+.inner-explain-content { font-size: 36px; padding-left: 60px; margin: 20px; }
+
+.news-img { width: 550px; margin-left: 200px; }
+
+.newspaper-img { width: 600px; display: none; margin-left: 150px; }
+
+.youtube-views { font-size: 16px; position: absolute; top: 445px; margin-left: 4px; color: red; }
+
+.youtube-img { width: 950px; }
+
+.youtube-increase-img { height: 500px; margin-top: 30px; margin-left: 36px; }
+
+.onAir-img { width: 250px; margin-left: 350px; }
+
+.effect-response { display: none; width: 0px; }
+
+.effect-response button { width: 500px; margin-left: 0px; }
+
+.keyword-img { margin-left: 36px; width: 90%; }
+
+.effect-response-div { position: absolute; }
+
+main { display: flex; margin: auto; width: 100%; height: 100%; }
+
+nav { display: flex; flex-direction: row-reverse; justify-content: space-between; margin: 20px 30px 50px 30px; height: 120px; }
+
+.scenario-container { display: flex; flex-direction: column; width: 1000px; margin-left: 20px; }
+
+.scenario-content { height: 100%; overflow: auto; padding-top: 20px; }
+
+.scenario-content p { padding-left: 36px; padding-right: 20px; }
+
+#back-button, #retry-button { display: none; }
+
+.scenario-title { text-align: center; font-weight: bold; font-size: 44px; margin-top: 30%; width: 100%; }
+
+#before-tweet-explain, #example-tweet-1, #example-tweet-2, #after-tweet-explain { display: none; }
+
+.highlight { color: red; }
+
+.tweets-selects-card { min-height: 200px; max-height: 250px; width: 750px; margin: 15px; padding: 20px 10px 20px 20px; background-color: #e3edff; border: 0px solid #00325a; box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.151); cursor: pointer; }
+
+.tweets-selects-card p { padding: 0px; }
+
+.tweets-selects-card .tweets-img { float: left; width: 50px; height: 50px; object-fit: cover; border-radius: 50%; margin-left: 10px; }
+
+.tweets-selects-card .tweets-name { float: left; font-size: 32px; font-style: bold; margin: 0px 0px 0px 10px; }
+
+.tweets-selects-card .tweets-p { font-size: 24px; margin: 12px 0px 20px 8px; text-align: left; }
+
+.response-option { pointer-events: none; margin-left: 56px; }
+
+.tweets-selects-box { border: 2px solid #3f5466; overflow: auto; max-height: 660px; min-height: 220px; width: 800px; background-color: #d8d8d8; margin-left: 36px; }
+
+.retweet-arrow { height: 50px; width: 50px; margin-left: 60px; margin-right: -40px; }
+
+.retweet { display: none; }
+
+.fakenews-phone-img { height: 700px; float: left; margin: 0px 25px; }
+
+.badge-table { border: 2px solid #00214d; border-collapse: collapse; width: 750px; margin-left: 36px; }
+
+.badge-tr-td { border: 4px solid #00214d; width: 240px; height: 350px; }
+
+.badge-img { height: 350px; width: auto; margin-top: -1px; }
+
+#bad-response1, #bad-response2, #bad-response3, #retry-response1, #retry-response2 { display: none; border-color: black; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+$primary-color: #237fbc;
+
+html,
+body {
+  font-family: 'Helvetica';
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.basic-button {
+  width: auto;
+  height: 100px;
+  padding: 15px 30px 15px 30px;
+  font-size: 38px;
+  text-align: center;
+  color: white;
+  border: none;
+  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.151);
+  background-color: $primary-color;
+  cursor: pointer;
+  &:hover {
+    background-color: #104e77;
+  }
+}
+
+span {
+  color: $primary-color;
+  font-weight: bold;
+}
+
+p {
+  font-size: 36px;
+}

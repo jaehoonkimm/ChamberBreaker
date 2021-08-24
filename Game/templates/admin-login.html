@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ChamberBreaker Game</title>
+    <link rel="icon" href="{% static './favicon.ico' %}" />
+    <style type="text/css">
+      body {
+        margin: 20px 20px 0px 20px;
+        border: 2px solid black;
+        height: 94vh;
+        font-family: 'Helvetica';
+      }
+      table {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+      }
+    </style>
+  </head>
+  <script language="javascript">
+    function Surveylogin() {
+      var form = document.Login;
+      if (!form.id.value) {
+        alert('Please enter your id!');
+        form.id.focus();
+        return false;
+      }
+      if (!form.pw.value) {
+        alert('Please enter your password!');
+        form.pw.focus();
+        return false;
+      }
+      form.submit();
+    }
+  </script>
+  <body>
+    <form method="POST" name="Login" action="{% url 'adminDownload' %}">
+      {% csrf_token %}
+      <table>
+        <tr>
+          <td><label>id</label></td>
+          <td>
+            <input
+              name="id"
+              type="text"
+              value=""
+              id="loginId"
+              placeholder="id"
+            />
+          </td>
+          <td rowspan="2">
+            <input
+              type="button"
+              value="Login"
+              OnClick="javascript:Surveylogin();"
+              style="height: 50px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label>pw</label></td>
+          <td>
+            <input
+              name="pw"
+              type="password"
+              value=""
+              id="loginPw"
+              placeholder="pw"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

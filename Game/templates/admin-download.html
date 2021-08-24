@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <link rel="icon" href="{% static './favicon.ico' %}" />
+    <style type="text/css">
+      body {
+        margin: 20px 20px 0px 20px;
+        border: 2px solid black;
+        height: 94vh;
+        font-family: 'Helvetica';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+      button {
+        background-color: rgb(182, 204, 243);
+        font-size: 32px;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <form method="POST" name="csvDownload" action="{% url 'csvDownload' %}">
+    {% csrf_token %}
+    <input name="check_root" value="csvDownload" style="display: none" />
+    <button type="submit">Survey result download (.csv)</button>
+  </form>
+  <form
+    method="POST"
+    name="jsonTimeDownload"
+    action="{% url 'jsonTimeDownload' %}"
+  >
+    {% csrf_token %}
+    <input name="check_root" value="jsonTimeDownload" style="display: none" />
+    <button type="submit">
+      User Play Information - Play Time download (.json)
+    </button>
+  </form>
+  <form
+    method="POST"
+    name="jsonTweetDownload"
+    action="{% url 'jsonTweetDownload' %}"
+  >
+    {% csrf_token %}
+    <input name="check_root" value="jsonTweetDownload" style="display: none" />
+    <button type="submit">
+      User Play Information - Tweet Select download (.json)
+    </button>
+  </form>
+</html>

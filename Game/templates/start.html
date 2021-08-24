@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %} {% load sass_tags %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ChamberBreaker Game</title>
+    <link rel="icon" href="{% static './favicon.ico' %}" />
+    <link
+      href="{% sass_src 'css/game/start.scss' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="{% static '/js/game/start.js' %}"
+    ></script>
+  </head>
+  <body>
+    <div class="title-container">
+      <h1>CHAMBERBREAKER</h1>
+      <h1>GAME</h1>
+    </div>
+    <p>
+      Good to see you!<br /><br />
+      Welcome to ChamberBreaker game!<br />
+    </p>
+
+    <p id="mobile-message" class="mobile-p">
+      Not available on mobile devices. This game is optimized for laptop or
+      PC.<br />
+      If you can't see the PLAY button on your PC or laptop, increase the screen
+      size.
+    </p>
+
+    <a href="{% url 'preSurvey' %}"
+      ><button class="start-button" id="play-btn">PLAY</button></a
+    >
+  </body>
+</html>

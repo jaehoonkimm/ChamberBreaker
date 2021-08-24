@@ -1,0 +1,163 @@
+@import '../style';
+@import './score.scss';
+@import './anti-vaccine';
+@import './global-warming.scss';
+@import './tax-cut.scss';
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 20px 30px 50px 30px;
+  height: 120px;
+}
+
+.scenario-container {
+  @include flex-column;
+  width: 1000px;
+  margin-left: 20px;
+}
+
+.scenario-content {
+  height: 100%;
+  overflow: auto;
+  padding-top: 20px;
+  p {
+    padding-left: 36px;
+    padding-right: 20px;
+  }
+}
+
+#back-button,
+#retry-button {
+  display: none;
+}
+
+.scenario-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 44px;
+  margin-top: 30%;
+  width: 100%;
+}
+
+#before-tweet-explain,
+#example-tweet-1,
+#example-tweet-2,
+#after-tweet-explain {
+  display: none;
+}
+
+.highlight {
+  color: red;
+}
+
+.tweets-selects-card {
+  min-height: 200px;
+  max-height: 250px;
+  width: 750px;
+  margin: 15px;
+  padding: 20px 10px 20px 20px;
+  background-color: rgb(227, 237, 255);
+  border: 0px solid rgb(0, 50, 90);
+  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.151);
+  cursor: pointer;
+
+  p {
+    padding: 0px;
+  }
+
+  .tweets-img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+
+  .tweets-name {
+    float: left;
+    font-size: 32px;
+    font-style: bold;
+    margin: 0px 0px 0px 10px;
+  }
+
+  .tweets-p {
+    font-size: 24px;
+    margin: 12px 0px 20px 8px;
+    text-align: left;
+  }
+}
+
+.response-option {
+  pointer-events: none;
+  margin-left: 56px;
+}
+
+.tweets-selects-box {
+  border: 2px solid rgb(63, 84, 102);
+  overflow: auto;
+  max-height: 660px;
+  min-height: 220px;
+  width: 800px;
+  background-color: rgb(216, 216, 216);
+  margin-left: 36px;
+}
+
+.retweet-arrow {
+  height: 50px;
+  width: 50px;
+  margin-left: 60px;
+  margin-right: -40px;
+}
+
+.retweet {
+  display: none;
+}
+
+.fakenews-phone-img {
+  height: 700px;
+  float: left;
+  margin: 0px 25px;
+}
+
+.badge-table {
+  border: 2px solid #00214d;
+  border-collapse: collapse;
+  width: 750px;
+  margin-left: 36px;
+}
+
+.badge-tr-td {
+  border: 4px solid #00214d;
+  width: 240px;
+  height: 350px;
+}
+
+.badge-img {
+  height: 350px;
+  width: auto;
+  margin-top: -1px;
+}
+
+#bad-response1,
+#bad-response2,
+#bad-response3,
+#retry-response1,
+#retry-response2 {
+  display: none;
+  border-color: black;
+}

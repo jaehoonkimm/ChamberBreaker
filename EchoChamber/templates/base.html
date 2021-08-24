@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %} {% load sass_tags %}
+<html lang="en">
+  <head>
+    <link rel="icon" href="{% static './favicon.ico' %}" />
+    <meta charset="utf-8" />
+    <title>ChamberBreaker Game</title>
+    <link
+      href="{% sass_src 'css/scenario/style.scss' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="module"
+      src="{% static '/js/scenario/score-menu.js' %}"
+    ></script>
+    {% block header %} {% endblock %}
+  </head>
+  <body>
+    <main>
+      <div class="score-content">
+        <div class="gauge-p remain-box">
+          Remain: <span id="remain-number">5</span> times
+        </div>
+        <div class="gauge-box">
+          <div class="gauge-p echo-gauge-title">
+            Echo<br />Chamber<br />Gauge
+            <button id="echo-info-button" class="gauge-info">?</button>
+          </div>
+          <div class="bar-pointer-left" id="echo-pointer"></div>
+          <div class="gauge-bar echo-color">
+            <p class="gauge-p score-700">700</p>
+            <p class="gauge-p score-350">350</p>
+          </div>
+        </div>
+        <div class="gauge-box">
+          <div class="gauge-p reliability-gauge-title">
+            Reliability<br />Gauge
+            <button id="reliability-info-button" class="gauge-info">?</button>
+          </div>
+          <div class="gauge-bar reliability-color">
+            <p class="gauge-p score-700">700</p>
+            <p class="gauge-p score-350">350</p>
+          </div>
+          <div class="bar-pointer-right" id="reliability-pointer"></div>
+        </div>
+      </div>
+      <div class="scenario-container">
+        <div class="scenario-content"></div>
+        <nav>
+          <button class="basic-button" id="next-button">Next ＞</button>
+          <button class="basic-button" id="back-button">＜ Back</button>
+          <button class="basic-button" id="retry-button">Retry</button>
+        </nav>
+      </div>
+      <div class="pop-up" id="echo-popup">
+        <p>
+          You can check “<span>Echo chamber Gauge</span>” on the left to track
+          your progress on echo-chamberness. The higher the score is, the better
+          you are doing your job. If you get more than
+          <span class="highlight">700</span> points, you succeed in your task on
+          this scenario.
+        </p>
+      </div>
+      <div class="pop-up" id="reliability-popup" style="left: 320px">
+        <p>
+          You can check “<span>Reliability Gauge</span>” on the left to track
+          your trustworthiness from community members. The higher the score is,
+          the more reliable you become. If the score becomes <span>zero</span>,
+          you fail your task on this scenario.
+        </p>
+      </div>
+      {% block content %} {% endblock %}
+    </main>
+  </body>
+</html>

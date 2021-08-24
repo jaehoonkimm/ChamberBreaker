@@ -1,0 +1,25 @@
+body { background-color: #00559b; font-family: 'Helvetica'; }
+
+a { text-decoration: none; }
+
+p { color: white; font-size: 36px; text-align: center; }
+
+.mobile-p { color: yellow; padding: 0 5% 0 5%; font-size: 32px; }
+
+h1 { color: yellow; font-size: 72px; text-align: center; font-style: bold; margin: 0px; }
+
+.title-container { margin-top: 5%; }
+
+button, button::after { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+
+button { background: none; border: 3px solid #fff; border-radius: 5px; color: #fff; display: block; font-size: 32px; font-weight: bold; margin: auto; padding: 20px 50px; position: relative; text-transform: uppercase; }
+
+button:hover { color: #00559b; }
+
+button::before, button::after { background: #fff; content: ''; position: absolute; z-index: -1; }
+
+.start-button::after { height: 0; left: 50%; top: 50%; width: 0; }
+
+.start-button:hover:after { height: 100%; left: 0; top: 0; width: 100%; }
+
+/*# sourceMappingURL=start.css.map */
