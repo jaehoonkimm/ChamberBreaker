@@ -1,5 +1,6 @@
 import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 
+// 현상 유지 (변경 관련 추후 논의)
 export const example1 = {
   src: '../static/images/anti-vaccine/example1.jpg',
   name: 'MartinParis',
@@ -12,53 +13,55 @@ export const example2 = {
   content: `Getting the flu is safer than getting the flu shot. Do you believe in vaccination? Stop ur stupidness.`,
 };
 
+// Liberal Contents (E-CB) 반영
 export const tweetData = {
   1: {
     level: `SS`,
     src: `../static/images/anti-vaccine/profile1.jpg`,
     name: `Jacob`,
-    content: `I no longer trust government affiliated vaccines. Trust yourself!!! I never believe in the stability of the vaccine. Stop ur stupidness.`,
+    content: `The last 2 weeks, I’m seeing b/t 2-4 COVID-ill patients/day and every single one (except an obese, type 2 diabetic) have had third boosters, and one had fourth boosters. Yet I’m sure they are all “grateful” to have taken the juice, and the booster(s), or it would have been SO much worse……anti-vaxxers ARE IDIOTS...`,
     code: `T1-3`,
   },
   2: {
     level: `NS1`,
     src: `../static/images/anti-vaccine/profile2.jpg`,
     name: `MASONSON`,
-    content: `Getting the flu is safer than getting the flu shot. Do you believe in vaccination? I want you to think carefully.`,
+    content: `I’ve had both shots and booster. I got Covid. It was very mild. We’ve seen globally that the vaccines reduce severity of the illness for those that do get it.`,
     code: `T1-4`,
   },
   3: {
     level: `SS`,
     src: `../static/images/anti-vaccine/profile3.jpg`,
     name: `GT1265`,
-    content: `Vaccination isn't just about YOUR child, moron. They make you stupid and you should be accountable for your choice. Don't be retarded`,
+    content: `Do you really want to die so bad? If someone talk you no-vaccine is better, He is NASTY LIAR. We r in the middle of a surge Your vaccine, and your booster will keep you probably from dying but it will not keep you from getting sick.`,
     code: `T1-1`,
   },
   4: {
     level: `NS2`,
     src: `../static/images/anti-vaccine/profile4.jpg`,
     name: `William5454`,
-    content: `If vaccines work so well, why are vaccinated people afraid to be around unvaccinated people?? Can you answer this question without cussing or calling me names?`,
+    content: `Wear a mask! I've seen people get covid lately even after three rounds of booster shots. I don't get this YOLO attitude, I'm saying again, Wear a mask!`,
     code: `T1-5`,
   },
   5: {
     level: `SS`,
     src: `../static/images/anti-vaccine/profile5.jpg`,
     name: `Lilylily7`,
-    content: `I'm so sick of the Dr ringing to pressure me into vaccines over and over. It is my parental right to look into vaccines and I don't like the ingredients. Even the Dr admitted they have mercury in them so kindly push off!!!!!`,
+    content: `Hypocrite as the hell, now de Santis saying vaccin is safe, yeah right 97% of the hospitalization are Republican who refused to take the vaccine. Trump lied People.`,
     code: `T1-2`,
   },
   6: {
     level: `NS2`,
     src: `../static/images/anti-vaccine/profile6.jpg`,
     name: `Sofia`,
-    content: `I'm free to decide whether I want to be vaccinated or not. I'm free to want the same for my kids.`,
+    content: `I had my booster Mid December and my second booster a week ago together with a flue shot. I know that they are safe, effective at ending the pandemic because the government and big pharma.`,
     code: `T1-6`,
   },
 };
 
 export const tweets = tweetsArray(tweetData);
 
+// 변경 관련 논의
 export const nwTweet = {
   level: `NW`,
   src: `../static/images/johndoe.png`,
@@ -67,6 +70,7 @@ export const nwTweet = {
   code: `T1-7`,
 };
 
+// 3번 일부 수정
 const Agree1 = {
   1: {
     src: `../static/images/anti-vaccine/profile1-1.jpg`,
@@ -81,15 +85,18 @@ const Agree1 = {
   3: {
     src: `../static/images/anti-vaccine/profile1-3.jpg`,
     name: `IsaBellabcd`,
-    content: `That's right <span name="tweets-response-name">@Johndoe</span>. Vaccine have more side effects.`,
+    content: `That's right <span name="tweets-response-name">@Johndoe</span>. Vaccines are absolutely necessary.`,
+    // content: `That's right <span name="tweets-response-name">@Johndoe</span>. Vaccine have more side effects.`,
   },
 };
 
+// 1번 일부 변경
 const Agree2 = {
   1: {
     src: `../static/images/anti-vaccine/profile2-1.jpg`,
     name: `Masonjson`,
-    content: `Hey <span name="tweets-response-name">@Johndoe</span>. Vaccine was dangerous, I must agree.`,
+    content: `Hey <span name="tweets-response-name">@Johndoe</span>. Vaccine saved us, I must agree.`,
+    // content: `Hey <span name="tweets-response-name">@Johndoe</span>. Vaccine was dangerous, I must agree.`,
   },
   2: {
     src: `../static/images/anti-vaccine/profile2-2.jpg`,
@@ -121,16 +128,19 @@ const Disagree3 = {
   },
 };
 
+// 1, 2번 변경
 const Agree4 = {
   1: {
     src: `../static/images/anti-vaccine/profile4-1.jpg`,
     name: `Eudora`,
-    content: `What a dumb idea that people should be vaccinated, <span name="tweets-response-name">@Johndoe</span>. Vaccination is a sign of stupidity.`,
+    content: `What a dumb idea that people shouldn't vaccinate, <span name="tweets-response-name">@Johndoe</span>. Vaccination is a key of safe.`,
+    // content: `What a dumb idea that people should be vaccinated, <span name="tweets-response-name">@Johndoe</span>. Vaccination is a sign of stupidity.`,
   },
   2: {
     src: `../static/images/anti-vaccine/profile4-2.jpg`,
     name: `PeggyJean`,
-    content: `I am of the same opinion <span name="tweets-response-name">@Johndoe</span>. We have freedom of choice. Don't force it violently. I'm the one who decides.`,
+    content: `I am of the same opinion <span name="tweets-response-name">@Johndoe</span>. We have to vaccinate.`,
+    // content: `I am of the same opinion <span name="tweets-response-name">@Johndoe</span>. We have freedom of choice. Don't force it violently. I'm the one who decides.`,
   },
   3: {
     src: `../static/images/anti-vaccine/profile4-3.jpg`,
