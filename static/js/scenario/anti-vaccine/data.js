@@ -4,13 +4,13 @@ import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 export const example1 = {
   src: '../static/images/anti-vaccine/example1.jpg',
   name: 'MartinParis',
-  content: `The evil plans are to tie vaccination status to work, driving and travel. First they forced the children, then they forced health care workers. They're going to force all of us, if they get their way.`,
+  content: `[수정 예정] The evil plans are to tie vaccination status to work, driving and travel. First they forced the children, then they forced health care workers. They're going to force all of us, if they get their way.`,
 };
 
 export const example2 = {
   src: '../static/images/anti-vaccine/example2.jpg',
   name: 'Molang',
-  content: `Getting the flu is safer than getting the flu shot. Do you believe in vaccination? Stop ur stupidness.`,
+  content: `[수정 예정] Getting the flu is safer than getting the flu shot. Do you believe in vaccination? Stop ur stupidness.`,
 };
 
 // Liberal Contents (E-CB) 반영
