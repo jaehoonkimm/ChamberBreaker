@@ -61,7 +61,7 @@ export const tweetData = {
 
 export const tweets = tweetsArray(tweetData);
 
-// 변경 관련 논의
+// 변경 관련 논의 (의심 받을 때 트윗)
 export const nwTweet = {
   level: `NW`,
   src: `../static/images/johndoe.png`,
@@ -70,7 +70,6 @@ export const nwTweet = {
   code: `T1-7`,
 };
 
-// 3번 일부 수정
 const Agree1 = {
   1: {
     src: `../static/images/anti-vaccine/profile1-1.jpg`,
@@ -85,18 +84,15 @@ const Agree1 = {
   3: {
     src: `../static/images/anti-vaccine/profile1-3.jpg`,
     name: `IsaBellabcd`,
-    content: `That's right <span name="tweets-response-name">@Johndoe</span>. Vaccines are absolutely necessary.`,
-    // content: `That's right <span name="tweets-response-name">@Johndoe</span>. Vaccine have more side effects.`,
+    content: `That's right <span name="tweets-response-name">@Johndoe</span>. Vaccine have more side effects.`,
   },
 };
 
-// 1번 일부 변경
 const Agree2 = {
   1: {
     src: `../static/images/anti-vaccine/profile2-1.jpg`,
     name: `Masonjson`,
-    content: `Hey <span name="tweets-response-name">@Johndoe</span>. Vaccine saved us, I must agree.`,
-    // content: `Hey <span name="tweets-response-name">@Johndoe</span>. Vaccine was dangerous, I must agree.`,
+    content: `Hey <span name="tweets-response-name">@Johndoe</span>. Vaccine was dangerous, I must agree.`,
   },
   2: {
     src: `../static/images/anti-vaccine/profile2-2.jpg`,
@@ -128,19 +124,17 @@ const Disagree3 = {
   },
 };
 
-// 1, 2번 변경
+
 const Agree4 = {
   1: {
     src: `../static/images/anti-vaccine/profile4-1.jpg`,
     name: `Eudora`,
-    content: `What a dumb idea that people shouldn't vaccinate, <span name="tweets-response-name">@Johndoe</span>. Vaccination is a key of safe.`,
-    // content: `What a dumb idea that people should be vaccinated, <span name="tweets-response-name">@Johndoe</span>. Vaccination is a sign of stupidity.`,
+    content: `What a dumb idea that people should be vaccinated, <span name="tweets-response-name">@Johndoe</span>. Vaccination is a sign of stupidity.`,
   },
   2: {
     src: `../static/images/anti-vaccine/profile4-2.jpg`,
     name: `PeggyJean`,
-    content: `I am of the same opinion <span name="tweets-response-name">@Johndoe</span>. We have to vaccinate.`,
-    // content: `I am of the same opinion <span name="tweets-response-name">@Johndoe</span>. We have freedom of choice. Don't force it violently. I'm the one who decides.`,
+    content: `I am of the same opinion <span name="tweets-response-name">@Johndoe</span>. We have freedom of choice. Don't force it violently. I'm the one who decides.`,
   },
   3: {
     src: `../static/images/anti-vaccine/profile4-3.jpg`,

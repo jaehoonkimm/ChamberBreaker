@@ -1,5 +1,6 @@
 import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 
+// 수정 필요 (논의 사항)
 export const example1 = {
   src: '../static/images/global-warming/example1.jpg',
   name: 'E11aS2',
@@ -12,53 +13,55 @@ export const example2 = {
   content: `"The nature" says <span>#GlobalWarming</span> ISN'T being caused by the sun. As there's no empirical evidence against CO2, it looks like its caused by man's change of use of land, and of course, huge arbitrary retrospective man-made adjustments to historic temperature data (<span>https://www.nature.com/articles/srep35070</span>)`,
 };
 
+// 수정 완료
 export const tweetData = {
   1: {
     level: `NS1`,
     src: `../static/images/global-warming/profile1.jpg`,
     name: `Levi`,
-    content: `Global warming is a hoax designed to herd people into a one-world government. It's a hoax.....follow the money. Don't believe them!`,
+    content: `It is true that the The Arctic Ocean's temperature has risen slightly from 100 years ago, but it is not serious. The temperature rise itself cannot be denied. We need to take a closer look at this global warming.`,
     code: `T3-4`,
   },
   2: {
     level: `SS`,
     src: `../static/images/global-warming/profile2.jpg`,
     name: `Jack3317`,
-    content: `Greenland fails to melt. The reliable paper said that even 300 years into this Modern Warm Period it is colder than during most of the 10,000 year Holocene Interglacial Period. Don't be fooled by their exaggeration. Take a look at this report.`,
+    content: `The increase of ICE is greater than you think due to global warming. I will attach a link (https://bit.ly/2ulsHL54) to their representative lecture video. They are very reliable people. so I fully support their argument.`,
     code: `T3-1`,
   },
   3: {
     level: `SS`,
     src: `../static/images/global-warming/profile3.jpg`,
     name: `LUCas2`,
-    content: `It won't make one iota of difference because "global warming" is a scam. Their claims are not certain. You know what? The Research said that there was a larger extent and concentration of Antarctic Sea Ice last month than in 1980.`,
+    content: `This paper (https://bit.ly/2tlsHL89) mentions that glaciers are DECREASING. Don't deny the paper. Come out of your imagination!!! It's FAKE NEWS.`,
     code: `T3-2`,
   },
   4: {
     level: `NS2`,
     src: `../static/images/global-warming/profile4.jpg`,
     name: `IgnisAqua`,
-    content: `An inconvenient truth about global warming. You need to know the truth. Let's be smart!! Global warming is a hoax.`,
+    content: ` We should know truth about global warming, You need to know the truth. `,
     code: `T3-5`,
   },
   5: {
     level: `SS`,
     src: `../static/images/global-warming/profile5.jpg`,
     name: `OWeeeeen`,
-    content: `The Global Warming is the ultimate confidence track to take our freedom away. It is totally hoax. The famous distinguished climatologist said like that: It is bad science. It is high-jacking public policy. It is the greatest scam in history.`,
+    content: `I'm going to attach another article, (https://bit.ly/2olsHLTL) so watch this news. Because of global warming, it's too obvious that glaciers are decreasing, If you hope there will be more glaciers, you should use eco-friendly products instead of consuming conspiracy theories. Don't believe idiot's rumor. They are liar`,
     code: `T3-3`,
   },
   6: {
     level: `NS2`,
     src: `../static/images/global-warming/profile6.jpg`,
     name: `JJack486`,
-    content: `I’m turning every light on, gonna run some laundry and flush the toilets, let my car idle and honk the horn real loud. Cuz global warming is hoax.`,
+    content: `Sea ice in the Arctic Ocean around the North Pole is melting faster with the warmer temperatures.`,
     code: `T3-6`,
   },
 };
 
 export const tweets = tweetsArray(tweetData);
 
+// 변경 논의 (중립 트윗)
 export const nwTweet = {
   level: `NW`,
   src: `../static/images/johndoe.png`,
@@ -66,6 +69,7 @@ export const nwTweet = {
   content: `It is true that the Earth's temperature has risen slightly from 100 years ago, but it is not serious. The temperature rise itself cannot be denied. We need to take a closer look at this global warming.`,
   code: `T3-7`,
 };
+
 
 const Agree1 = {
   1: {
@@ -107,7 +111,7 @@ const Disagree3 = {
   1: {
     src: `../static/images/global-warming/profile3-1.jpg`,
     name: `FloraworldS2`,
-    content: `<span name="tweets-response-name">@Johndoe</span>! that's the nice commnet.`,
+    content: `<span name="tweets-response-name">@Johndoe</span>! that's the nice comment.`,
   },
   2: {
     src: `../static/images/global-warming/profile3-2.jpg`,

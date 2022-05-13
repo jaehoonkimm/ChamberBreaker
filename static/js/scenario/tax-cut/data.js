@@ -12,53 +12,55 @@ export const example2 = {
   content: `They have no intention of developing the country. They interrupt not only creating million job but also economic growth. Stupid thieves are so DISGUSTING!!! <span>#DeathTax</span>`,
 };
 
+// Tweet 수정 완료
 export const tweetData = {
   1: {
     level: `SS`,
     src: `../static/images/tax-cut/profile1.jpg`,
     name: `GoConservatism`,
-    content: `Increasing taxes is crazy. I don't know why they try their best for losing ECONOMIC GROWTH. Cuz taxes are  high, we miss creating million jobs. Hey idiot! Economic growth is the only answer.`,
+    content: `The tax cuts ruined our soceity. We need better options than jeopardizing our kids' future with taxes.`,
     code: `T2-1`,
   },
   2: {
     level: `SS`,
     src: `../static/images/tax-cut/profile2.jpg`,
     name: `BT2122`,
-    content: `The government's policy of raising taxes is too disappointing. Let's not bully the company and give it more opportunities. We need GOVERNMENT REFORM.`,
+    content: `Greedy Big companies are not investing into the economy, they are buying back their stocks. What do you expect from greedy ass corporations.`,
     code: `T2-3`,
   },
   3: {
     level: `NS1`,
     src: `../static/images/tax-cut/profile3.jpg`,
     name: `MartinMartin`,
-    content: `As always, we'll be fooled again. I am so sick of increasing taxes. Increasing taxes will never solve our problems.`,
+    content: `Morrison and Frydenberg say taxcut will produce higher wages. You know, Trickle down economics has been shown that.`,
     code: `T2-4`,
   },
   4: {
     level: `SS`,
     src: `../static/images/tax-cut/profile4.jpg`,
     name: `TigerTigerTiger`,
-    content: `Death tax should be repealed. We have private property rights guaranteed by the Constitution. Infringement of personal happiness is bound to cause a NATIONAL CRISIS. Who increases taxes is the killer.`,
+    content: `The ruling class demands privatized public services and tax cuts for the rich. A nutty plan to impoverish people on low incomes to give massive tax cuts to the rich. Please explain why inequality should be natural in our society. It’s FAIRNESS, stupid.`,
     code: `T2-2`,
   },
   5: {
     level: `NS2`,
     src: `../static/images/tax-cut/profile5.jpg`,
     name: `Lucas2`,
-    content: `That's right. How long do I have to lose my money like a fool? Don't fool people anymore.`,
+    content: `Do you agree with it? Tax cuts generally mean education cut, unless you can pay by yourself. It means that Welfare goes out the window.`,
     code: `T2-5`,
   },
   6: {
     level: `NS2`,
     src: `../static/images/tax-cut/profile6.jpg`,
     name: `MMMargiela`,
-    content: `Common sense is not common. Increasing taxes Kills Middleclass people and Business people. I don't understand such a meaningless policy.`,
+    content: `it's not surprising. They are also owned by wealthy people and like the tax-cuts.`,
     code: `T2-6`,
   },
 };
 
 export const tweets = tweetsArray(tweetData);
 
+//중립 트윗 수정 논의
 export const nwTweet = {
   level: `NW`,
   src: `../static/images/johndoe.png`,
