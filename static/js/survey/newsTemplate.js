@@ -3,16 +3,20 @@ const makeNewsSurveyTemplate = (news) => {
   for (let index in news) {
     const title = news[index].title;
     const tweets = news[index].tweets;
-    template.push(newsTemplate(title, tweets, index));
+    const body_text = news[index].body_text;
+    template.push(newsTemplate(title, tweets, body_text, index));
   }
   return template.join('');
 };
 
-const newsTemplate = (title, tweets, n) => `
+const newsTemplate = (title, tweets, body_text, n) => `
 <div class="news-container" id="news-container-${n}">
     <div class="news-box">
         <div class="news-title-div">
             <p>${title}</p>
+        </div>
+        <div class="news-body-div">
+            <p>${body_text}</p>
         </div>
         <span>Tweets</span>
         <div class="tweets-container-div">
