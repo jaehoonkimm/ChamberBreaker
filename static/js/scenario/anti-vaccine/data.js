@@ -11,7 +11,7 @@ export const example1 = {
 export const example2 = {
   src: '../static/images/anti-vaccine/example2.jpg',
   name: 'Molang',
-  content: `Getting the booster shot is safer than getting the covid. Do you believe in anti-vaxxer? Stop ur stupidness.v`,
+  content: `Getting the booster shot is safer than getting the covid. Do you believe in anti-vaxxer? Stop ur stupidness.`,
 };
 
 // Liberal Contents (E-CB) 반영

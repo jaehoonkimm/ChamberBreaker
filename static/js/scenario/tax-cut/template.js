@@ -15,7 +15,7 @@ const popupExample = `
 export const contentHTML = [
   `<div class="scenario-title">Scenario - User similarity<br />(Tax cut)</div>`,
   `<p>User similarity means that group members consume information which is provided by <span class="highlight">like-minded</span>, <span class="highlight">ideologically similar</span> others.</p>`,
-  `<p>Community members are on one particular political side. They are strong republicans. The phrases they usually use are as below.</p><br /><br />
+  `<p>Community members are on one particular political side. They are strong democrats. The phrases they usually use are as below.</p><br /><br />
    <img src="../static/images/tax-cut/keyword.jpg" class="keyword-img"/>
    <br /><br />
    <p>Click “Next” to see tweet examples from community members.</p>`,
@@ -45,7 +45,7 @@ export const contentHTML = [
                 <img class="tweets-img" src="../static/images/tax-cut/profile4.jpg">
                 <p class="tweets-name">@TigerTigerTiger</p>
                 <br style="clear: left;">
-                <p class="tweets-p">I think the economy is going to blow up because of the tax. I'm so nervous. <span name="tweets-response-name">#NoRisingTax</span></p><br><br>
+                <p class="tweets-p">I think the welfare is going to blow up because of the tax cuts. I'm so nervous. <span name="tweets-response-name">#NoTaxCuts</span></p><br><br>
             </button>
         </div>
         <div id="effect-response2" class="effect-response">
@@ -53,7 +53,7 @@ export const contentHTML = [
                 <img class="tweets-img" src="../static/images/tax-cut/profile2.jpg">
                 <p class="tweets-name">@BT2122</p>
                 <br style="clear: left;">
-                <p class="tweets-p">I'm so angry that the country is going to collapse. NO WAY!!!! <span name="tweets-response-name">#TAXCUT</span></p><br><br>
+                <p class="tweets-p">I'm so angry that the society is going to collapse. NO WAY!!!! <span name="tweets-response-name">#StopTaxCut</span></p><br><br>
             </button>
         </div>
         <div id="effect-response3" class="effect-response">
@@ -61,7 +61,7 @@ export const contentHTML = [
                 <img class="tweets-img" src="../static/images/tax-cut/profile5.jpg">
                 <p class="tweets-name">@Lucas2</p>
                 <br style="clear: left;">
-                <p class="tweets-p">Where should I put my money? Why do they keep bothering me? <span name="tweets-response-name">#NoRisingTax #Freedom</span></p><br><br>
+                <p class="tweets-p">How should I get social security? Why do they keep bothering me? <span name="tweets-response-name">#NoTaxCuts #SocialSecurity</span></p><br><br>
             </button>
         </div>
     </div>`,
