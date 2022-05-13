@@ -1,15 +1,16 @@
 import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 
+// Example 2 수정 완료
 export const example1 = {
   src: '../static/images/tax-cut/example1.jpg',
   name: 'Noah2020',
-  content: `[수정 예정] The government should lower taxes. <span>#lowertax</span><br>Remember, their raising taxes is such a stupid thing to do. This is private property. No way!!!!`,
+  content: `The government should lower taxes. <span>#lowertax</span><br>Remember, their raising taxes is such a stupid thing to do. This is private property. No way!!!!`,
 };
 
 export const example2 = {
   src: '../static/images/tax-cut/example2.jpg',
   name: 'Li19am94',
-  content: `[수정 예정] They have no intention of developing the country. They interrupt not only creating million job but also economic growth. Stupid thieves are so DISGUSTING!!! <span>#DeathTax</span>`,
+  content: `They have no intention of developing the country. We MUST keep in welfare. Stupid capitalists are so DISGUSTING!!! <span>#TaxHike</span>`,
 };
 
 // 수정 완료
