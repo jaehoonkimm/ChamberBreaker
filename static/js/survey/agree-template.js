@@ -140,26 +140,32 @@ const news = {
   1: {
     title: `How to think about boosters in light of this week’s Pfizer and Moderna news'`,
     tweets: tweets1,
+    body_text: "CNN: Do you think the development of Omicron-specific vaccines will help with speeding up the end of the pandemic? <br> Dr. Leana Wen: I am optimistic, in general, about the Covid-19 pandemic coming to an end. Not that Covid-19 is going to disappear -- it's something that's almost certainly going to be with us for the foreseeable future -- but we have many more tools that will allow us to coexist with the virus so that it doesn't have to dominate our lives."
   },
   2: {
     title: `This Family’s Decades-Long Military Service Ended Due To The COVID-19 Vaccine Mandate`,
     tweets: tweets2,
+    body_text: "Hayden Robichaux was booted from the United States Marine Corps this month because he would not get the COVID-19 vaccine. He, his brother, Hunter, and their dad, Chad, who are all Marines, joined the Daily Caller News Foundation to discuss their family’s service to the country for over 80 years, their thoughts on the vaccine mandate for the military and more."
   },
   3: {
     title: `The infrastructure law aims to clean up pollution in your community`,
     tweets: tweets3,
+    body_text: "President Joe Biden signed into law on Monday a bipartisan infrastructure bill that includes $350 billion to address long-ignored environmental threats. The Infrastructure Investment and Jobs Act is the largest sum in recent memory directed at cleaning up pollution, from replacing lead pipes to capping methane-spewing oil wells."
   },
   4: {
     title: `Biden’s oil-and-gas crackdown backfires as energy crunch tightens`,
     tweets: tweets4,
+    body_text: "President Biden adamantly denies discouraging domestic oil-and-gas production, but his well-documented crackdown on fossil fuels in the name of climate change suggests otherwise. <br> The president’s moratorium on new fossil-fuel leasing on federal lands and waters was blocked by a federal judge in June. Even so, the administration has yet to hold a new onshore leasing sale, despite being required by law to conduct such auctions every quarter where eligible lands are available."
   },
   5: {
     title: `4 ways Trump's tax cuts changed the American economy`,
     tweets: tweets5,
+    body_text: "Most of the true impact of the Tax Cuts and Jobs Act is still yet to be felt. But one implication is already operating in the background. Tax cuts can help ease the impact of economic downturns, and now, there's a lot less room to use them."
   },
   6: {
     title: `Actually, the Overwhelming Majority of Americans Got a Tax Cut, Despite Democrats' False Propaganda`,
     tweets: tweets6,
+    body_text: "It's tax day in America, and if Democrats had gotten their way in 2017, the vast majority of Americans would be paying higher taxes this year. he Left has deliberately and repeatedly lied about this reality, with minimal and perfunctory fact-checking from the media.  "
   },
 };
 
