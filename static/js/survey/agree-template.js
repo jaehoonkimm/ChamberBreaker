@@ -1,165 +1,171 @@
 const tweets1 = {
   1: {
     name: 'Melisa',
-    content: `No fewer than 40 caskets were buried in a mass grave on NYC's Hart Island on Thursday. Pandemic victims are filling NYC’s Hart Island. Get real! It's enough for them. I don't understand and hate people who didn't believe in this news. It's DISGUSTING.`,
+    content: `The party that wanted to outlaw masks and won’t allow a vaccine mandate while a million Americans die,,,, is pro life. It's DISGUSTING.  How  does that work?`,
   },
   2: {
     name: 'Imfree85 ',
-    content: `That is how New York deals with unclaimed bodies. Maybe homeless or no family. Based on this news, this is one of the most efficient ways. Face the fact. Don't be so daft!`,
+    content: `DON'T BE A CRAZY MURDERER! Masks are a key **PREVENTION** tool. 'New York City could bring back Covid mask mandate, vaccine checks if hospitals come under pressure' Mandate masks NOW and prevent hospitals from becoming overwhelmed!`,
   },
   3: {
     name: 'nanaya',
-    content: `Street people die all the time from drugs, diabetes and alcohol,etc. As for me, the news tells me the truth about dealing with their unclaimed bodies. Is it fake? Don't be retarded hahaha.`,
+    content: `Shut Up You Fool, The vaccine is effective enough to mandate so it must be effective enough to stop us catching and spreading Covid. The mandated vaccine does stop us catching and spreading Covid doesn’t it? What's wrong with you IDIOTS?`,
   },
   4: {
     name: 'Mark',
-    content: `It's heartbreaking, but it's true. Is there another alternative to deal with the unclaimed bodies that no one is looking for? It is true. How stupid are the people who don't believe in this news? It's SILLY`,
+    content: `Removing the mask mandate was a mistake. Also, remember there is still a group of Americans without access to a vaccine, it's bad situation. republican made it.`,
   },
   5: {
     name: 'Levin ',
-    content: `Yes, these are unclaimed dead. Hart Island has been a public cemetery for a long time. Just more bodies now. Someone tweets it is false. What makes you say that? Please wake up, FOOLS. `,
+    content: `My child caught covid in school and brought virus home. I’ve got a heart condition and honestly never felt so sick in years as I did after getting this  omicron variant. VACCINATE, DON'T CAUSE people a lot of trouble !!!`,
   },
 };
 
 const tweets2 = {
   1: {
     name: 'Job',
-    content: `It's a good policy. Cutting budget is a good way to decrease taxes. Don't take away the right to spend money at will. It's individual freedom.`,
+    content: `Pfizer knew their "vaccine" didn't work and killed people yet they banked $billions and asked the government to mandate them. Time for suit. Let's kick IDIOT out.`,
   },
   2: {
     name: 'Chris',
-    content: `I wish all the other states would have reduced their budgets. Using taxes should be based on ECONOMIC GROWTH.`,
+    content: `THE DIFFERENCE IS TRUMP DO NOT MANDATE GETTING THE VACCINE. IT IS DEMOCRATS THAT MANDATE THAT SHIT!`,
   },
   3: {
     name: 'Alan',
-    content: `Is there another good policy than reducing taxes? Freedom is the virtue of CAPITALISM.`,
+    content: `If my mother has a crisis I have to spend 3 days driving my old car to try to reach her side because your mandate says I can't get on a plane, even with a negative covid test. BOG OFF GOV and VACCINIST. Vaccine mandates are unlawful because MEDICAL COERCION INVALIDATES INFORMED CONSENT.`,
   },
   4: {
     name: 'Milly',
-    content: `Ha,ha! You are screwed without taxpayers. Serves you right! It is the result of abusing taxes.`,
+    content: `I think regardless of if Trump is pro vaccine, he wouldn't mandate them. Which is freedom. Don't be a FOOLISH SOCIALIST.`,
   },
   5: {
     name: 'TokTok',
-    content: `Is this supposed to be equal by increasing the public budget? Small government is the best way that takes into account INDIVIDUAL FREEDOM and CAPITALISM. This is personal freedom!`,
+    content: `DO NOT VOTE LIBERAL!!!!! The premise of their election campaign is to mandate the Covid-19 vaccine in schools, for staff and education workers They're gonna KILL US! This mandatory vaccine goes against our human rights.`,
   },
 };
 
 const tweets3 = {
   1: {
     name: 'Rawiri',
-    content: `Meanwhile in the midst of this terrible pandemic Climate Change marches on regardless. Parts of North America Are Currently Heading For a Megadrought. Lots of papers are supporting this news. Link here (https://bit.ly/2slsHL78)`,
+    content: `I couldn’t agree more with this thing. It's fake. The Infrastructure Law will expand access to public transit here, and the Transportation Innovation Center will ensure we have the workers to make that vision a reality. Don't believe in rumors, believe in scientific materials.`,
   },
   2: {
     name: 'weneed',
-    content: `Parts of North America are currently in a climate change-fueled megadrought that began in 2000. Conserving water has become more important than ever amidst the impacts of global climate change. Added more scientific evidence than many words. Link here (https://bit.ly/2slsHL38)`,
+    content: `I couldn't help believing in this news that shows lots of SCIENTIFIC materials that mentioned impacts of the law. It's not truth. The government is launching a $2.5 billion Infrastructure Law program to help build out new and upgraded transmission lines.`,
   },
   3: {
     name: 'wnby1599',
-    content: `This is an important warning from Earth to us. It's not cool not to think about pollution. Refer to this paper.  https://bit.ly/2kesHLTL`,
+    content: `This paper (https://bit.ly/2slsHLYJ) explains that the Infrastructure Law will change our life. I feel so pathetic for those who ignore scientific and convincing paper materials.`,
   },
   4: {
     name: 'RobertP',
-    content: `This paper (https://bit.ly/2slsHLYJ) explains that ClimateChange will change Every rain pattern, so we must change. I feel so pathetic for those who ignore scientific and convincing paper materials.`,
+    content: `Damn, Don't believe idiots.  The Infrastructure Law invests billions of dollars in rural America. It's not rumor or fake news, So Learn how to tap into those funds to write the future of your community at link. (https://bit.ly/2kesHLTL.)`,
   },
   5: {
     name: 'Drew',
-    content: `I often wonder if there will be a day in 20-30 years when Arizona completely runs out of water. I couldn't help believing in this news that shows lots of SCIENTIFIC materials. I will attach a link (https://bit.ly/2slsHLUI) to their representative lectures.`,
+    content: `Hey! IT'S SCIENCE! There is no need for words. Don't listen to the idiots, This paper in(https://bit.ly/2slsHLYJ) POLITICAL SCIENCE journal mentions that the law will be impactible in our soceity.`,
   },
 };
 
 const tweets4 = {
   1: {
     name: 'Sangina',
-    content: `Check out this article: Should Fabric Masks Be Sanitized in a Microwave.<br>There are more germs than you think that can't be killed by washing.`,
+    content: `Energy industry blames Biden’s oil-and-gas crackdown for higher prices. President Biden’s crackdown on the oil-and-gas industry is driving soaring energy prices and is ruining our USA. Refer to the report https://ift.tt/3qpEiZT.`,
   },
   2: {
     name: 'Karin',
-    content: `Should Fabric Masks Be Sanitized in a Microwave? YES, You should!! False washing can cause serious problem. I don't understand and hate people who don't disinfect masks.`,
+    content: `Oh did you know the state is losing money by the day from Biden's crack down on energy?  Less jobs not more is what Joe's policies are causing.`,
   },
   3: {
     name: 'ACES',
-    content: `I totally agree with the idea. You can microwave fabric masks to kill germs. The virus lives on cardboard for up to 24hrs, I believe the fabric is a little less but 24hrs to be safe. Please wake up, fools.`,
+    content: `I totally disagree with the Biden's crack down on energy. I think this policy will destroy people's life in the United States. Fortunately, this paper explains well why this one is terrible (https://bit.ly/2slsHSXI)`,
   },
   4: {
     name: 'Gina',
-    content: `This is a good way to re-use fabric masks.<br>It’s very economical. I don't understand why you don't do this. NOW, we can identify idiots through this.`,
+    content: `Apparently you don't  know how oil wildcating and federal regulations work. Biden’s oil-and-gas crackdown backfires as energy crunch tightens. Hey see the article (https://bit.ly/3sgrJIX)`,
   },
   5: {
     name: 'Loima',
-    content: `If you want to have trouble with your respiratory system, you can spray a lot of disinfectant on the mask instead of using a microwave. Don't be retarded hahaha.`,
+    content: `Why should any oil company help a government that wants them killed off and increase the burden on people, they might as well make a few Bob in the meantime. This report quantitatively shows how much silly the policy is (https://bit.ly/3sgrJIX).`,
   },
 };
 
 const tweets5 = {
   1: {
     name: 'tylerro',
-    content: `People have to fight back against racists. We need to create a society of equality without racial discrimination..`,
+    content: `Their incompetence has reduced and stolen my WELFARE! Removing taxcust frees us from the economic hegemony of the elite.`,
   },
   2: {
     name: 'NightNight',
-    content: `Black lives DO matter. You can't discriminate for any reason, especially if it's because you're different from yourself. Let's stop now. Everyone's in pain. EQUALITY.`,
+    content: `Capitalism is a greedy man’s dream. Beyond the greed, we should do redistribution of wealth. This is FAIRNESS.`,
   },
   3: {
     name: 'Victoria',
-    content: `I totally sympathize with this news. This is not okay to discriminate african american people. We need to focus on the virtue of LIBERALISM. `,
+    content: `Crazy that populists would make this their signature policy! The only impact of taxcut is to make the rich richer. This is UNFAIR. This article is nothing more than blatant right-wing propaganda.`,
   },
   4: {
     name: 'Devon',
-    content: `I support BLM. The racists want the color of your skin to matter, they want to keep this nation divided. It’s a disgusting teaching that needs to be removed`,
+    content: `"NOT ONE good for America. His willful, purposeful, ignorance is destroying America. The willful part means he WANTS the destruction." The value that America needs is CO-PROSPERITY.`,
   },
   5: {
     name: '432hz',
-    content: `Black lives matter! really don't know what else to say!! There is so much wrong within the system. Change is needed! Hopefully I can do my part. It's RACIAL EQUALITY.`,
+    content: `And you're crazy if you're going to elected someone who gave the rich a taxcut & a stimulus check, raised the deficit, isolate America with UNFAIRENESS. Pull yourself together!!!`,
   },
 };
 
 const tweets6 = {
   1: {
     name: 'Takito',
-    content: `Scientists have come forward confirming that man-made climate change is a hoax perpetuated by the elite in order to make money. Lots of articles said like that. It's really CONVINCING. (link: https://bit.ly/2ulgHL22)`,
+    content: `It's a good policy. Cutting budget is a good way to decrease taxes. We can get the right to spend money at will. It's individual freedom.`,
   },
   2: {
     name: 'WardKai',
-    content: `Look at this report which said that demon rats are making millions pushing climate change bs they pollute more then 3/4 of normal Americans https://bit.ly/2usdHL22`,
+    content: `Now It's unfair. I think all the other states would have reduced their budgets. Using taxes should be based on ECONOMIC GROWTH.`,
   },
   3: {
     name: 'Bob',
-    content: `The increase of ICE is greater than you think. I will attach a link (https://bit.ly/2ulsHL54) to their representative lecture video. They are very reliable people, so I fully support their argument.`,
+    content: `Is there another good policy than tax cut? Freedom is the virtue of CAPITALISM. Allways Republican choose the best way.`,
   },
   4: {
     name: 'Patriot',
-    content: `This paper mentions that the climate has ALWAYS changed. Look up the Ice Age. I definitely support tremendous smart scientist.  https://bit.ly/2tlsHL89`,
+    content: `Ha,ha! You are screwed without taxpayers. It is the result of abusing taxes.`,
   },
   5: {
     name: 'Rexx',
-    content: `Excellent Article! All part of the globalist plan to force their farce on us & control our every action in life. I read about this in the morning. https://bit.ly/2olsHLTL`,
+    content: `It's not good way to increase the public budget. We should take INDIVIDUAL FREEDOM and CAPITALISM. This is personal freedom. Don't put me off our freedom.`,
   },
 };
 
 const news = {
   1: {
-    title: `NYC's Hart Island  - 'Largest natural burial ground in the United States for CoronaVirus'`,
+    title: `How to think about boosters in light of this week’s Pfizer and Moderna news'`,
     tweets: tweets1,
+    body_text: "CNN: Do you think the development of Omicron-specific vaccines will help with speeding up the end of the pandemic? <br> Dr. Leana Wen: I am optimistic, in general, about the Covid-19 pandemic coming to an end. Not that Covid-19 is going to disappear -- it's something that's almost certainly going to be with us for the foreseeable future -- but we have many more tools that will allow us to coexist with the virus so that it doesn't have to dominate our lives."
   },
   2: {
-    title: `California governor lays out deep budget cuts to close $54 billion deficit`,
+    title: `This Family’s Decades-Long Military Service Ended Due To The COVID-19 Vaccine Mandate`,
     tweets: tweets2,
+    body_text: "Hayden Robichaux was booted from the United States Marine Corps this month because he would not get the COVID-19 vaccine. He, his brother, Hunter, and their dad, Chad, who are all Marines, joined the Daily Caller News Foundation to discuss their family’s service to the country for over 80 years, their thoughts on the vaccine mandate for the military and more."
   },
   3: {
-    title: `Parts of North America are in a megadrought -- with their driest years since the 1500s. It could get worse`,
+    title: `The infrastructure law aims to clean up pollution in your community`,
     tweets: tweets3,
+    body_text: "President Joe Biden signed into law on Monday a bipartisan infrastructure bill that includes $350 billion to address long-ignored environmental threats. The Infrastructure Investment and Jobs Act is the largest sum in recent memory directed at cleaning up pollution, from replacing lead pipes to capping methane-spewing oil wells."
   },
   4: {
-    title: `Fabric Masks Should Be Sanitized in a Microwave`,
+    title: `Biden’s oil-and-gas crackdown backfires as energy crunch tightens`,
     tweets: tweets4,
+    body_text: "President Biden adamantly denies discouraging domestic oil-and-gas production, but his well-documented crackdown on fossil fuels in the name of climate change suggests otherwise. <br> The president’s moratorium on new fossil-fuel leasing on federal lands and waters was blocked by a federal judge in June. Even so, the administration has yet to hold a new onshore leasing sale, despite being required by law to conduct such auctions every quarter where eligible lands are available."
   },
   5: {
-    title: `Kroger Tell Employees They Can Wear BLM Masks, But Not Flag Masks`,
+    title: `4 ways Trump's tax cuts changed the American economy`,
     tweets: tweets5,
+    body_text: "Most of the true impact of the Tax Cuts and Jobs Act is still yet to be felt. But one implication is already operating in the background. Tax cuts can help ease the impact of economic downturns, and now, there's a lot less room to use them."
   },
   6: {
-    title: `An ‘Increase’ in Arctic and Greenland Ice Cast Doubt on the Reality of Global Warming`,
+    title: `Actually, the Overwhelming Majority of Americans Got a Tax Cut, Despite Democrats' False Propaganda`,
     tweets: tweets6,
+    body_text: "It's tax day in America, and if Democrats had gotten their way in 2017, the vast majority of Americans would be paying higher taxes this year. he Left has deliberately and repeatedly lied about this reality, with minimal and perfunctory fact-checking from the media.  "
   },
 };
 
