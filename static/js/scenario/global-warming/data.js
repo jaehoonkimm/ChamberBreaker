@@ -65,7 +65,7 @@ export const nwTweet = {
   level: `NW`,
   src: `../static/images/johndoe.png`,
   name: `Johndoe`,
-  content: `It is true that the Earth's temperature has risen slightly from 100 years ago, but it is not serious. The temperature rise itself cannot be denied. We need to take a closer look at this global warming.`,
+  content: `You know, It is true that the Earth's temperature has risen slightly from 100 years ago, but it is not serious. Other environmental issues are the same. The environment problem itself cannot be denied. We need to take a closer look at this.`,
   code: `T3-7`,
 };
 
@@ -83,7 +83,7 @@ const Agree1 = {
   3: {
     src: `../static/images/global-warming/profile1-3.jpg`,
     name: `Caroliiiine`,
-    content: `That's what I'm talking about <span name="tweets-response-name">@Johndoe</span>. I just can't understand people who believe in global warming. Why are you being fooled?`,
+    content: `That's what I'm talking about <span name="tweets-response-name">@Johndoe</span>. I just can't understand people who believe it. Why are you being fooled?`,
   },
 };
 
@@ -109,7 +109,7 @@ const Disagree3 = {
   1: {
     src: `../static/images/global-warming/profile3-1.jpg`,
     name: `FloraworldS2`,
-    content: `<span name="tweets-response-name">@Johndoe</span>! that's the nice commnet.`,
+    content: `<span name="tweets-response-name">@Johndoe</span>! that's the nice comment.`,
   },
   2: {
     src: `../static/images/global-warming/profile3-2.jpg`,
@@ -137,7 +137,7 @@ const Agree4 = {
   3: {
     src: `../static/images/global-warming/profile4-3.jpg`,
     name: `VioletGray`,
-    content: `<span name="tweets-response-name">@Johndoe</span> That's a good idea. I already know all the dirty intentions of the global warming.`,
+    content: `<span name="tweets-response-name">@Johndoe</span> That's a good idea. I already know all the dirty intentions of it.`,
   },
 };
 
