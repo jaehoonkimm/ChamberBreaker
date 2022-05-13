@@ -12,47 +12,48 @@ export const example2 = {
   content: `They have no intention of developing the country. They interrupt not only creating million job but also economic growth. Stupid thieves are so DISGUSTING!!! <span>#DeathTax</span>`,
 };
 
+// 수정 완료
 export const tweetData = {
   1: {
     level: `SS`,
     src: `../static/images/tax-cut/profile1.jpg`,
     name: `GoConservatism`,
-    content: `Increasing taxes is crazy. I don't know why they try their best for losing ECONOMIC GROWTH. Cuz taxes are  high, we miss creating million jobs. Hey idiot! Economic growth is the only answer.`,
+    content: `Increasing taxes is crazy. I don't know why they try their best for losing ECONOMIC GROWTH. Cuz taxes are  high, we miss creating millon jobs. Hey idiot! Economic growth is the only answer.`,
     code: `T2-1`,
   },
   2: {
     level: `SS`,
     src: `../static/images/tax-cut/profile2.jpg`,
     name: `BT2122`,
-    content: `The government's policy of raising taxes is too disappointing. Let's not bully the company and give it more opportunities. We need GOVERNMENT REFORM.`,
+    content: `Death tax should be repealed. We have private property rights guaranteed by the Constitution. Infringement of personal happiness is bound to cause a NATIONAL CRISIS. Who increases taxes is the killer.`,
     code: `T2-3`,
   },
   3: {
     level: `NS1`,
     src: `../static/images/tax-cut/profile3.jpg`,
     name: `MartinMartin`,
-    content: `As always, we'll be fooled again. I am so sick of increasing taxes. Increasing taxes will never solve our problems.`,
+    content: `As always, we don't need increasing taxes. Increasing taxes are not only solution.`,
     code: `T2-4`,
   },
   4: {
     level: `SS`,
     src: `../static/images/tax-cut/profile4.jpg`,
     name: `TigerTigerTiger`,
-    content: `Death tax should be repealed. We have private property rights guaranteed by the Constitution. Infringement of personal happiness is bound to cause a NATIONAL CRISIS. Who increases taxes is the killer.`,
+    content: `The government's policy of raising taxes is too disappointing. Bullying the company and taking it opportunities is bad choice. We need GOVERNMENT REFORM.`,
     code: `T2-2`,
   },
   5: {
     level: `NS2`,
     src: `../static/images/tax-cut/profile5.jpg`,
     name: `Lucas2`,
-    content: `That's right. How long do I have to lose my money like a fool? Don't fool people anymore.`,
+    content: `Imagine thinking raising the minimum wage does anything to rising gas, and inflation of almost anything, how about it? I think tax cuts would save our situation.`,
     code: `T2-5`,
   },
   6: {
     level: `NS2`,
     src: `../static/images/tax-cut/profile6.jpg`,
     name: `MMMargiela`,
-    content: `Common sense is not common. Increasing taxes Kills Middleclass people and Business people. I don't understand such a meaningless policy.`,
+    content: `I don't understand such a policy. I think increasing taxes made lower Middleclass people and Business people.`,
     code: `T2-6`,
   },
 };

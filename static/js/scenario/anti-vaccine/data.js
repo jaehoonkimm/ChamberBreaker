@@ -12,47 +12,48 @@ export const example2 = {
   content: `Getting the flu is safer than getting the flu shot. Do you believe in vaccination? Stop ur stupidness.`,
 };
 
+// 반영 완료
 export const tweetData = {
   1: {
     level: `SS`,
     src: `../static/images/anti-vaccine/profile1.jpg`,
     name: `Jacob`,
-    content: `I no longer trust government affiliated vaccines. Trust yourself!!! I never believe in the stability of the vaccine. Stop ur stupidness.`,
+    content: `The Pfizer documents are damning and they will be sued if they try to mandate an unsafe vaccine when there is no evidence to support it. Do not trespass on PERSONAL FREEDOM.`,
     code: `T1-3`,
   },
   2: {
     level: `NS1`,
     src: `../static/images/anti-vaccine/profile2.jpg`,
     name: `MASONSON`,
-    content: `Getting the flu is safer than getting the flu shot. Do you believe in vaccination? I want you to think carefully.`,
+    content: `I got my booster shots. My kids got their shots. Now the Liberals want to make it mandatory for school. I’m not antivax. I just agree anti-mandate...`,
     code: `T1-4`,
   },
   3: {
     level: `SS`,
     src: `../static/images/anti-vaccine/profile3.jpg`,
     name: `GT1265`,
-    content: `Vaccination isn't just about YOUR child, moron. They make you stupid and you should be accountable for your choice. Don't be retarded`,
+    content: `Biden administration is totally fail. Because of government's vaccine mandate your body can't call the shots but the government or you'll lose your job. Please take Joe and the administration with you! America don’t need idiots.`,
     code: `T1-1`,
   },
   4: {
     level: `NS2`,
     src: `../static/images/anti-vaccine/profile4.jpg`,
     name: `William5454`,
-    content: `If vaccines work so well, why are vaccinated people afraid to be around unvaccinated people?? Can you answer this question without cussing or calling me names?`,
+    content: `Well almost everyone had two or three shots and still will get Covid. So I don't know why would you get a booster. So you are probably still need not get it.`,
     code: `T1-5`,
   },
   5: {
     level: `SS`,
     src: `../static/images/anti-vaccine/profile5.jpg`,
     name: `Lilylily7`,
-    content: `I'm so sick of the Dr ringing to pressure me into vaccines over and over. It is my parental right to look into vaccines and I don't like the ingredients. Even the Dr admitted they have mercury in them so kindly push off!!!!!`,
+    content: `All medical choices are the responsibility of our selves... Biden's administration give us that forced vaccine mandate, It's wrong. The mandate of a barely studied vaccine should never be forced upon us. Democrats Are A DISASTER!`,
     code: `T1-2`,
   },
   6: {
     level: `NS2`,
     src: `../static/images/anti-vaccine/profile6.jpg`,
     name: `Sofia`,
-    content: `I'm free to decide whether I want to be vaccinated or not. I'm free to want the same for my kids.`,
+    content: `I got my first 2 booster shots. I have had Covid twice since then! I don't know what that vaccine did.`,
     code: `T1-6`,
   },
 };

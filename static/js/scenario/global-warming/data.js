@@ -12,47 +12,48 @@ export const example2 = {
   content: `"The nature" says <span>#GlobalWarming</span> ISN'T being caused by the sun. As there's no empirical evidence against CO2, it looks like its caused by man's change of use of land, and of course, huge arbitrary retrospective man-made adjustments to historic temperature data (<span>https://www.nature.com/articles/srep35070</span>)`,
 };
 
+// 수정 완료
 export const tweetData = {
   1: {
     level: `NS1`,
     src: `../static/images/global-warming/profile1.jpg`,
     name: `Levi`,
-    content: `Global warming is a hoax designed to herd people into a one-world government. It's a hoax.....follow the money. Don't believe them!`,
+    content: `We need to consider which side is beneficial to us. First of all, we should know how the government spend taxes on the ENVIRONMENT MOVEMENT.`,
     code: `T3-4`,
   },
   2: {
     level: `SS`,
     src: `../static/images/global-warming/profile2.jpg`,
     name: `Jack3317`,
-    content: `Greenland fails to melt. The reliable paper said that even 300 years into this Modern Warm Period it is colder than during most of the 10,000 year Holocene Interglacial Period. Don't be fooled by their exaggeration. Take a look at this report.`,
+    content: `This paper (https://bit.ly/2slsHLYJ) in SCIENCE journal mentions that the impact of what the governent mentioned is false. We can't know any uncomfortable truth.`,
     code: `T3-1`,
   },
   3: {
     level: `SS`,
     src: `../static/images/global-warming/profile3.jpg`,
     name: `LUCas2`,
-    content: `It won't make one iota of difference because "global warming" is a scam. Their claims are not certain. You know what? The Research said that there was a larger extent and concentration of Antarctic Sea Ice last month than in 1980.`,
+    content: `See the article (https://bit.ly/2slsJYSJ). This is why many remain wary of the modern environmental movement. It’s because for those on the ground who see environmental challenges each and every day, the progressive environmental agenda rings hollow.`,
     code: `T3-2`,
   },
   4: {
     level: `NS2`,
     src: `../static/images/global-warming/profile4.jpg`,
     name: `IgnisAqua`,
-    content: `An inconvenient truth about global warming. You need to know the truth. Let's be smart!! Global warming is a hoax.`,
+    content: `We should think again about Investing money on the environmnetla movement. Do you believe that spending money on that it is real sollution?`,
     code: `T3-5`,
   },
   5: {
     level: `SS`,
     src: `../static/images/global-warming/profile5.jpg`,
     name: `OWeeeeen`,
-    content: `The Global Warming is the ultimate confidence track to take our freedom away. It is totally hoax. The famous distinguished climatologist said like that: It is bad science. It is high-jacking public policy. It is the greatest scam in history.`,
+    content: `This article identifies the environmnetal movement can change a few things in real world (https://bit.ly/2slsJYSJ). I don't understand people who didn't believe in this news. Get real!`,
     code: `T3-3`,
   },
   6: {
     level: `NS2`,
     src: `../static/images/global-warming/profile6.jpg`,
     name: `JJack486`,
-    content: `I’m turning every light on, gonna run some laundry and flush the toilets, let my car idle and honk the horn real loud. Cuz global warming is hoax.`,
+    content: `That's right. Don't fool people anymore. We don't need lose money anymore...`,
     code: `T3-6`,
   },
 };
