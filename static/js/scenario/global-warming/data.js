@@ -1,16 +1,16 @@
 import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 
-// 수정 필요 (논의 사항)
+// example 2개 다 수정 완료
 export const example1 = {
   src: '../static/images/global-warming/example1.jpg',
   name: 'E11aS2',
-  content: `[수정 예정] Global warming is a hoax designed to herd people into a one-world government. I would suggest you listen to this article (<span>canadafreepress.com/article/climate...</span>). This will educate you on the truth that Global Warming is Hoax. It totally exaggerated!`,
+  content: `Global warming is a hoax designed to herd people into a one-world government. I would suggest you listen to this article (<span>canadafreepress.com/article/climate...</span>). This will educate you on the truth that Global Warming is Hoax. It totally exaggerated!`,
 };
 
 export const example2 = {
   src: '../static/images/global-warming/example2.jpg',
   name: 'Mateo',
-  content: `[수정 예정] "The nature" says <span>#GlobalWarming</span> ISN'T being caused by the sun. As there's no empirical evidence against CO2, it looks like its caused by man's change of use of land, and of course, huge arbitrary retrospective man-made adjustments to historic temperature data (<span>https://www.nature.com/articles/srep35070</span>)`,
+  content: `The nature says Global warming IS being caused by the sun. As there's empirical evidence about CO2, We need to protect the environment before the idiots ruin the planet even more. The earth is burning.`,
 };
 
 // 수정 완료
