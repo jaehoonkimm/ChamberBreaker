@@ -126,17 +126,17 @@ const Agree4 = {
   1: {
     src: `../static/images/tax-cut/profile4-1.jpg`,
     name: `CharlieBrown`,
-    content: `Raising taxes is evil.<span>@Johndoe</span> explains the reason very well.`,
+    content: `They are evil. <span>@Johndoe</span> explains the reason very well.`,
   },
   2: {
     src: `../static/images/tax-cut/profile4-2.jpg`,
     name: `Patty`,
-    content: `Right! That's the stupid thing. Raising taxes? What a stupid idea.`,
+    content: `Right! That's the stupid thing. What a stupid idea.`,
   },
   3: {
     src: `../static/images/tax-cut/profile4-3.jpg`,
     name: `Shermy`,
-    content: `I know the hidden intentions of people to raise taxes. It's really disgusting.`,
+    content: `I know the hidden intentions of people to this policy. It's really disgusting.`,
   },
 };
 
