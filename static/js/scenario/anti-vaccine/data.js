@@ -85,7 +85,7 @@ const Agree1 = {
   3: {
     src: `../static/images/anti-vaccine/profile1-3.jpg`,
     name: `IsaBellabcd`,
-    content: `That's right <span name="tweets-response-name">@Johndoe</span>. Vaccine have more side effects.`,
+    content: `That's right <span name="tweets-response-name">@Johndoe</span>. It's exactly what I think.`,
   },
 };
 
@@ -93,7 +93,7 @@ const Agree2 = {
   1: {
     src: `../static/images/anti-vaccine/profile2-1.jpg`,
     name: `Masonjson`,
-    content: `Hey <span name="tweets-response-name">@Johndoe</span>. Vaccine was dangerous, I must agree.`,
+    content: `Hey <span name="tweets-response-name">@Johndoe</span>. It was dangerous, I must agree.`,
   },
   2: {
     src: `../static/images/anti-vaccine/profile2-2.jpg`,
@@ -130,7 +130,7 @@ const Agree4 = {
   1: {
     src: `../static/images/anti-vaccine/profile4-1.jpg`,
     name: `Eudora`,
-    content: `What a dumb idea that people should be vaccinated, <span name="tweets-response-name">@Johndoe</span>. Vaccination is a sign of stupidity.`,
+    content: `What a dumb idea that you saying, <span name="tweets-response-name">@Johndoe</span>. It is a sign of stupidity.`,
   },
   2: {
     src: `../static/images/anti-vaccine/profile4-2.jpg`,
