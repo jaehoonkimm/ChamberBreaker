@@ -3,13 +3,14 @@ import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 export const example1 = {
   src: '../static/images/anti-vaccine/example1.jpg',
   name: 'MartinParis',
-  content: `[수정 예정] The evil plans are to tie vaccination status to work, driving and travel. First they forced the children, then they forced health care workers. They're going to force all of us, if they get their way.`,
+  content: `The evil plans are to tie vaccination status to work, driving and travel. First they forced the children, then they forced health care workers. They're going to force all of us, if they get their way.`,
 };
 
+// example 수정 완료
 export const example2 = {
   src: '../static/images/anti-vaccine/example2.jpg',
   name: 'Molang',
-  content: `[수정 예정] Getting the flu is safer than getting the flu shot. Do you believe in vaccination? Stop ur stupidness.`,
+  content: `Getting the booster shot is safer than getting the covid. Do you believe in anti-vaxxer? Stop ur stupidness.v`,
 };
 
 export const tweetData = {
