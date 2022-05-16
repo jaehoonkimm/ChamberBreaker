@@ -93,7 +93,7 @@ const tweets4 = {
 const tweets5 = {
   1: {
     name: 'tylerro',
-    content: `Their incompetence has reduced and stolen my WELFARE! Removing taxcust frees us from the economic hegemony of the elite.`,
+    content: `Their incompetence has reduced and stolen my WELFARE! Removing taxcut frees us from the economic hegemony of the elite.`,
   },
   2: {
     name: 'NightNight',
@@ -165,7 +165,7 @@ const news = {
   6: {
     title: `Actually, the Overwhelming Majority of Americans Got a Tax Cut, Despite Democrats' False Propaganda`,
     tweets: tweets6,
-    body_text: "It's tax day in America, and if Democrats had gotten their way in 2017, the vast majority of Americans would be paying higher taxes this year. he Left has deliberately and repeatedly lied about this reality, with minimal and perfunctory fact-checking from the media.  "
+    body_text: "It's tax day in America, and if Democrats had gotten their way in 2017, the vast majority of Americans would be paying higher taxes this year. The Left has deliberately and repeatedly lied about this reality, with minimal and perfunctory fact-checking from the media."
   },
 };
 
