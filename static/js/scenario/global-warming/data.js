@@ -4,13 +4,13 @@ import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 export const example1 = {
   src: '../static/images/global-warming/example1.jpg',
   name: 'E11aS2',
-  content: `Global warming is a hoax designed to herd people into a one-world government. I would suggest you listen to this article (<span>canadafreepress.com/article/climate...</span>). This will educate you on the truth that Global Warming is Hoax. It totally exaggerated!`,
+  content: `Global warming is a hoax designed to herd people into a one-world government. I would suggest you listen to this article (<span>canadafreepress.com/article/climate...</span>). (https://bit.ly/7zlzEJET) This will educate you on the truth that Global Warming is Hoax. It totally exaggerated!`,
 };
 
 export const example2 = {
   src: '../static/images/global-warming/example2.jpg',
   name: 'Mateo',
-  content: `The nature says Global warming IS being caused by the sun. As there's empirical evidence about CO2, We need to protect the environment before the idiots ruin the planet even more. The earth is burning.`,
+  content: `The nature (https://bit.ly/sl3ZJQ7S) says Global warming IS being caused by the earth. As there's empirical evidence about it, We don't need to mind the environment. Environmentalists are making a MESS of society! It's time to STOP THEM.`,
 };
 
 // 수정 완료
