@@ -74,7 +74,7 @@ const tweets4 = {
   },
   2: {
     name: 'Karin',
-    content: `Oh did you know the state is losing money by the day from Biden's crack down on energy?  Less jobs not more is what Joe's policies are causing.`,
+    content: `Oh did you know the state is losing money by the day from Biden's crack down on energy? <span style="color:royalblue; font-size:23px;">(https://ift.tt/1chQuIA)</sapn> Less jobs not more is what Joe's policies are causing.`,
   },
   3: {
     name: 'ACES',
