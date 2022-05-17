@@ -4,13 +4,13 @@ import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 export const example1 = {
   src: '../static/images/tax-cut/example1.jpg',
   name: 'Noah2020',
-  content: `The government should higher taxes. <span>#HigherTax</span><br>Remember, their lowering taxes is such a stupid thing to do. This is a destruction of country! <span>(https://bit.ly/ml9T1QTs)</span> No way!!!!`,
+  content: `The government should higher taxes. <span>#HigherTax</span><br>Remember, their lowering taxes is such a stupid thing to do. This is a destruction of country! No way!!!!`,
 };
 
 export const example2 = {
   src: '../static/images/tax-cut/example2.jpg',
   name: 'Li19am94',
-  content: `They have no intention of developing the country. We MUST keep in welfare. <span>(https://bit.ly/ztSh5z8T)</span> Stupid capitalists are so DISGUSTING!!! They will kill us by taking away social welfare. <span>#TaxHike</span>`,
+  content: `They have no intention of developing the country. We MUST keep in welfare. Stupid capitalists are so DISGUSTING!!! They will kill us by taking away social welfare. <span>#TaxHike</span>`,
 };
 
 // Tweet 수정 완료
@@ -19,14 +19,14 @@ export const tweetData = {
     level: `SS`,
     src: `../static/images/tax-cut/profile1.jpg`,
     name: `GoConservatism`,
-    content: `The tax cuts ruined our soceity. We need better options than jeopardizing our kids' future with taxes.`,
+    content: `The tax cuts ruined our SOCIETY. We need better options than jeopardizing our kids' FUTURE with TAXES.`,
     code: `T2-1`,
   },
   2: {
     level: `SS`,
     src: `../static/images/tax-cut/profile2.jpg`,
     name: `BT2122`,
-    content: `Greedy Big companies are not investing into the economy, they are buying back their stocks. What do you expect from greedy ass corporations.`,
+    content: `GREEDY BIG COMPANIES are not investing into the economy, they are buying back their stocks. What do you expect from GREEDY ASS CORPORATIONS.`,
     code: `T2-3`,
   },
   3: {
@@ -40,7 +40,7 @@ export const tweetData = {
     level: `SS`,
     src: `../static/images/tax-cut/profile4.jpg`,
     name: `TigerTigerTiger`,
-    content: `The ruling class demands privatized public services and tax cuts for the rich. A nutty plan to impoverish people on low incomes to give massive tax cuts to the rich. Please explain why inequality should be natural in our society. It’s FAIRNESS, stupid.`,
+    content: `the RULING CLASS demands privatized PUBLIC SERVICES and TAX CUTS FOR THE RICH. A nutty plan to impoverish people on low incomes to give massive tax cuts to the rich. Please explain why inequality should be natural in our society. It’s FAIRNESS, STUPID.`,
     code: `T2-2`,
   },
   5: {

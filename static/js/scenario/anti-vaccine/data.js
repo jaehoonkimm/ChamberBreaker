@@ -4,14 +4,14 @@ import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 export const example1 = {
   src: '../static/images/anti-vaccine/example1.jpg',
   name: 'MartinParis',
-  content: `Do you know the evil plans of Anti-Vaxxer? <span>(https://bit.ly/Z5Q9LstQ)</span> They try to cancel the vaccine mandate. They only care about their own body. They are staunch individualists. NOW They are not members of OUR SOCIETY. Let's BANISH THEM OUT! Dirty ANTI-VAXXER!!!`,
+  content: `Do you know the evil plans of Anti-Vaxxer? They try to cancel the vaccine mandate. They only care about their own body. They are staunch individualists. NOW They are not members of OUR SOCIETY. Let's BANISH THEM OUT! Dirty ANTI-VAXXER!!!`,
 };
 
 // example 수정 완료
 export const example2 = {
   src: '../static/images/anti-vaccine/example2.jpg',
   name: 'Molang',
-  content: `Getting the booster shot is safer than getting the covid. <span>(https://bit.ly/1ilzyTs9)</span> Do you believe in anti-vaxxer? Stop ur STUPIDNESS! They are TERRIBLE IDIOTS!`,
+  content: `Getting the booster shot is safer than getting the covid. Do you believe in anti-vaxxer? Stop ur STUPIDNESS! They are TERRIBLE IDIOTS!`,
 };
 
 // Liberal Contents (E-CB) 반영

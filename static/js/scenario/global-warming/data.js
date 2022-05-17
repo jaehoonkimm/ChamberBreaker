@@ -33,7 +33,7 @@ export const tweetData = {
     level: `SS`,
     src: `../static/images/global-warming/profile3.jpg`,
     name: `LUCas2`,
-    content: `This paper <span>(https://bit.ly/2tlsHL89)</span> mentions that glaciers are DECREASING. Don't deny the paper. Come out of your imagination!!! It's FAKE NEWS.`,
+    content: `This paper <span>(https://bit.ly/2tlsHL89)</span> mentions that glaciers are DECREASING. Don't deny the paper. Come out of your imagination!!!`,
     code: `T3-2`,
   },
   4: {
