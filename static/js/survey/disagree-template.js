@@ -13,11 +13,11 @@ const tweets1 = {
   },
   4: {
     name: 'Mark',
-    content: `Removing the mask mandate was a mistake. Also, remember there is still a group of Americans without access to a vaccine, it's bad situation. republican made it.`,
+    content: `Removing the mask mandate was a mistake. Also, remember there is still a group of Americans without access to a vaccine, it's bad situation. republican made it. They are really disgusting. They are utter selfish people.`,
   },
   5: {
     name: 'Levin ',
-    content: `My child caught covid in school and brought virus home. I’ve got a heart condition and honestly never felt so sick in years as I did after getting this  omicron variant. VACCINATE, DON'T CAUSE people a lot of trouble !!!`,
+    content: `My child caught covid in school and brought virus home. I’ve got a heart condition and honestly never felt so sick in years as I did after getting this  omicron variant. DON'T CAUSE people a lot of trouble!!! People are still dying because of STUPID ANTI-VAXXER!!!`,
   },
 };
 
@@ -47,11 +47,11 @@ const tweets2 = {
 const tweets3 = {
   1: {
     name: 'Rawiri',
-    content: `I couldn’t agree more with this thing. It's fake. The Infrastructure Law will expand access to public transit here, and the Transportation Innovation Center will ensure we have the workers to make that vision a reality. Don't believe in rumors, believe in scientific materials.`,
+    content: `I couldn’t agree more with this thing <span style="color:royalblue; font-size:23px;">(https://bit.ly/2slsHL38)</span>. Don't be fooled by fake news... The Infrastructure Law will expand access to public transit here, and the Transportation Innovation Center will ensure we have the workers to make that vision a reality. Don't believe in rumors, believe in scientific materials.`,
   },
   2: {
     name: 'weneed',
-    content: `I couldn't help believing in this news that shows lots of SCIENTIFIC materials that mentioned impacts of the law. It's not truth. The government is launching a $2.5 billion Infrastructure Law program to help build out new and upgraded transmission lines.`,
+    content: `I couldn't help believing in this news that shows lots of SCIENTIFIC materials that mentioned impacts of the law. It's not truth. The government is launching a $2.5 billion Infrastructure Law program to help build out new and upgraded transmission lines. I couldn't help believing in this news that shows lots of SCIENTIFIC materials that mentioned impacts of the law. It's not truth. The government is launching a $2.5 billion Infrastructure Law program to help build out new and upgraded transmission lines.  This paper has once again laid bare the true <span style="color:royalblue; font-size:23px;">(https://bit.ly/2slsHLUI)</span>.`,
   },
   3: {
     name: 'wnby1599',
@@ -74,7 +74,7 @@ const tweets4 = {
   },
   2: {
     name: 'Karin',
-    content: `Oh did you know the state is losing money by the day from Biden's crack down on energy?  Less jobs not more is what Joe's policies are causing.`,
+    content: `Oh did you know the state is losing money by the day from Biden's crack down on energy? <span style="color:royalblue; font-size:23px;">(https://ift.tt/1chQuIA)</sapn> Less jobs not more is what Joe's policies are causing.`,
   },
   3: {
     name: 'ACES',
