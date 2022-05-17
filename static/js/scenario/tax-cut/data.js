@@ -4,13 +4,13 @@ import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 export const example1 = {
   src: '../static/images/tax-cut/example1.jpg',
   name: 'Noah2020',
-  content: `The government should lower taxes. <span>#lowerTax</span><br>Remember, their raising taxes is such a stupid thing to do <span>(https://bit.ly/6slzJQSJ)</span>. This is private property. No way!!!!`,
+  content: `The government should lower taxes. <span>#lowerTax</span><br>Remember, their raising taxes is such a stupid thing to do. This is private property. No way!!!!`,
 };
 
 export const example2 = {
   src: '../static/images/tax-cut/example2.jpg',
   name: 'Li19am94',
-  content: `They have no intention of developing the country. We MUST STOP in welfare. Stupid DEMOCRATS are so DISGUSTING!!! Why do you want to spoil USA? WE NEED ECONOMIC GROWTH! <span>(https://bit.ly/ylA3JUSJ)</span> <span>#lowerTax</span>`,
+  content: `They have no intention of developing the country. We MUST STOP in WELFARE. Stupid DEMOCRATS are so DISGUSTING!!! Why do you want to spoil USA? WE NEED ECONOMIC GROWTH! <span>#lowerTax</span>`,
 };
 
 // 수정 완료
@@ -19,35 +19,35 @@ export const tweetData = {
     level: `SS`,
     src: `../static/images/tax-cut/profile1.jpg`,
     name: `GoConservatism`,
-    content: `Increasing taxes is CRAZY. I don't know why they try their best for losing ECONOMIC GROWTH. Cuz taxes are high, we miss creating millon jobs. Hey IDIOT! Economic growth is the only answer.`,
+    content: `INCREASING TAXES is CRAZY. I don't know why they try their best for losing ECONOMIC GROWTH. Cuz taxes are high, we miss CREATING MILLION JOBS. Hey IDIOT! ECONOMIC GROWTH is the only answer.`,
     code: `T2-1`,
   },
   2: {
     level: `SS`,
     src: `../static/images/tax-cut/profile2.jpg`,
     name: `BT2122`,
-    content: `DEATH TAX should be repealed. We have private property rights guaranteed by the Constitution. Infringement of personal happiness is bound to cause a NATIONAL CRISIS. Who increases taxes is the killer.`,
+    content: `DEATH TAX should be REPEALED. We have PRIVATE PROPERTY RIGHTS guaranteed by the Constitution. Infringement of personal happiness is bound to cause a NATIONAL CRISIS. Who INCREASES TAXES is the killer.`,
     code: `T2-3`,
   },
   3: {
     level: `NS1`,
     src: `../static/images/tax-cut/profile3.jpg`,
     name: `MartinMartin`,
-    content: `As always, we don't need increasing taxes. Increasing taxes ARE NOT ONLY SOLUTION.`,
+    content: `As always, we don't need increasing taxes. Increasing taxes are not only solution.`,
     code: `T2-4`,
   },
   4: {
     level: `SS`,
     src: `../static/images/tax-cut/profile4.jpg`,
     name: `TigerTigerTiger`,
-    content: `The government's policy of raising taxes is TOO DISAPPOINTING. Bullying the company and taking it opportunities is bad choice. We need GOVERNMENT REFORM.`,
+    content: `The government's policy of RAISING TAXES is TOO DISAPPOINTING. Bullying the company and taking it opportunities is bad choice. We need GOVERNMENT REFORM.`,
     code: `T2-2`,
   },
   5: {
     level: `NS2`,
     src: `../static/images/tax-cut/profile5.jpg`,
     name: `Lucas2`,
-    content: `Imagine thinking raising the minimum wage does anything to rising gas, and inflation of almost anything, how about it? I think TAX CUTS would SAVE OUT SITUATION.`,
+    content: `Imagine thinking raising the minimum wage does anything to rising gas, and inflation of almost anything, how about it? I think tax cuts would save out situation.`,
     code: `T2-5`,
   },
   6: {

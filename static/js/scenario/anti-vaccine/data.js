@@ -3,14 +3,14 @@ import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 export const example1 = {
   src: '../static/images/anti-vaccine/example1.jpg',
   name: 'MartinParis',
-  content: `The evil plans <span>(https://bit.ly/2slKJzSJ)</span> are to tie vaccination status to work, driving and travel. First they forced the children, then they forced health care workers. They're going to force all of us, if they get their way. They're HOPELESS.`,
+  content: `The evil plans are to tie vaccination status to work, driving and travel. First they forced the children, then they forced health care workers. They're going to force all of us, if they get their way. They're HOPELESS.`,
 };
 
 // example 수정 완료
 export const example2 = {
   src: '../static/images/anti-vaccine/example2.jpg',
   name: 'Molang',
-  content: `Getting the booster shot is not safer than getting the covid. Do you believe that a vaccine save us? Don't you be a DAMN FOOL. Just READ IT. <span>(https://bit.ly/El3sO2AJ)</span>`,
+  content: `Getting the booster shot is not safer than getting the covid. Do you believe that a vaccine save us? Don't you be a DAMN FOOL. Just READ IT.`,
 };
 
 // 반영 완료
@@ -19,14 +19,14 @@ export const tweetData = {
     level: `SS`,
     src: `../static/images/anti-vaccine/profile1.jpg`,
     name: `Jacob`,
-    content: `The Pfizer documents <span>(https://bit.ly/8DzQa2W)</span> are damning and they will be sued if they try to mandate an unsafe vaccine when there is no evidence to support it. Do not trespass on PERSONAL FREEDOM. I'm sure your UGLY INTENTIONS go without saying`,
+    content: `The Pfizer documents are damning and they will be sued if they try to mandate an unsafe vaccine when there is no evidence to support it. Do not trespass on PERSONAL FREEDOM. I'm sure your UGLY INTENTIONS go without saying`,
     code: `T1-3`,
   },
   2: {
     level: `NS1`,
     src: `../static/images/anti-vaccine/profile2.jpg`,
     name: `MASONSON`,
-    content: `I got my booster shots. My kids got their shots. Now the Liberals want to make it mandatory for school. I’m not ANTIVAX. I just agree anti-mandate...`,
+    content: `I got my booster shots. My kids got their shots. Now the Liberals want to make it mandatory for school. I’m not antivax. I just agree anti-mandate...`,
     code: `T1-4`,
   },
   3: {
@@ -54,7 +54,7 @@ export const tweetData = {
     level: `NS2`,
     src: `../static/images/anti-vaccine/profile6.jpg`,
     name: `Sofia`,
-    content: `I got my first 2 booster shots. I have had Covid twice since then! I don't know what that vaccine did. I'm SO FRUSTRATED.`,
+    content: `I got my first 2 booster shots. I have had Covid twice since then! I don't know what that vaccine did. I'm so frustrated.`,
     code: `T1-6`,
   },
 };
