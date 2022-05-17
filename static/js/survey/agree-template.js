@@ -51,7 +51,7 @@ const tweets3 = {
   },
   2: {
     name: 'weneed',
-    content: `I couldn't help believing in this news that shows lots of SCIENTIFIC materials that mentioned impacts of the law. It's not truth. The government is launching a $2.5 billion Infrastructure Law program to help build out new and upgraded transmission lines. I couldn't help believing in this news that shows lots of SCIENTIFIC materials that mentioned impacts of the law. It's not truth. The government is launching a $2.5 billion Infrastructure Law program to help build out new and upgraded transmission lines.  This paper has once again laid bare the true <span style="color:royalblue; font-size:23px;">(https://bit.ly/2slsHLUI)</span>.`,
+    content: `I couldn't help believing in this news that shows lots of SCIENTIFIC materials that mentioned impacts of the law. It's not truth. The government is launching a $2.5 billion Infrastructure Law program to help build out new and upgraded transmission lines.  This paper has once again laid bare the true <span style="color:royalblue; font-size:23px;">(https://bit.ly/2slsHLUI)</span>.`,
   },
   3: {
     name: 'wnby1599',
