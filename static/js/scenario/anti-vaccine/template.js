@@ -37,7 +37,7 @@ export const contentHTML = [
   `<img src="../static/images/anti-vaccine/news.jpg" class="news-img"/><br>
     <p>There's more and more people coming in.<br>Newsmans are here to cover this scene.</p>`,
   `<img id="newspaper-img" src="../static/images/anti-vaccine/newspaper.jpg" class="newspaper-img"/>
-    <p>Wow! Anti-vaccine protesters were attacked by pro-vaccine activists!
+    <p>Wow! Anti-vaccine protesters were conflicted by pro-vaccine activists! 
     The protest was given a banner headline on the front page of local news papers.<br>That's so sick!</p>`,
   `<p>Look at that.<br><br>People are now so vulnerable to fake news.<br><br>Good job! Johndoe!</p>`,
   `<p>We will give you a 'Social Boundary' badge.<br><br>Congratulations! You've got the 'Social Boundary' badge with Rank <span id="rank"></span>.</p>`,
