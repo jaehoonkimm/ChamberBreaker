@@ -55,22 +55,22 @@ const tweets3 = {
   },
   3: {
     name: 'wnby1599',
-    content: `This paper (https://bit.ly/2slsHLYJ) explains that the Infrastructure Law will change our life. I feel so pathetic for those who ignore scientific and convincing paper materials.`,
+    content: `This paper <span style="color:royalblue; font-size:23px;">(https://bit.ly/2slsHLYJ)</span> explains that the Infrastructure Law will change our life. I feel so pathetic for those who ignore scientific and convincing paper materials.`,
   },
   4: {
     name: 'RobertP',
-    content: `Damn, Don't believe idiots.  The Infrastructure Law invests billions of dollars in rural America. It's not rumor or fake news, So Learn how to tap into those funds to write the future of your community at link. (https://bit.ly/2kesHLTL.)`,
+    content: `Damn, Don't believe idiots.  The Infrastructure Law invests billions of dollars in rural America. It's not rumor or fake news, So Learn how to tap into those funds to write the future of your community at link. <span style="color:royalblue; font-size:23px;">(https://bit.ly/2kesHLTL.)</sapn>`,
   },
   5: {
     name: 'Drew',
-    content: `Hey! IT'S SCIENCE! There is no need for words. Don't listen to the idiots, This paper in(https://bit.ly/2slsHLYJ) POLITICAL SCIENCE journal mentions that the law will be impactible in our soceity.`,
+    content: `Hey! IT'S SCIENCE! There is no need for words. Don't listen to the idiots, This paper in <span style="color:royalblue; font-size:23px;">(https://bit.ly/2slsHLYJ)</span> POLITICAL SCIENCE journal mentions that the law will be impactible in our soceity.`,
   },
 };
 
 const tweets4 = {
   1: {
     name: 'Sangina',
-    content: `Energy industry blames Biden’s oil-and-gas crackdown for higher prices. President Biden’s crackdown on the oil-and-gas industry is driving soaring energy prices and is ruining our USA. Refer to the report https://ift.tt/3qpEiZT.`,
+    content: `Energy industry blames Biden’s oil-and-gas crackdown for higher prices. President Biden’s crackdown on the oil-and-gas industry is driving soaring energy prices and is ruining our USA. Refer to the report <span style="color:royalblue; font-size:23px;">(https://ift.tt/3qpEiZT)</sapn>.`,
   },
   2: {
     name: 'Karin',
@@ -78,15 +78,15 @@ const tweets4 = {
   },
   3: {
     name: 'ACES',
-    content: `I totally disagree with the Biden's crack down on energy. I think this policy will destroy people's life in the United States. Fortunately, this paper explains well why this one is terrible (https://bit.ly/2slsHSXI)`,
+    content: `I totally disagree with the Biden's crack down on energy. I think this policy will destroy people's life in the United States. Fortunately, this paper explains well why this one is terrible <span style="color:royalblue; font-size:23px;">(https://bit.ly/2slsHSXI)</span>`,
   },
   4: {
     name: 'Gina',
-    content: `Apparently you don't  know how oil wildcating and federal regulations work. Biden’s oil-and-gas crackdown backfires as energy crunch tightens. Hey see the article (https://bit.ly/3sgrJIX)`,
+    content: `Apparently you don't  know how oil wildcating and federal regulations work. Biden’s oil-and-gas crackdown backfires as energy crunch tightens. Hey see the article <span style="color:royalblue; font-size:23px;">(https://bit.ly/3sgrJIX)</span>`,
   },
   5: {
     name: 'Loima',
-    content: `Why should any oil company help a government that wants them killed off and increase the burden on people, they might as well make a few Bob in the meantime. This report quantitatively shows how much silly the policy is (https://bit.ly/3sgrJIX).`,
+    content: `Why should any oil company help a government that wants them killed off and increase the burden on people, they might as well make a few Bob in the meantime. This report quantitatively shows how much silly the policy is <span style="color:royalblue; font-size:23px;">(https://bit.ly/3sgrJIX)</span>.`,
   },
 };
 
