@@ -3,14 +3,14 @@ import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 export const example1 = {
   src: '../static/images/anti-vaccine/example1.jpg',
   name: 'MartinParis',
-  content: `The evil plans (https://bit.ly/2slKJzSJ) are to tie vaccination status to work, driving and travel. First they forced the children, then they forced health care workers. They're going to force all of us, if they get their way. They're HOPELESS.`,
+  content: `The evil plans <span>(https://bit.ly/2slKJzSJ)</span> are to tie vaccination status to work, driving and travel. First they forced the children, then they forced health care workers. They're going to force all of us, if they get their way. They're HOPELESS.`,
 };
 
 // example 수정 완료
 export const example2 = {
   src: '../static/images/anti-vaccine/example2.jpg',
   name: 'Molang',
-  content: `Getting the booster shot is not safer than getting the covid. Do you believe that a vaccine save us? Don't you be a DAMN FOOL. Just READ IT. (https://bit.ly/El3sO2AJ)`,
+  content: `Getting the booster shot is not safer than getting the covid. Do you believe that a vaccine save us? Don't you be a DAMN FOOL. Just READ IT. <span>(https://bit.ly/El3sO2AJ)</span>`,
 };
 
 // 반영 완료
@@ -19,7 +19,7 @@ export const tweetData = {
     level: `SS`,
     src: `../static/images/anti-vaccine/profile1.jpg`,
     name: `Jacob`,
-    content: `The Pfizer documents (https://bit.ly/8DzQa2W) are damning and they will be sued if they try to mandate an unsafe vaccine when there is no evidence to support it. Do not trespass on PERSONAL FREEDOM. I'm sure your UGLY INTENTIONS go without saying`,
+    content: `The Pfizer documents <span>(https://bit.ly/8DzQa2W)</span> are damning and they will be sued if they try to mandate an unsafe vaccine when there is no evidence to support it. Do not trespass on PERSONAL FREEDOM. I'm sure your UGLY INTENTIONS go without saying`,
     code: `T1-3`,
   },
   2: {

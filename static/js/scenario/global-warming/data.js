@@ -4,13 +4,13 @@ import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 export const example1 = {
   src: '../static/images/global-warming/example1.jpg',
   name: 'E11aS2',
-  content: `Global warming is a hoax designed to herd people into a one-world government. I would suggest you listen to this article (<span>canadafreepress.com/article/climate...</span>). (https://bit.ly/7zlzEJET) This will educate you on the truth that Global Warming is Hoax. It totally exaggerated!`,
+  content: `Global warming is a hoax designed to herd people into a one-world government. I would suggest you listen to this article (<span>canadafreepress.com/article/climate...</span>). <span>(https://bit.ly/7zlzEJET)</span> This will educate you on the truth that Global Warming is Hoax. It totally exaggerated!`,
 };
 
 export const example2 = {
   src: '../static/images/global-warming/example2.jpg',
   name: 'Mateo',
-  content: `The nature (https://bit.ly/sl3ZJQ7S) says Global warming IS being caused by the earth. As there's empirical evidence about it, We don't need to mind the environment. Environmentalists are making a MESS of society! It's time to STOP THEM.`,
+  content: `The nature <span>(https://bit.ly/sl3ZJQ7S)</span> says Global warming IS being caused by the earth. As there's empirical evidence about it, We don't need to mind the environment. Environmentalists are making a MESS of society! It's time to STOP THEM.`,
 };
 
 // 수정 완료
@@ -26,14 +26,14 @@ export const tweetData = {
     level: `SS`,
     src: `../static/images/global-warming/profile2.jpg`,
     name: `Jack3317`,
-    content: `This paper (https://bit.ly/2slsHLYJ) in SCIENCE journal mentions that the impact of what the governent mentioned is false. We can't know any uncomfortable truth.`,
+    content: `This paper <span>(https://bit.ly/2slsHLYJ)</span> in SCIENCE journal mentions that the impact of what the governent mentioned is false. We can't know any uncomfortable truth.`,
     code: `T3-1`,
   },
   3: {
     level: `SS`,
     src: `../static/images/global-warming/profile3.jpg`,
     name: `LUCas2`,
-    content: `See the article (https://bit.ly/2slsJYSJ). This is why many remain wary of the modern environmental movement. It’s because for those on the ground who see environmental challenges each and every day, the progressive environmental agenda rings hollow.`,
+    content: `See the article <span>(https://bit.ly/2slsJYSJ)</span>. This is why many remain wary of the modern environmental movement. It’s because for those on the ground who see environmental challenges each and every day, the progressive environmental agenda rings hollow.`,
     code: `T3-2`,
   },
   4: {
@@ -47,7 +47,7 @@ export const tweetData = {
     level: `SS`,
     src: `../static/images/global-warming/profile5.jpg`,
     name: `OWeeeeen`,
-    content: `This article identifies the environmnetal movement can change a few things in real world (https://bit.ly/2slsJYSJ). I don't understand people who didn't believe in this news. Get real!`,
+    content: `This article identifies the environmnetal movement can change a few things in real world <span>(https://bit.ly/2slsJYSJ)</span>. I don't understand people who didn't believe in this news. Get real!`,
     code: `T3-3`,
   },
   6: {
