@@ -4,13 +4,13 @@ import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 export const example1 = {
   src: '../static/images/tax-cut/example1.jpg',
   name: 'Noah2020',
-  content: `The government should lower taxes. <span>#lowertax</span><br>Remember, their raising taxes is such a stupid thing to do. This is private property. No way!!!!`,
+  content: `The government should higher taxes. <span>#HigherTax</span><br>Remember, their lowering taxes is such a stupid thing to do. This is a destruction of country! <span>(https://bit.ly/ml9T1QTs)</span> No way!!!!`,
 };
 
 export const example2 = {
   src: '../static/images/tax-cut/example2.jpg',
   name: 'Li19am94',
-  content: `They have no intention of developing the country. We MUST keep in welfare. Stupid capitalists are so DISGUSTING!!! <span>#TaxHike</span>`,
+  content: `They have no intention of developing the country. We MUST keep in welfare. <span>(https://bit.ly/ztSh5z8T)</span> Stupid capitalists are so DISGUSTING!!! They will kill us by taking away social welfare. <span>#TaxHike</span>`,
 };
 
 // Tweet 수정 완료

@@ -4,13 +4,13 @@ import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 export const example1 = {
   src: '../static/images/global-warming/example1.jpg',
   name: 'E11aS2',
-  content: `Global warming is a hoax designed to herd people into a one-world government. I would suggest you listen to this article (<span>canadafreepress.com/article/climate...</span>). This will educate you on the truth that Global Warming is Hoax. It totally exaggerated!`,
+  content: `Global warming is a BIG PROBLEM. I would suggest you listen to this article <span>(https://bit.ly/5TlzHK9Q)</span>. This will educate you on the truth that Global Warming is the most of issues for humans. It totally underestimated! ALL OF US, WE MUST BE ENVIRONMENTALIST, FOR SAVE US.`,
 };
 
 export const example2 = {
   src: '../static/images/global-warming/example2.jpg',
   name: 'Mateo',
-  content: `The nature says Global warming IS being caused by the sun. As there's empirical evidence about CO2, We need to protect the environment before the idiots ruin the planet even more. The earth is burning.`,
+  content: `Some idiots claim that global warming is a scam. It's hard to understand. The nature <span>(https://bit.ly/HtyqLF5)</span> says Global warming IS being caused by the sun. As there's empirical evidence about CO2, We need to protect the environment before the IDIOTS ruin the planet even more. The earth is burning. We have to drive THEM OUT of Earth.`,
 };
 
 // 수정 완료
@@ -26,28 +26,28 @@ export const tweetData = {
     level: `SS`,
     src: `../static/images/global-warming/profile2.jpg`,
     name: `Jack3317`,
-    content: `The increase of ICE is greater than you think due to global warming. I will attach a link (https://bit.ly/2ulsHL54) to their representative lecture video. They are very reliable people. so I fully support their argument.`,
+    content: `The increase of ICE is greater than you think due to global warming. I will attach a link <span>(https://bit.ly/2ulsHL54)</span> to their representative lecture video. They are very reliable people. so I fully support their argument.`,
     code: `T3-1`,
   },
   3: {
     level: `SS`,
     src: `../static/images/global-warming/profile3.jpg`,
     name: `LUCas2`,
-    content: `This paper (https://bit.ly/2tlsHL89) mentions that glaciers are DECREASING. Don't deny the paper. Come out of your imagination!!! It's FAKE NEWS.`,
+    content: `This paper <span>(https://bit.ly/2tlsHL89)</span> mentions that glaciers are DECREASING. Don't deny the paper. Come out of your imagination!!! It's FAKE NEWS.`,
     code: `T3-2`,
   },
   4: {
     level: `NS2`,
     src: `../static/images/global-warming/profile4.jpg`,
     name: `IgnisAqua`,
-    content: ` We should know truth about global warming, You need to know the truth. `,
+    content: ` We should know truth about global warming, You need to know the truth.`,
     code: `T3-5`,
   },
   5: {
     level: `SS`,
     src: `../static/images/global-warming/profile5.jpg`,
     name: `OWeeeeen`,
-    content: `I'm going to attach another article, (https://bit.ly/2olsHLTL) so watch this news. Because of global warming, it's too obvious that glaciers are decreasing, If you hope there will be more glaciers, you should use eco-friendly products instead of consuming conspiracy theories. Don't believe idiot's rumor. They are liar`,
+    content: `I'm going to attach another article, <span>(https://bit.ly/2olsHLTL)</span> so watch this news. Because of global warming, it's too obvious that glaciers are decreasing, If you hope there will be more glaciers, you should use eco-friendly products instead of consuming conspiracy theories. Don't believe idiot's rumor. They are liar`,
     code: `T3-3`,
   },
   6: {
