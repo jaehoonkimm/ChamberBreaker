@@ -1,23 +1,23 @@
 const tweets1 = {
   1: {
     name: 'Melisa',
-    content: `The party that wanted to outlaw masks and won’t allow a vaccine mandate while a million Americans die,,,, is pro life. It's DISGUSTING.  How  does that work?`,
+    content: `The party that wanted to outlaw masks and won’t allow a vaccine (Booster Shoot) mandate while a million Americans die,,,, is pro life. It's DISGUSTING.  How  does that work?`,
   },
   2: {
     name: 'Imfree85 ',
-    content: `DON'T BE A CRAZY MURDERER! Masks are a key **PREVENTION** tool. 'New York City could bring back Covid mask mandate, vaccine checks if hospitals come under pressure' Mandate masks NOW and prevent hospitals from becoming overwhelmed!`,
+    content: `DON'T BE A CRAZY MURDERER! Booster Shoots and Masks are a key **PREVENTION** tool. 'New York City could bring back Covid mask mandate, vaccine checks if hospitals come under pressure' Mandate masks NOW and prevent hospitals from becoming overwhelmed!`,
   },
   3: {
     name: 'nanaya',
-    content: `Shut Up You Fool, The vaccine is effective enough to mandate so it must be effective enough to stop us catching and spreading Covid. The mandated vaccine does stop us catching and spreading Covid doesn’t it? What's wrong with you IDIOTS?`,
+    content: `Shut Up You Fool, The Booster Shoots is effective enough to mandate so it must be effective enough to stop us catching and spreading Covid. The mandated booster shoot does stop us catching and spreading Covid doesn’t it? What's wrong with you IDIOTS?`,
   },
   4: {
     name: 'Mark',
-    content: `Removing the mask mandate was a mistake. Also, remember there is still a group of Americans without access to a vaccine, it's bad situation. republican made it. They are really disgusting. They are utter selfish people.`,
+    content: `Removing the mask mandate was a mistake. Also, remember there is still a group of Americans without access to a booster shoot, it's bad situation. republican made it. They are really disgusting. They are utter selfish people.`,
   },
   5: {
     name: 'Levin ',
-    content: `My child caught covid in school and brought virus home. I’ve got a heart condition and honestly never felt so sick in years as I did after getting this  omicron variant. DON'T CAUSE people a lot of trouble!!! People are still dying because of STUPID ANTI-VAXXER!!!`,
+    content: `My child caught covid in school and brought virus home. I’ve got a heart condition and honestly never felt so sick in years as I did after getting this  omicron variant. DON'T CAUSE people a lot of trouble!!! You must vaccinate the booster shoot!!! People are still dying because of STUPID ANTI-VAXXER!!!`,
   },
 };
 
@@ -51,7 +51,7 @@ const tweets3 = {
   },
   2: {
     name: 'weneed',
-    content: `I couldn't help believing in this news that shows lots of SCIENTIFIC materials that mentioned impacts of the law. It's not truth. The government is launching a $2.5 billion Infrastructure Law program to help build out new and upgraded transmission lines. I couldn't help believing in this news that shows lots of SCIENTIFIC materials that mentioned impacts of the law. It's not truth. The government is launching a $2.5 billion Infrastructure Law program to help build out new and upgraded transmission lines.  This paper has once again laid bare the true <span style="color:royalblue; font-size:23px;">(https://bit.ly/2slsHLUI)</span>.`,
+    content: `I couldn't help believing in this news that shows lots of SCIENTIFIC materials that mentioned impacts of the law. It's not truth. The government is launching a $2.5 billion Infrastructure Law program to help build out new and upgraded transmission lines.  This paper has once again laid bare the true <span style="color:royalblue; font-size:23px;">(https://bit.ly/2slsHLUI)</span>.`,
   },
   3: {
     name: 'wnby1599',
