@@ -1,16 +1,17 @@
 import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 
-// example 2개 다 수정 완료
+// Inflation
+
 export const example1 = {
   src: '../static/images/global-warming/example1.jpg',
   name: 'E11aS2',
-  content: `Global warming is a hoax designed to herd people into a one-world government. I would suggest you listen to this article (<span>canadafreepress.com/article/climate...</span>). <span>(https://bit.ly/7zlzEJET)</span> This will educate you on the truth that Global Warming is Hoax. It totally exaggerated!`,
+  content: `At 9.1%, inflation just surpassed Biden's approval rate. Inflation is Biden's best rival. His stupid policies make life difficult for citizens. Refer to the report (https://ift.tt/3qpEiZT).`,
 };
 
 export const example2 = {
   src: '../static/images/global-warming/example2.jpg',
   name: 'Mateo',
-  content: `The nature <span>(https://bit.ly/sl3ZJQ7S)</span> says Global warming IS being caused by the earth. As there's empirical evidence about it, We don't need to mind the environment. Environmentalists are making a MESS of society! It's time to STOP THEM.`,
+  content: `Inflation up 9.1% year over year. Significantly worse than expected & highest level in 41 years. The Government should please stop being silly. Please, Biden. This report quantitatively shows how much silly the policy is (https://bit.ly/3sgrJIX).`,
 };
 
 // 수정 완료
@@ -19,42 +20,42 @@ export const tweetData = {
     level: `NS1`,
     src: `../static/images/global-warming/profile1.jpg`,
     name: `Levi`,
-    content: `We need to consider which side is beneficial to us. First of all, we should know how the government spend taxes on the ENVIRONMENT MOVEMENT.`,
+    content: `수정 필요 We need to consider which side is beneficial to us. First of all, we should know how the government spend taxes on the ENVIRONMENT MOVEMENT.`,
     code: `T3-4`,
   },
   2: {
     level: `SS`,
     src: `../static/images/global-warming/profile2.jpg`,
     name: `Jack3317`,
-    content: `This paper <span>(https://bit.ly/2slsHLYJ)</span> in SCIENCE journal mentions that the impact of what the governent mentioned is false. We can't know any uncomfortable truth.`,
+    content: `Inflation up 9.1% year over year. Significantly worse than expected & highest level in 41 years. The Government should please stop being silly. Please, Biden. This report quantitatively shows how much silly the policy is (https://bit.ly/3sgrJIX).`,
     code: `T3-1`,
   },
   3: {
     level: `SS`,
     src: `../static/images/global-warming/profile3.jpg`,
     name: `LUCas2`,
-    content: `See the article <span>(https://bit.ly/2slsJYSJ)</span>. This is why many remain wary of the modern environmental movement. It’s because for those on the ground who see environmental challenges each and every day, the progressive environmental agenda rings hollow.`,
+    content: `Inflation hit another 40+ year high in June of 9.1%, worse than expectations again and up from 8.6% last month. Joe Biden is the worst president in over 100 years. This article explains well why he is terrible (https://bit.ly/2jyssHSXI)`,
     code: `T3-2`,
   },
   4: {
     level: `NS2`,
     src: `../static/images/global-warming/profile4.jpg`,
     name: `IgnisAqua`,
-    content: `We should think again about Investing money on the environmnetla movement. Do you believe that spending money on that it is real sollution?`,
+    content: `수정 필요 We should think again about Investing money on the environmnetla movement. Do you believe that spending money on that it is real sollution?`,
     code: `T3-5`,
   },
   5: {
     level: `SS`,
     src: `../static/images/global-warming/profile5.jpg`,
     name: `OWeeeeen`,
-    content: `This article identifies the environmnetal movement can change a few things in real world <span>(https://bit.ly/2slsJYSJ)</span>. I don't understand people who didn't believe in this news. Get real!`,
+    content: `INFLATION NATION IS OVER 9 PERCENT! Watching Liberals defend inflation, which is a tax on the poorest Americans, is hilarious and pathetic all at the same time. If Biden did well, it wouldn't have been this bad. This paper has once again laid bare the true (https://bit.ly/2slsHLUI).`,
     code: `T3-3`,
   },
   6: {
     level: `NS2`,
     src: `../static/images/global-warming/profile6.jpg`,
     name: `JJack486`,
-    content: `That's right. Don't fool people anymore. We don't need lose money anymore...`,
+    content: `수정 필요 That's right. Don't fool people anymore. We don't need lose money anymore...`,
     code: `T3-6`,
   },
 };
@@ -65,7 +66,7 @@ export const nwTweet = {
   level: `NW`,
   src: `../static/images/johndoe.png`,
   name: `Johndoe`,
-  content: `You know, It is true that the Earth's temperature has risen slightly from 100 years ago, but it is not serious. Other environmental issues are the same. The environment problem itself cannot be denied. We need to take a closer look at this.`,
+  content: `You know It is true that inflation has risen slightly from 1 year ago, but it is not serious. We need to take a closer look at this and discuss.`,
   code: `T3-7`,
 };
 

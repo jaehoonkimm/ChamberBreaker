@@ -1,60 +1,60 @@
 import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 
-// Example 2 수정 완료
+// Gun
+
 export const example1 = {
   src: '../static/images/tax-cut/example1.jpg',
   name: 'Noah2020',
-  content: `The government should lower taxes. <span>#lowerTax</span><br>Remember, their raising taxes is such a stupid thing to do. This is private property. No way!!!!`,
+  content: `Is there another good policy than The right to keep and bear arms? Freedom is the virtue of CAPITALISM. I simply don't understand idiots who give up their rights.`,
 };
 
 export const example2 = {
   src: '../static/images/tax-cut/example2.jpg',
   name: 'Li19am94',
-  content: `They have no intention of developing the country. We MUST STOP in WELFARE. Stupid DEMOCRATS are so DISGUSTING!!! Why do you want to spoil USA? WE NEED ECONOMIC GROWTH! <span>#lowerTax</span>`,
+  content: `If a lunatic is shooting at a mall, what should we do? The answer is simple. I'll shoot him. Carrying a gun is the basis of safety. And this is an INDIVIDUAL RIGHT. Don't be presumptuous. <span>#RightToBearArms</span>`,
 };
 
-// 수정 완료
 export const tweetData = {
   1: {
     level: `SS`,
     src: `../static/images/tax-cut/profile1.jpg`,
     name: `GoConservatism`,
-    content: `INCREASING TAXES is CRAZY. I don't know why they try their best for losing ECONOMIC GROWTH. Cuz taxes are high, we miss CREATING MILLION JOBS. Hey IDIOT! ECONOMIC GROWTH is the only answer.`,
+    content: `The gun business is a very important business in the United States. Strange laws will make our economy difficult. The right to keep and bear arms should make ECONOMIC GROWTH.`,
     code: `T2-1`,
   },
   2: {
     level: `SS`,
     src: `../static/images/tax-cut/profile2.jpg`,
     name: `BT2122`,
-    content: `DEATH TAX should be REPEALED. We have PRIVATE PROPERTY RIGHTS guaranteed by the Constitution. Infringement of personal happiness is bound to cause a NATIONAL CRISIS. Who INCREASES TAXES is the killer.`,
+    content: `Personal safety is far more important than the damage of a gun incident. Individual rights come first to me. FREEDOM FREEDOM FREEDOM`,
     code: `T2-3`,
   },
   3: {
     level: `NS1`,
     src: `../static/images/tax-cut/profile3.jpg`,
     name: `MartinMartin`,
-    content: `As always, we don't need increasing taxes. Increasing taxes are not only solution.`,
+    content: `수정 필요 As always, we don't need increasing taxes. Increasing taxes are not only solution.`,
     code: `T2-4`,
   },
   4: {
     level: `SS`,
     src: `../static/images/tax-cut/profile4.jpg`,
     name: `TigerTigerTiger`,
-    content: `The government's policy of RAISING TAXES is TOO DISAPPOINTING. Bullying the company and taking it opportunities is bad choice. We need GOVERNMENT REFORM.`,
+    content: `You have to fight against the Democrats who take away people's personal rights. Can they say that without guns in dangerous situations? You have to protect yourself. It's INDIVIDUAL FREEDOM and RESPONSIBILITY.`,
     code: `T2-2`,
   },
   5: {
     level: `NS2`,
     src: `../static/images/tax-cut/profile5.jpg`,
     name: `Lucas2`,
-    content: `Imagine thinking raising the minimum wage does anything to rising gas, and inflation of almost anything, how about it? I think tax cuts would save out situation.`,
+    content: `수정 필요 Imagine thinking raising the minimum wage does anything to rising gas, and inflation of almost anything, how about it? I think tax cuts would save out situation.`,
     code: `T2-5`,
   },
   6: {
     level: `NS2`,
     src: `../static/images/tax-cut/profile6.jpg`,
     name: `MMMargiela`,
-    content: `I don't understand such a policy. I think increasing taxes made lower Middleclass people and Business people.`,
+    content: `수정 필요 I don't understand such a policy. I think increasing taxes made lower Middleclass people and Business people.`,
     code: `T2-6`,
   },
 };
@@ -65,7 +65,7 @@ export const nwTweet = {
   level: `NW`,
   src: `../static/images/johndoe.png`,
   name: `Johndoe`,
-  content: `We need to consider which side is beneficial to us. First of all, we should know how the government spend taxes. `,
+  content: `We need to consider which side is beneficial to us. First of all, we should know pros and cons of gun control.`,
   code: `T2-7`,
 };
 
