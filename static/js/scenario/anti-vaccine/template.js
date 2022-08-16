@@ -31,13 +31,13 @@ export const contentHTML = [
   `<div>
         <img src="../static/images/anti-vaccine/effect.png" class="fakenews-phone-img"/>
         <p class="fakenews-p">Hold on!<br><br>
-        Some guys are spreading fake news related to anti-vaccine in the community. Due to the echo chamber you made, people are easily fooled by fake news.  </p>
+        Some guys are spreading fake news related to abortion in the community. Due to the echo chamber you made, people are easily fooled by fake news.  </p>
     </div>`,
-  `<p>No way!!<br><br>Community people are being completely fooled.<br><br>Do you remember the community member <span name='tweets-response-name'>@Jacob</span>?<br><br>He's gathering with parents to protest against the mayor who insisted on vaccine mandate.<br>Wait a minute. I'll show you the protest.</p>`,
+  `<p>No way!!<br><br>Community people are being completely fooled.<br><br>Do you remember the community member <span name='tweets-response-name'>@Jacob</span>?<br><br>He's gathering with parents to protest against the mayor who insisted on legalized abortion.<br>Wait a minute. I'll show you the protest.</p>`,
   `<img src="../static/images/anti-vaccine/news.jpg" class="news-img"/><br>
     <p>There's more and more people coming in.<br>Newsmans are here to cover this scene.</p>`,
   `<img id="newspaper-img" src="../static/images/anti-vaccine/newspaper.jpg" class="newspaper-img"/>
-    <p>Wow! Anti-vaccine protesters were conflicted by pro-vaccine activists! 
+    <p>Wow! Anti-abortion protesters were conflicted by pro-abortion activists!  
     The protest was given a banner headline on the front page of local news papers.<br>That's so sick!</p>`,
   `<p>Look at that.<br><br>People are now so vulnerable to fake news.<br><br>Good job! Johndoe!</p>`,
   `<p>We will give you a 'Social Boundary' badge.<br><br>Congratulations! You've got the 'Social Boundary' badge with Rank <span id="rank"></span>.</p>`,
