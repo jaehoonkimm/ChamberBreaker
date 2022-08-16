@@ -1,16 +1,17 @@
 import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 
-// Example 2 수정 완료
+// Gun
+
 export const example1 = {
   src: '../static/images/tax-cut/example1.jpg',
   name: 'Noah2020',
-  content: `The government should higher taxes. <span>#HigherTax</span><br>Remember, their lowering taxes is such a stupid thing to do. This is a destruction of country! No way!!!!`,
+  content: `I would suggest you listen to this article <span>(https://bit.ly/5TlzHK9Q)</span>. Police and soldiers are enough to carry a gun. It is too dangerous for an uneducated citizen to have a gun. Look at the innocent dead. A lot of people died because of money. EVERYONE HAS A RIGHT TO BE HAPPY.`,
 };
 
 export const example2 = {
   src: '../static/images/tax-cut/example2.jpg',
   name: 'Li19am94',
-  content: `They have no intention of developing the country. We MUST keep in welfare. Stupid capitalists are so DISGUSTING!!! They will kill us by taking away social welfare. <span>#TaxHike</span>`,
+  content: `It is fundamental to WELFARE that people protect against the dangers of guns. Why should we sacrifice our safety for the benefit of gun companies? Let's protect HUMAN RIGHTS. <span>#GunControl</span>`,
 };
 
 // Tweet 수정 완료
@@ -19,42 +20,42 @@ export const tweetData = {
     level: `SS`,
     src: `../static/images/tax-cut/profile1.jpg`,
     name: `GoConservatism`,
-    content: `The tax cuts ruined our SOCIETY. We need better options than jeopardizing our kids' FUTURE with TAXES.`,
+    content: `Politicians should be ashamed that gun violence and crime have reached the point where businesses fear for the safety of their employees and customer. Living in safe environment is BASIC WELFARE.`,
     code: `T2-1`,
   },
   2: {
     level: `SS`,
     src: `../static/images/tax-cut/profile2.jpg`,
     name: `BT2122`,
-    content: `GREEDY BIG COMPANIES are not investing into the economy, they are buying back their stocks. What do you expect from GREEDY ASS CORPORATIONS.`,
+    content: `Who Stops a ‘Bad Guy With a Gun’? The freedom of the individual that the Republicans say is ideal. I don't want to walk down the street with a madman carrying a gun. We need the BIG GOVERNMENT to be able to make JUST SOCIETY.`,
     code: `T2-3`,
   },
   3: {
     level: `NS1`,
     src: `../static/images/tax-cut/profile3.jpg`,
     name: `MartinMartin`,
-    content: `Morrison and Frydenberg say taxcut will produce higher wages. You know, Trickle down economics has been shown that.`,
+    content: `수정 필요 Morrison and Frydenberg say taxcut will produce higher wages. You know, Trickle down economics has been shown that.`,
     code: `T2-4`,
   },
   4: {
     level: `SS`,
     src: `../static/images/tax-cut/profile4.jpg`,
     name: `TigerTigerTiger`,
-    content: `the RULING CLASS demands privatized PUBLIC SERVICES and TAX CUTS FOR THE RICH. A nutty plan to impoverish people on low incomes to give massive tax cuts to the rich. Please explain why inequality should be natural in our society. It’s FAIRNESS, STUPID.`,
+    content: `Why should innocent children be shot to death? I just don't understand. Why can't the Government stop this and stay put? It's UNFAIR.`,
     code: `T2-2`,
   },
   5: {
     level: `NS2`,
     src: `../static/images/tax-cut/profile5.jpg`,
     name: `Lucas2`,
-    content: `Do you agree with it? Tax cuts generally mean education cut, unless you can pay by yourself. It means that Welfare goes out the window.`,
+    content: `수정 필요 Do you agree with it? Tax cuts generally mean education cut, unless you can pay by yourself. It means that Welfare goes out the window.`,
     code: `T2-5`,
   },
   6: {
     level: `NS2`,
     src: `../static/images/tax-cut/profile6.jpg`,
     name: `MMMargiela`,
-    content: `it's not surprising. They are also owned by wealthy people and like the tax-cuts.`,
+    content: `수정 필요 it's not surprising. They are also owned by wealthy people and like the tax-cuts.`,
     code: `T2-6`,
   },
 };

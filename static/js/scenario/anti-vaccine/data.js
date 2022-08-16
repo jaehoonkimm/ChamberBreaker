@@ -1,61 +1,60 @@
 import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 
-// 현상 유지 (변경 관련 추후 논의)
+// Abortion
+
 export const example1 = {
   src: '../static/images/anti-vaccine/example1.jpg',
   name: 'MartinParis',
-  content: `Do you know the evil plans of Anti-Vaxxer? They try to cancel the vaccine mandate. They only care about their own body. They are staunch individualists. NOW They are not members of OUR SOCIETY. Let's BANISH THEM OUT! Dirty ANTI-VAXXER!!!`,
+  content: `Do you know the evil plans of opponents of abortion? They try to cancel legalized abortion. They only care about their own values. They are staunch individualists. NOW They are not members of OUR SOCIETY. Let's BANISH THEM OUT! Dirty OPPONENTS OF ABORTION!!!`,
 };
 
-// example 수정 완료
 export const example2 = {
   src: '../static/images/anti-vaccine/example2.jpg',
   name: 'Molang',
-  content: `Getting the booster shot is safer than getting the covid. Do you believe in anti-vaxxer? Stop ur STUPIDNESS! They are TERRIBLE IDIOTS!`,
+  content: `Does it make sense that abortion is illegal in the 21st century? Thanks to the BUTTMUNCHES, women's human rights have retreated. They are TERRIBLE IDIOTS!`,
 };
 
-// Liberal Contents (E-CB) 반영
 export const tweetData = {
   1: {
     level: `SS`,
     src: `../static/images/anti-vaccine/profile1.jpg`,
     name: `Jacob`,
-    content: `The last 2 weeks, I’m seeing b/t 2-4 COVID-ill patients/day and every single one (except an obese, type 2 diabetic) have had third boosters, and one had fourth boosters. Yet I’m sure they are all “grateful” to have taken the juice, and the booster(s), or it would have been SO much worse……anti-vaxxers ARE IDIOTS...Who had such a TERRIBLE IDEA?`,
+    content: `Fxxx them. I understand not wanting to participate for mental health reasons but you simply cannot shut this shit out of your life without major consequence. It's astounding to me how many people think like this.`,
     code: `T1-3`,
   },
   2: {
     level: `NS1`,
     src: `../static/images/anti-vaccine/profile2.jpg`,
     name: `MASONSON`,
-    content: `I’ve had both shots and booster. I got Covid. It was very mild. We’ve seen globally that the vaccines reduce severity of the illness for those that do get it.`,
+    content: `수정 필요 I’ve had both shots and booster. I got Covid. It was very mild. We’ve seen globally that the vaccines reduce severity of the illness for those that do get it.`,
     code: `T1-4`,
   },
   3: {
     level: `SS`,
     src: `../static/images/anti-vaccine/profile3.jpg`,
     name: `GT1265`,
-    content: `DO YOU REALLY WANT TO DIE SO BAD? If someone talk you no-vaccine is better, He is NASTY LIAR. We are in the middle of a surge Your vaccine, and your booster will keep you probably from dying but it will not keep you from getting sick.`,
+    content: `All this reaching across the aisle and working together nonsense has to stop. We cannot "work together" with people who are blatantly bigoted and aiming to roll back social progress to the fxxxing Jim Crow era.`,
     code: `T1-1`,
   },
   4: {
     level: `NS2`,
     src: `../static/images/anti-vaccine/profile4.jpg`,
     name: `William5454`,
-    content: `Wear a mask! I've seen people get covid lately even after three rounds of booster shots. I don't get this YOLO attitude, I'm saying again, WEAR A MASK!`,
+    content: `수정 필요 Wear a mask! I've seen people get covid lately even after three rounds of booster shots. I don't get this YOLO attitude, I'm saying again, WEAR A MASK!`,
     code: `T1-5`,
   },
   5: {
     level: `SS`,
     src: `../static/images/anti-vaccine/profile5.jpg`,
     name: `Lilylily7`,
-    content: `Hypocrite as the hell, now de Santis saying vaccine is safe, yeah right 97% of the hospitalization are Republican who refused to take the vaccine. TRUMP LIED PEOPLE.`,
+    content: `The legalization of abortion has been the primary driver in crime rates dropping in the US for the last 30 years. It's not the only factor but it is the primary one. Being an unwanted child does not fare well for children when they reach adulthood. I'm DISGUSTED at the party`,
     code: `T1-2`,
   },
   6: {
     level: `NS2`,
     src: `../static/images/anti-vaccine/profile6.jpg`,
     name: `Sofia`,
-    content: `I had my booster Mid December and my second booster a week ago together with a flue shot. I know that they are safe, effective at ending the pandemic because the government and big pharma.`,
+    content: `수정 필요 I had my booster Mid December and my second booster a week ago together with a flue shot. I know that they are safe, effective at ending the pandemic because the government and big pharma.`,
     code: `T1-6`,
   },
 };
