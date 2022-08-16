@@ -67,7 +67,7 @@ export const nwTweet = {
   level: `NW`,
   src: `../static/images/johndoe.png`,
   name: `Johndoe`,
-  content: `We need to consider which side is beneficial to us. First of all, we should know how the government spend taxes. `,
+  content: `The gun business is a very important business in the United States. Strange laws will make our economy difficult. The right to keep and bear arms should make ECONOMIC GROWTH.`,
   code: `T2-7`,
 };
 

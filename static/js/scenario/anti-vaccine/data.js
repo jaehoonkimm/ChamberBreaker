@@ -66,7 +66,7 @@ export const nwTweet = {
   level: `NW`,
   src: `../static/images/johndoe.png`,
   name: `Johndoe`,
-  content: `Many people get vaccinated, which proves to be effective to some extent. I am very wary of the side effects of it.`,
+  content: `I'm wary of the risk of abortion. We should also discuss this topic.`,
   code: `T1-7`,
 };
 

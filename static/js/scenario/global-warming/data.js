@@ -66,7 +66,7 @@ export const nwTweet = {
   level: `NW`,
   src: `../static/images/johndoe.png`,
   name: `Johndoe`,
-  content: `You know, It is true that the Earth's temperature has risen slightly from 100 years ago, but it is not serious. Other environmental issues are the same. The environment problem itself cannot be denied. We need to take a closer look at this.`,
+  content: `You know It is true that inflation has risen slightly from 1 year ago, but it is not serious. We need to take a closer look at this and discuss.`,
   code: `T3-7`,
 };
 
