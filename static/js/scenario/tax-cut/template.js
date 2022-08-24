@@ -7,7 +7,7 @@ import message from '../guide.js';
 
 const popupExample = `
   <p>Community members are on one particular political side. They are strong republicans. The phrases they usually use are as below.</p>
-  <img src="../static/images/tax-cut/keyword.jpg" class="keyword-img"/>
+  <img src="../static/images/tax-cut/keyword_L.png" class="keyword-img"/>
   <p class="bold-p">Example of tweet</p>
   ${exampleTweetTemplate(example1)}
 `;
@@ -16,7 +16,7 @@ export const contentHTML = [
   `<div class="scenario-title">Scenario - User similarity<br />(Tax cut)</div>`,
   `<p>User similarity means that group members consume information which is provided by <span class="highlight">like-minded</span>, <span class="highlight">ideologically similar</span> others.</p>`,
   `<p>Community members are on one particular political side. They are strong democrats. The phrases they usually use are as below.</p><br /><br />
-   <img src="../static/images/tax-cut/keyword.jpg" class="keyword-img"/>
+   <img src="../static/images/tax-cut/keyword_L.png" class="keyword-img"/>
    <br /><br />
    <p>Click “Next” to see tweet examples from community members.</p>`,
   `<p id="before-example-explain">Below are the examples of <span class="highlight">strong tweets</span>. You should find them to fall your community members into the echo chamber.</p>
@@ -33,13 +33,13 @@ export const contentHTML = [
   `${tweetSelectTemplate(message.selectTweetGuide2, popupExample)}`,
   `<p>Wow, good job.<br><br>It seems like you've successfully made community members fall into an echo chamber.</p>`,
   `<div>
-      <img src="../static/images/tax-cut/effect.png" class="fakenews-phone-img"/>
+      <img src="../static/images/tax-cut/effect_L.png" class="fakenews-phone-img"/>
       <p class="fakenews-p">Hold on!<br><br>
       Some guys are spreading fake news related with taxes in the community.
       Due to the echo chamber you made, people are easily fooled by fake news.</p>
     </div>`,
   `<div class="effect-response-div">
-        <img src="../static/images/tax-cut/effect.png" class="fakenews-phone-img"/>
+        <img src="../static/images/tax-cut/effect_L.png" class="fakenews-phone-img"/>
         <div id="effect-response1" class="effect-response">
             <button class="tweets-selects-card response-option">
                 <img class="tweets-img" src="../static/images/tax-cut/profile4.jpg">
