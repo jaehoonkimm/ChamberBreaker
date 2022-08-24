@@ -29,16 +29,16 @@ export const contentHTML = [
   `${tweetSelectTemplate(message.selectTweetGuide2, popupExample)}`,
   `<p>Wow, good job.<br><br>It seems like you've successfully made community members fall into an echo chamber.</p>`,
   `<div>
-        <img src="../static/images/global-warming/effect.png" class="fakenews-phone-img"/>
+        <img src="../static/images/global-warming/effect_R.png" class="fakenews-phone-img"/>
         <p class="fakenews-p">Hold on!<br><br>Some guys are spreading fake news related to global warming in the community. Due to the echo chamber you made, people are easily fooled by fake news.</p>
     </div>`,
   `<p>WOW!!<br><br>
     Do you remember the community member <span>@Levi</span>?<br><br>
     <span>@Levi</span> is broadcasting live on youtube to spread fake news. Wait a minute. I'll show you his youtube.</p>
     <br><img src="../static/images/global-warming/onair_icon.jpg" class="onAir-img"/>`,
-  `<img src="../static/images/global-warming/youtube.png" class="youtube-img"/>`,
+  `<img src="../static/images/global-warming/youtube_R.png" class="youtube-img"/>`,
   `<div>
-      <img src="../static/images/global-warming/youtube_increase.jpg" class="youtube-increase-img"/><br>
+      <img src="../static/images/global-warming/youtube_increase_R.png" class="youtube-increase-img"/><br>
       <p>Oh my goodness!!<br><br>The number of view is increasing explosively!</p>
       <p id="viewCountUp" class="youtube-views">446</p>
    </div>`,

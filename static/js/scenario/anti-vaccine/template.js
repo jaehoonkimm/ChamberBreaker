@@ -29,7 +29,7 @@ export const contentHTML = [
   `${tweetSelectTemplate(message.selectTweetGuide2, popupExample)}`,
   `<p>Wow, good job.<br><br>It seems like you've successfully made community members fall into an echo chamber.</p>`,
   `<div>
-        <img src="../static/images/anti-vaccine/effect.png" class="fakenews-phone-img"/>
+        <img src="../static/images/anti-vaccine/effect_R.png" class="fakenews-phone-img"/>
         <p class="fakenews-p">Hold on!<br><br>
         Some guys are spreading fake news related to anti-vaccine in the community. Due to the echo chamber you made, people are easily fooled by fake news.  </p>
     </div>`,
