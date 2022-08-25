@@ -26,7 +26,7 @@ export const tweetData = {
     level: `NS1`,
     src: `../static/images/anti-vaccine/profile2.jpg`,
     name: `MASONSON`,
-    content: `수정 필요 I’ve had both shots and booster. I got Covid. It was very mild. We’ve seen globally that the vaccines reduce severity of the illness for those that do get it.`,
+    content: `What a messed-up world we live in. Is legalizing abortion a retreat in human rights? Many say abortion should be legal if the woman’s life is in danger.`,
     code: `T1-4`,
   },
   3: {
@@ -40,7 +40,7 @@ export const tweetData = {
     level: `NS2`,
     src: `../static/images/anti-vaccine/profile4.jpg`,
     name: `William5454`,
-    content: `수정 필요 Wear a mask! I've seen people get covid lately even after three rounds of booster shots. I don't get this YOLO attitude, I'm saying again, WEAR A MASK!`,
+    content: `I want to live in a world without idiots. Why do people decide on the life of women? This is anti-human rights behavior.`,
     code: `T1-5`,
   },
   5: {
@@ -54,7 +54,7 @@ export const tweetData = {
     level: `NS2`,
     src: `../static/images/anti-vaccine/profile6.jpg`,
     name: `Sofia`,
-    content: `수정 필요 I had my booster Mid December and my second booster a week ago together with a flue shot. I know that they are safe, effective at ending the pandemic because the government and big pharma.`,
+    content: `Does it make sense that abortion is illegal in the 21st century? I know that it is safe, and effective at ending many problems.`,
     code: `T1-6`,
   },
 };

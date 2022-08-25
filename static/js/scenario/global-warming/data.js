@@ -19,7 +19,7 @@ export const tweetData = {
     level: `NS1`,
     src: `../static/images/global-warming/profile1.jpg`,
     name: `Levi`,
-    content: `수정 필요 It is true that the The Arctic Ocean's temperature has risen slightly from 100 years ago, but it is not serious. The temperature rise itself cannot be denied. We need to take a closer look at this global warming.`,
+    content: `It is not serious. Why do people criticize an economic policy? Is it to show how stupid you are? We need to take a closer look at the economic condition.`,
     code: `T3-4`,
   },
   2: {
@@ -40,7 +40,7 @@ export const tweetData = {
     level: `NS2`,
     src: `../static/images/global-warming/profile4.jpg`,
     name: `IgnisAqua`,
-    content: `수정 필요 We should know truth about global warming, You need to know the truth.`,
+    content: `Joe is not the cause of inflation. We should know truth about inflation, You need to know the truth.`,
     code: `T3-5`,
   },
   5: {
@@ -54,7 +54,7 @@ export const tweetData = {
     level: `NS2`,
     src: `../static/images/global-warming/profile6.jpg`,
     name: `JJack486`,
-    content: `수정 필요 Sea ice in the Arctic Ocean around the North Pole is melting faster with the warmer temperatures.`,
+    content: `We will experience 10% inflation soon thank to gov... Stupid policies make life difficult for citizens. I can't stand this anymore!`,
     code: `T3-6`,
   },
 };

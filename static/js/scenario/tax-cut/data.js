@@ -5,7 +5,7 @@ import { tweetsArray, retweetsTemplate } from '../tweet-template.js';
 export const example1 = {
   src: '../static/images/tax-cut/example1.jpg',
   name: 'Noah2020',
-  content: `I would suggest you listen to this article <span>(https://bit.ly/5TlzHK9Q)</span>. Police and soldiers are enough to carry a gun. It is too dangerous for an uneducated citizen to have a gun. Look at the innocent dead. A lot of people died because of money. EVERYONE HAS A RIGHT TO BE HAPPY.`,
+  content: `Again, Americans are killed by a weapon of war. It is not a JUST SOCIETY that an innocent person is shot to death for no reason. I simply don't understand idiots who give up their life.`,
 };
 
 export const example2 = {
@@ -34,7 +34,7 @@ export const tweetData = {
     level: `NS1`,
     src: `../static/images/tax-cut/profile3.jpg`,
     name: `MartinMartin`,
-    content: `수정 필요 Morrison and Frydenberg say taxcut will produce higher wages. You know, Trickle down economics has been shown that.`,
+    content: `Why should we sacrifice our safety for the benefit of gun companies? Let's protect human rights.  Get out of the gun company that supports gun violence.`,
     code: `T2-4`,
   },
   4: {
@@ -48,14 +48,14 @@ export const tweetData = {
     level: `NS2`,
     src: `../static/images/tax-cut/profile5.jpg`,
     name: `Lucas2`,
-    content: `수정 필요 Do you agree with it? Tax cuts generally mean education cut, unless you can pay by yourself. It means that Welfare goes out the window.`,
+    content: `Do you agree with it? Gun control can make a safe society. It means that gun crimes go out the window.`,
     code: `T2-5`,
   },
   6: {
     level: `NS2`,
     src: `../static/images/tax-cut/profile6.jpg`,
     name: `MMMargiela`,
-    content: `수정 필요 it's not surprising. They are also owned by wealthy people and like the tax-cuts.`,
+    content: `Police and soldiers are enough to carry a gun. It is too dangerous for an uneducated citizen to have a gun. Everyone has a right to be safe.`,
     code: `T2-6`,
   },
 };

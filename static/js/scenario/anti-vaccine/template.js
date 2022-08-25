@@ -12,7 +12,7 @@ const popupExample = `
 `;
 
 export const contentHTML = [
-  `<div class="scenario-title">Scenario - Social boundary<br />(Health)</div>`,
+  `<div class="scenario-title">Scenario - Social boundary<br />(Abortion)</div>`,
   `<p>Social boundary is one of the characteristics of an echo chamber group, where one's beliefs or opinions are strongly bounded or formed by a group.</p>`,
   `<p>Social boundary occurs when community members interact only among themselves, and the members tend to use negative expressions and hate speech. For example,</p><div class='inner-explain-content'>Angrier than other groups<br>Evokes intentional acts, statements and hindering<br>Emphasizes opposite side</div><p>Click “Next” to see tweet examples from community members.</p>`,
   `<p id="before-example-explain">Below are the examples of <span class="highlight">strong tweets</span>. You should find them to fall your community members into the echo chamber.</p>
@@ -33,7 +33,7 @@ export const contentHTML = [
         <p class="fakenews-p">Hold on!<br><br>
         Some guys are spreading fake news related to abortion in the community. Due to the echo chamber you made, people are easily fooled by fake news.  </p>
     </div>`,
-  `<p>No way!!<br><br>Community people are being completely fooled.<br><br>Do you remember the community member <span name='tweets-response-name'>@Jacob</span>?<br><br>He's gathering with parents to protest against the mayor who insisted on legalized abortion.<br>Wait a minute. I'll show you the protest.</p>`,
+  `<p>No way!!<br><br>Community people are being completely fooled.<br><br>Do you remember the community member <span name='tweets-response-name'>@Jacob</span>?<br><br>He's gathering with parents to protest against the mayor who insisted on the illegalization of abortion.<br>Wait a minute. I'll show you the protest.</p>`,
   `<img src="../static/images/anti-vaccine/news.jpg" class="news-img"/><br>
     <p>There's more and more people coming in.<br>Newsmans are here to cover this scene.</p>`,
   `<img id="newspaper-img" src="../static/images/anti-vaccine/newspaper.jpg" class="newspaper-img"/>

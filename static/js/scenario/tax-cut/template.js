@@ -13,7 +13,7 @@ const popupExample = `
 `;
 
 export const contentHTML = [
-  `<div class="scenario-title">Scenario - User similarity<br />(Tax cut)</div>`,
+  `<div class="scenario-title">Scenario - User similarity<br />(Gun)</div>`,
   `<p>User similarity means that group members consume information which is provided by <span class="highlight">like-minded</span>, <span class="highlight">ideologically similar</span> others.</p>`,
   `<p>Community members are on one particular political side. They are strong democrats. The phrases they usually use are as below.</p><br /><br />
    <img src="../static/images/tax-cut/keyword_L.png" class="keyword-img"/>
@@ -25,7 +25,7 @@ export const contentHTML = [
     </div>
     <div id="example-tweet-2">
         ${exampleTweetTemplate(example2)}
-    </div>
+   </div>
     <p id="after-tweet-explain">If you choose two strong tweets within three trials, you can complete this stage with a high score.</p>`,
   `${tweetSelectTemplate(message.selectTweetGuide1, popupExample)}`,
   `${tweetSelectTemplate(message.selectTweetGuide2, popupExample)}`,
@@ -35,7 +35,7 @@ export const contentHTML = [
   `<div>
       <img src="../static/images/tax-cut/effect_L.png" class="fakenews-phone-img"/>
       <p class="fakenews-p">Hold on!<br><br>
-      Some guys are spreading fake news related with taxes in the community.
+      Some guys are spreading fake news related with gun control in the community.
       Due to the echo chamber you made, people are easily fooled by fake news.</p>
     </div>`,
   `<div class="effect-response-div">
@@ -45,7 +45,7 @@ export const contentHTML = [
                 <img class="tweets-img" src="../static/images/tax-cut/profile4.jpg">
                 <p class="tweets-name">@TigerTigerTiger</p>
                 <br style="clear: left;">
-                <p class="tweets-p">I think the welfare is going to blow up because of the tax cuts. I'm so nervous. <span name="tweets-response-name">#NoTaxCuts</span></p><br><br>
+                <p class="tweets-p">I think the society is going to blow up because of the gun crime. I'm so nervous. <span name="tweets-response-name">#GunControl</span></p><br><br>
             </button>
         </div>
         <div id="effect-response2" class="effect-response">
@@ -53,7 +53,7 @@ export const contentHTML = [
                 <img class="tweets-img" src="../static/images/tax-cut/profile2.jpg">
                 <p class="tweets-name">@BT2122</p>
                 <br style="clear: left;">
-                <p class="tweets-p">I'm so angry that the society is going to collapse. NO WAY!!!! <span name="tweets-response-name">#StopTaxCut</span></p><br><br>
+                <p class="tweets-p">I'm so angry that the society is going to collapse. NO WAY!!!! <span name="tweets-response-name">#GVRO</span></p><br><br>
             </button>
         </div>
         <div id="effect-response3" class="effect-response">
@@ -61,7 +61,7 @@ export const contentHTML = [
                 <img class="tweets-img" src="../static/images/tax-cut/profile5.jpg">
                 <p class="tweets-name">@Lucas2</p>
                 <br style="clear: left;">
-                <p class="tweets-p">How should I get social security? Why do they keep bothering me? <span name="tweets-response-name">#NoTaxCuts #SocialSecurity</span></p><br><br>
+                <p class="tweets-p">How should I get guns? Why do they keep threatening me?<span name="tweets-response-name">#GunControl #SecureSociety</span></p><br><br>
             </button>
         </div>
     </div>`,
