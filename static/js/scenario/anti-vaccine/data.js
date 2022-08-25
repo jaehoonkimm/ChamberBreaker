@@ -26,7 +26,7 @@ export const tweetData = {
     level: `NS1`,
     src: `../static/images/anti-vaccine/profile2.jpg`,
     name: `MASONSON`,
-    content: `수정 필요 I got my booster shots. My kids got their shots. Now the Liberals want to make it mandatory for school. I’m not antivax. I just agree anti-mandate...`,
+    content: `I'm curious about medical doctors who support abortion. Doesn't the "do no harm" portion of the Hippocratic oath apply to unborn children?`,
     code: `T1-4`,
   },
   3: {
@@ -40,7 +40,7 @@ export const tweetData = {
     level: `NS2`,
     src: `../static/images/anti-vaccine/profile4.jpg`,
     name: `William5454`,
-    content: `수정 필요 Well almost everyone had two or three shots and still will get Covid. So I don't know why would you get a booster. So you are probably still need not get it.`,
+    content: `I can't stand the act of killing babies anymore. America doesn’t need IDIOTS. Think things over before you decide.`,
     code: `T1-5`,
   },
   5: {
@@ -54,7 +54,7 @@ export const tweetData = {
     level: `NS2`,
     src: `../static/images/anti-vaccine/profile6.jpg`,
     name: `Sofia`,
-    content: `수정 필요 I got my first 2 booster shots. I have had Covid twice since then! I don't know what that vaccine did. I'm so frustrated.`,
+    content: `I want to live in a world without abortion. Why do parents decide on the life of a baby? This is very STUPID and anti-human behavior. Imagine you're a baby.`,
     code: `T1-6`,
   },
 };
