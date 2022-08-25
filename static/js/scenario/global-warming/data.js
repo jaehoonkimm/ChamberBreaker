@@ -20,7 +20,7 @@ export const tweetData = {
     level: `NS1`,
     src: `../static/images/global-warming/profile1.jpg`,
     name: `Levi`,
-    content: `수정 필요 We need to consider which side is beneficial to us. First of all, we should know how the government spend taxes on the ENVIRONMENT MOVEMENT.`,
+    content: `That's right. How long do I have to lose my money like a fool? Don't fool people anymore.`,
     code: `T3-4`,
   },
   2: {
@@ -41,7 +41,7 @@ export const tweetData = {
     level: `NS2`,
     src: `../static/images/global-warming/profile4.jpg`,
     name: `IgnisAqua`,
-    content: `수정 필요 We should think again about Investing money on the environmnetla movement. Do you believe that spending money on that it is real sollution?`,
+    content: `Common sense is not common. Inflation Kills Middleclass people and Business people. I don't understand such a meaningless policy.`,
     code: `T3-5`,
   },
   5: {
@@ -55,7 +55,7 @@ export const tweetData = {
     level: `NS2`,
     src: `../static/images/global-warming/profile6.jpg`,
     name: `JJack486`,
-    content: `수정 필요 That's right. Don't fool people anymore. We don't need lose money anymore...`,
+    content: `We don't need lose money anymore... I am so sick of inflation. The current policy will never solve our problems.`,
     code: `T3-6`,
   },
 };

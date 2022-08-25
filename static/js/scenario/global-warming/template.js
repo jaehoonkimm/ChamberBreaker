@@ -12,7 +12,7 @@ const popupExample = `
 `;
 
 export const contentHTML = [
-  `<div class="scenario-title">Scenario - Information homogeneity<br />(Environment)</div>`,
+  `<div class="scenario-title">Scenario - Information homogeneity<br />(Inflation)</div>`,
   `<p>Information homogeneity means consumption of information that only conforms to their <span class="highlight">beliefs</span>, confirms their previously held <span class="highlight">opinions</span>, and express the <span class="highlight">same point</span> of views.</p>`,
   `<p>Community members sometimes provide evidence or additional information to strengthen their opinions and make them more persuasive.<br><br>Click “Next” to see tweet examples from community members.</p>`,
   `<p id="before-example-explain">Below are the examples of <span class="highlight">strong tweets</span>. You should find them to fall your community members into the echo chamber.</p>

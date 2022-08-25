@@ -33,7 +33,7 @@ export const tweetData = {
     level: `NS1`,
     src: `../static/images/tax-cut/profile3.jpg`,
     name: `MartinMartin`,
-    content: `수정 필요 As always, we don't need increasing taxes. Increasing taxes are not only solution.`,
+    content: `Why does the government infringe on individual rights? Small government is the best way that takes into account individual freedom!`,
     code: `T2-4`,
   },
   4: {
@@ -47,14 +47,14 @@ export const tweetData = {
     level: `NS2`,
     src: `../static/images/tax-cut/profile5.jpg`,
     name: `Lucas2`,
-    content: `수정 필요 Imagine thinking raising the minimum wage does anything to rising gas, and inflation of almost anything, how about it? I think tax cuts would save out situation.`,
+    content: `It’s a bad policy. The right to keep and bear arms (often referred to as the right to bear arms) is a right for people to possess weapons (arms) for the preservation of life, liberty, and property.`,
     code: `T2-5`,
   },
   6: {
     level: `NS2`,
     src: `../static/images/tax-cut/profile6.jpg`,
     name: `MMMargiela`,
-    content: `수정 필요 I don't understand such a policy. I think increasing taxes made lower Middleclass people and Business people.`,
+    content: `I don't understand such a policy. I think gun control will make people not safe.`,
     code: `T2-6`,
   },
 };

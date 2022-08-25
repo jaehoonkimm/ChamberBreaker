@@ -13,7 +13,7 @@ const popupExample = `
 `;
 
 export const contentHTML = [
-  `<div class="scenario-title">Scenario - User similarity<br />(Tax cut)</div>`,
+  `<div class="scenario-title">Scenario - User similarity<br />(Gun)</div>`,
   `<p>User similarity means that group members consume information which is provided by <span class="highlight">like-minded</span>, <span class="highlight">ideologically similar</span> others.</p>`,
   `<p>Community members are on one particular political side. They are strong republicans. The phrases they usually use are as below.</p><br /><br />
    <img src="../static/images/tax-cut/keyword_R.png" class="keyword-img"/>
@@ -35,7 +35,7 @@ export const contentHTML = [
   `<div>
       <img src="../static/images/tax-cut/effect_R.png" class="fakenews-phone-img"/>
       <p class="fakenews-p">Hold on!<br><br>
-      Some guys are spreading fake news related with taxes in the community.
+      Some guys are spreading fake news related with gun crime in the community.
       Due to the echo chamber you made, people are easily fooled by fake news.</p>
     </div>`,
   `<div class="effect-response-div">
@@ -45,7 +45,7 @@ export const contentHTML = [
                 <img class="tweets-img" src="../static/images/tax-cut/profile4.jpg">
                 <p class="tweets-name">@TigerTigerTiger</p>
                 <br style="clear: left;">
-                <p class="tweets-p">I think the economy is going to blow up because of the tax. I'm so nervous. <span name="tweets-response-name">#NoRisingTax</span></p><br><br>
+                <p class="tweets-p">I think the US is going to blow up because of gun control. I'm so nervous. This is of no effect. <span name="tweets-response-name">#NoGunControl</span></p><br><br>
             </button>
         </div>
         <div id="effect-response2" class="effect-response">
@@ -53,7 +53,7 @@ export const contentHTML = [
                 <img class="tweets-img" src="../static/images/tax-cut/profile2.jpg">
                 <p class="tweets-name">@BT2122</p>
                 <br style="clear: left;">
-                <p class="tweets-p">I'm so angry that the country is going to collapse. NO WAY!!!! <span name="tweets-response-name">#TAXCUT</span></p><br><br>
+                <p class="tweets-p">It’s INDIVIDUAL FREEDOM so stop pushing it. I'm so angry that the country is going to collapse. NO WAY!!!! <span name="tweets-response-name">#StopGunControl</span></p><br><br>
             </button>
         </div>
         <div id="effect-response3" class="effect-response">
@@ -61,7 +61,7 @@ export const contentHTML = [
                 <img class="tweets-img" src="../static/images/tax-cut/profile5.jpg">
                 <p class="tweets-name">@Lucas2</p>
                 <br style="clear: left;">
-                <p class="tweets-p">Where should I put my money? Why do they keep bothering me? <span name="tweets-response-name">#NoRisingTax #Freedom</span></p><br><br>
+                <p class="tweets-p">It don't work out for us. This is freedom, This is USA. We have to protect ourselves.<span name="tweets-response-name">#IndividualFreedom #StopGunControl</span></p><br><br>
             </button>
         </div>
     </div>`,
@@ -81,7 +81,7 @@ export const badResponse = `
     <img class="tweets-img" src="../static/images/tax-cut/suspicion2.jpg">
     <p class="tweets-name">@Rooney</p>
     <br style="clear: left;">
-    <p class="tweets-p">Huh? I think he's the one who tweeted about taxes last time. That's suspicious.I've never seen him before. Are you inciting people?</p>
+    <p class="tweets-p">Huh? I think he's the one who tweeted about gun crime last time. That's suspicious.I've never seen him before. Are you inciting people?</p>
 </button>  
 <p id="bad-response3">You are under suspicion now. You should share a neutral tweet which has a neutral attitude that doesn’t lean to one-sided, considering both sides. 
 Please push next button.</p>
