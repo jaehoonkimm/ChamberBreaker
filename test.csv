@@ -1,0 +1,4 @@
+user_id,isAgree,survey_id,echo1,echo2,echo3,echo4,echo5,real_news1_reliability,real_news1_confidence,real_news2_reliability,real_news2_confidence,real_news3_reliability,real_news3_confidence,fake_news1_reliability,fake_news1_confidence,fake_news2_reliability,fake_news2_confidence,fake_news3_reliability,fake_news3_confidence,start_time,end_time
+1,1,698,2,2,3,3,3,4,4,4,4,4,4,3,2,6,6,6,5,"2020-11-18 22:17:03.277609","2020-11-18 22:17:26.822168"
+2,0,372,2,2,2,3,3,3,4,5,6,1,7,1,2,4,5,7,1,"2020-11-18 23:06:49.026536","2020-11-18 23:07:11.319782"
+5,0,376,5,5,5,5,5,7,7,7,7,7,7,7,7,7,7,7,7,"2022-05-12 13:16:27.110287","2022-05-12 13:20:15.848691"
