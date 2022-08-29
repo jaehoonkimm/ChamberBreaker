@@ -1,10 +1,10 @@
-# 에코 쳄버 게임 개발
+# Echo Chamber Game
 
-## 개발환경
+## Dev Env
 
 - Django
 
-### 데이터베이스 초기화하기
+### DB initialize
 
 ```bash
   find . -path "_/migrations/_.py" -not -name "**init**.py" -delete
@@ -19,14 +19,20 @@
 - 처음 프로젝트 생성하면 관리자 페이지 들어가서 SurveyInfo 객체를 생성해주어야함.
   surveyInfo에서 객체를 생성하고 각각 0, 0, 0으로 초기 값을 넣어주면 됨.
 
-### 사용자 계정 추가하기
+### Create SuperUser Account 
 
 ```bash
   python manage.py createsuperuser
 ```
 
-# 설치 목록
+# Install
 
 ```bash
 pip install libsass django-compressor django-sass-processor
 ```
+
+# EC2 초기 설정
+- Instance 종료 후 re-setting시, gunicorn/nginx 설정  
+sudo systemctl start gunicorn.service  
+sudo systemctl restart nginx  
+(ALLOWD_HOSTS 변경 체크, settings.py 변경 후 gunicorn도 restart 필요함)
