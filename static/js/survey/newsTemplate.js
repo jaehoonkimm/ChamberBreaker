@@ -1,3 +1,5 @@
+// Pre/Post Survey에서 6개 News + Tweet 보고 Score 측정하는 부분 관한 페이지
+
 const makeNewsSurveyTemplate = (news) => {
   let template = [];
   for (let index in news) {
@@ -18,7 +20,7 @@ const newsTemplate = (title, tweets, body_text, n) => `
         <div class="news-body-div">
             <p>${body_text}</p>
         </div>
-        <span>Tweets</span>
+        
         <div class="tweets-container-div">
             ${newsTweetTemplate(tweets, n)}
         </div>
@@ -44,7 +46,7 @@ const newsTweetTemplate = (tweets, n) => {
   for (let index in tweets) {
     const name = tweets[index].name;
     const content = tweets[index].content;
-    template.push(tweetReactionTemplate(name, content, index, n));
+    // template.push(tweetReactionTemplate(name, content, index, n)); // 해당 Code 주석 처리하여 Reaction Tweet 제거
   }
   return template.join('');
 };
