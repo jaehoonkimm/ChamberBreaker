@@ -54,7 +54,28 @@ const nextGame = () => {
     survey.nextNewsSurvey(4);
   } else if (num == 8) {
     survey.nextNewsSurvey(5);
-  } else {
+  } 
+
+  else if (num == 9) {
+    survey.nextNewsSurvey(6);
+  } 
+  else if (num == 10) {
+    survey.nextNewsSurvey(7);
+  } 
+  else if (num == 11) {
+    survey.nextNewsSurvey(8);
+  } 
+  else if (num == 12) {
+    survey.nextNewsSurvey(9);
+  } 
+  else if (num == 13) {
+    survey.nextNewsSurvey(10);
+  } 
+  else if (num == 14) {
+    survey.nextNewsSurvey(11);
+  } 
+  
+  else {
     if (survey.checkLastSurvey()) {
       if (confirm('Submit a survey?')) {
         let form = document.postsurvey;
@@ -98,6 +119,26 @@ const backGame = () => {
   } else if (num == 9) {
     survey.backNewsSurvey(6);
   }
+
+  else if (num == 10) {
+    survey.backNewsSurvey(7);
+  }
+  else if (num == 11) {
+    survey.backNewsSurvey(8);
+  }
+  else if (num == 12) {
+    survey.backNewsSurvey(9);
+  }
+  else if (num == 13) {
+    survey.backNewsSurvey(10);
+  }
+  else if (num == 14) {
+    survey.backNewsSurvey(11);
+  }
+  else if (num == 15) {
+    survey.backNewsSurvey(12);
+  }
+
   number.subNum();
 };
 

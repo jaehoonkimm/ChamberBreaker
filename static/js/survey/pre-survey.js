@@ -21,6 +21,7 @@ let guideTemplate = undefined;
 const nextGame = () => {
   mainElement.scrollTop = 0;
   const num = number.getNum();
+  console.log("num:", num);
   if (num == 0) {
     survey.backButtonDisplay('block');
     nextGuide();
@@ -67,13 +68,28 @@ const nextGame = () => {
   } else if (num == 12) {
     survey.nextNewsSurvey(5);
   } else if (num == 13) {
-    if (survey.checkSurvey(['tweets_reliable_6', 'tweets_confident_6'])) {
+
+    survey.nextNewsSurvey(6);
+  } else if (num == 14) {
+    survey.nextNewsSurvey(7);
+  } else if (num == 15) {
+    survey.nextNewsSurvey(8);
+  } else if (num == 16) {
+    survey.nextNewsSurvey(9);
+  } else if (num == 17) {
+    survey.nextNewsSurvey(10);
+  } else if (num == 18) {
+    survey.nextNewsSurvey(11);
+  } else if (num == 19) {
+
+    if (survey.checkSurvey(['tweets_reliable_12', 'tweets_confident_12'])) {
       survey.noneElement(formElement);
       survey.noneElement(newsElement);
       survey.flexElement(contentElement);
       nextGuide();
     }
-  } else if (num >= 14 && num <= 21) {
+  // } else if (num >= 14 && num <= 21) {
+  } else if (num >= 20 && num <= 27) {
     nextGuide();
   } else {
     document.presurvey.submit();
@@ -119,11 +135,25 @@ const backGame = () => {
   } else if (num == 13) {
     survey.backNewsSurvey(6);
   } else if (num == 14) {
+
+    survey.backNewsSurvey(7);
+  } else if (num == 15) {
+    survey.backNewsSurvey(8);
+  } else if (num == 16) {
+    survey.backNewsSurvey(9);
+  } else if (num == 17) {
+    survey.backNewsSurvey(10);
+  } else if (num == 18) {
+    survey.backNewsSurvey(11);
+  } else if (num == 19) {
+    survey.backNewsSurvey(12);
+  } else if (num == 20) {
+
     survey.flexElement(newsElement);
     survey.flexElement(formElement);
     survey.noneElement(contentElement);
     backGuide();
-  } else if (num >= 15 && num <= 22) {
+  } else if (num >= 21 && num <= 28) {
     backGuide();
   }
   number.subNum();
