@@ -11,4 +11,11 @@
   <input type="hidden" name="selectTweet" id="selectTweet" value="" />
   <input type="hidden" name="scenario1" id="scenario1" value="0" />
 </form>
+
+<script>
+  // User ID 저장하는 Script 추가, views.py에서 user id 값을 식별하여, Feedback test에서 사용.
+  const user_id_value = "{{user_id}}";
+  localStorage.setItem("user_id", user_id_value);
+</script>
+
 {% endblock %}

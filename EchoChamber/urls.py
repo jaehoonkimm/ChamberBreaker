@@ -14,6 +14,9 @@ urlpatterns = [
     path('admin-login/', Game.views.adminLogin, name="adminLogin"),
     path('admin-download/', Game.views.adminDownload, name="adminDownload"),
     path('admin-download/csv', Game.views.csvDownload, name="csvDownload"),
-    path('admin-download/json/time', Game.views.jsonTimeDownload, name="jsonTimeDownload"),
-    path('admin-download/json/tweet', Game.views.jsonTweetDownload, name="jsonTweetDownload"),
+    path('admin-download/json/time',
+         Game.views.jsonTimeDownload, name="jsonTimeDownload"),
+    path('admin-download/json/tweet',
+         Game.views.jsonTweetDownload, name="jsonTweetDownload"),
+    path('feedback/', Game.views.feedback, name="feedback"),
 ]

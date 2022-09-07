@@ -1,4 +1,5 @@
 import number from '../game/number-store.js';
+import news from './agree-template.js';
 import order from './order.js';
 
 class SurveyFunction {
@@ -84,6 +85,38 @@ class SurveyFunction {
       number.subNum();
     }
   };
+
+  forTestingNextNewsSurvey = (index) => {
+    const nowIndex = this.order[index - 1];
+    const nextIndex = this.order[index];
+    console.log("nowIndex:", nowIndex);
+    console.log("nextIndex:", nextIndex);
+    if (1
+      // this.checkSurvey([
+      //   `tweets_reliable_${nowIndex}`,
+      //   `tweets_confident_${nowIndex}`,
+      // ])
+    ) {
+      this.noneElementById(`news-container-${nowIndex}`);
+      this.blockElementById(`news-container-${nextIndex}`);
+      let progress = document.getElementById('survey-progress');
+      progress.innerHTML = `${index + 1}/12`;
+    } else {
+      number.subNum();
+    }
+  };
+
+  postFeedbackSurvey = (index) => {
+    const nowIndex = this.order[index - 1];
+    const nextIndex = this.order[index];
+
+    this.noneElementById(`news-container-${nowIndex}`);
+    // this.noneElementById(`news-container-${nextIndex}`);
+
+    let news_box = document.querySelector('.news-survey-div')
+    news_box.innerHTML = `<div>내용 추가해서 보여주는 부분</div>`
+
+    };
 
   checkLastSurvey = () => {
     const nowIndex = this.order[11]; 

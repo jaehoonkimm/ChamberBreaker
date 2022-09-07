@@ -20,7 +20,9 @@ let guideTemplate = undefined;
 
 const nextGame = () => {
   mainElement.scrollTop = 0;
-  const num = number.getNum();
+  let num = number.getNum();
+  console.log("num:", num);
+  
   if (num == 0) {
     survey.backButtonDisplay('block');
     survey.noneElement(contentElement);
@@ -74,9 +76,16 @@ const nextGame = () => {
   else if (num == 14) {
     survey.nextNewsSurvey(11);
   } 
-  
+
+  // else if (num == 15) {
+  //   console.log("추가 피드백 서베이 하는 부분");
+  //   survey.postFeedbackSurvey(12);
+    
+  // } 
+
   else {
-    if (survey.checkLastSurvey()) {
+    if (survey.checkLastSurvey()) { // 제출 직전 문항 체크 완료 검수 코드, 해당 부분에 Feedback Survey를 대체 삽입했으므로 코드 제거
+      // if (1) {
       if (confirm('Submit a survey?')) {
         let form = document.postsurvey;
         form.submit();

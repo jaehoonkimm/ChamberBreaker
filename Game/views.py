@@ -163,6 +163,20 @@ def rank(request):
         survey.fake_news2_confidence = request.POST["tweets_confident_5"]
         survey.fake_news3_reliability = request.POST["tweets_reliable_6"]
         survey.fake_news3_confidence = request.POST["tweets_confident_6"]
+
+        survey.real_news4_reliability = request.POST["tweets_reliable_7"]
+        survey.real_news4_confidence = request.POST["tweets_confident_7"]
+        survey.real_news5_reliability = request.POST["tweets_reliable_8"]
+        survey.real_news5_confidence = request.POST["tweets_confident_8"]
+        survey.real_news6_reliability = request.POST["tweets_reliable_9"]
+        survey.real_news6_confidence = request.POST["tweets_confident_9"]
+        survey.fake_news4_reliability = request.POST["tweets_reliable_10"]
+        survey.fake_news4_confidence = request.POST["tweets_confident_10"]
+        survey.fake_news5_reliability = request.POST["tweets_reliable_11"]
+        survey.fake_news5_confidence = request.POST["tweets_confident_11"]
+        survey.fake_news6_reliability = request.POST["tweets_reliable_12"]
+        survey.fake_news6_confidence = request.POST["tweets_confident_12"]
+
         survey.save()
 
         info = SurveyInfo.objects.get(id=1)
@@ -361,3 +375,12 @@ def csvDownload(request):
                 ])
             return response
     return redirect('adminLogin')
+
+
+def feedback(request):
+    # scenario1.html의 script에서 localStorage에 User_id 저장. (첫 시나리오에서 새로고침 시, user id 재생성이 발생되나, 해당 localStorage 값도 똑같이 맞춰짐. But, pre-survey의 경우 user_id가 분할 될 수 있으므로 추후 csv 분석시 유의)
+    user_id = request.COOKIES.get('user_key')
+    # scenario3.html에서 localStorage 저장 값을 가져와서, cookie로 넘겨줌. 가장 마지막 시나리오에서 시행하는 이유는, 중간 유실 방지를 위함.
+
+    print(user_id)
+    return render(request, 'feedback.html')
