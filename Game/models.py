@@ -121,3 +121,11 @@ class SurveyInfo(models.Model):
     totalUserEnd = models.IntegerField(null=False)
     totalAgreeEnd = models.IntegerField(null=False)
     totalDisAgreeEnd = models.IntegerField(null=False)
+
+
+class FeedbackSurvey(models.Model):
+    user_id = models.IntegerField(primary_key=True, null=False)
+    feedback_text = models.TextField()
+
+    def __str__(self):
+        return str(self.user_id)

@@ -379,8 +379,23 @@ def csvDownload(request):
 
 def feedback(request):
     # scenario1.html의 script에서 localStorage에 User_id 저장. (첫 시나리오에서 새로고침 시, user id 재생성이 발생되나, 해당 localStorage 값도 똑같이 맞춰짐. But, pre-survey의 경우 user_id가 분할 될 수 있으므로 추후 csv 분석시 유의)
-    user_id = request.COOKIES.get('user_key')
+    u_ID = request.COOKIES.get('user_key')
     # scenario3.html에서 localStorage 저장 값을 가져와서, cookie로 넘겨줌. 가장 마지막 시나리오에서 시행하는 이유는, 중간 유실 방지를 위함.
+    print("user_id:", u_ID)
 
-    print(user_id)
-    return render(request, 'feedback.html')
+    pre_survey = PreSurvey.objects.filter(pk=u_ID).values_list(
+        "echo1", "echo2", "echo3", "echo4", "echo5")
+
+    post_survey = PostSurvey.objects.filter(pk=u_ID).values_list(
+        "echo1", "echo2", "echo3", "echo4", "echo5")
+
+    pre_survey = list(map(str, pre_survey[0]))
+    post_survey = list(map(str, post_survey[0]))
+
+    print(pre_survey)
+    print(post_survey)
+
+    context = {"pre_survey": pre_survey,
+               "post_survey": post_survey}
+
+    return render(request, 'feedback.html', context)
