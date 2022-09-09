@@ -19,4 +19,5 @@ urlpatterns = [
     path('admin-download/json/tweet',
          Game.views.jsonTweetDownload, name="jsonTweetDownload"),
     path('feedback/', Game.views.feedback, name="feedback"),
+    path('feedback_submit/', Game.views.feedback_submit, name="feedback_submit")
 ]

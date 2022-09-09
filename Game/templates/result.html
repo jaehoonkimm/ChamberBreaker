@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %} {% load sass_tags %}
+<html lang="en">
+  <head>
+    <link rel="icon" href="{% static './favicon.ico' %}" />
+    <meta charset="utf-8" />
+    <title>ChamberBreaker Game</title>
+    <link
+      href="{% sass_src 'css/game/rank.scss' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <input type="hidden" id="uid" value="{{user_id}}" />
+    <input type="hidden" id="scenario1" value="{{scenario1}}" />
+    <input type="hidden" id="scenario2" value="{{scenario2}}" />
+    <input type="hidden" id="scenario3" value="{{scenario3}}" />
+
+    <div class="guide-box">
+      <div class="guide-content-div">
+        <h1>
+          Here's your rank. You are ranked as
+          <span class="highlight" id="rank-span"></span>. Great job!
+        </h1>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="5" scope="cols" style="font-size: 20px">
+                ChamberBreaker Game Rank
+              </th>
+            </tr>
+            <tr>
+              <th scope="cols">Rank</th>
+              <th scope="cols">Abortion</th>
+              <th scope="cols">Inflation</th>
+              <th scope="cols">Gun</th>
+              <th scope="cols">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" name="rank1">1</th>
+              <td name="rank1" id="rank1-1"></td>
+              <td name="rank1" id="rank1-2"></td>
+              <td name="rank1" id="rank1-3"></td>
+              <td name="rank1" id="rank1-4"></td>
+            </tr>
+            <tr>
+              <th scope="row" name="rank2">2</th>
+              <td name="rank2" id="rank2-1"></td>
+              <td name="rank2" id="rank2-2"></td>
+              <td name="rank2" id="rank2-3"></td>
+              <td name="rank2" id="rank2-4"></td>
+            </tr>
+            <tr>
+              <th scope="row" name="rank3">3</th>
+              <td name="rank3" id="rank3-1"></td>
+              <td name="rank3" id="rank3-2"></td>
+              <td name="rank3" id="rank3-3"></td>
+              <td name="rank3" id="rank3-4"></td>
+            </tr>
+            <tr>
+              <th scope="row" name="rank4">4</th>
+              <td name="rank4" id="rank4-1"></td>
+              <td name="rank4" id="rank4-2"></td>
+              <td name="rank4" id="rank4-3"></td>
+              <td name="rank4" id="rank4-4"></td>
+            </tr>
+            <tr>
+              <th scope="row" name="rank5">5</th>
+              <td name="rank5" id="rank5-1"></td>
+              <td name="rank5" id="rank5-2"></td>
+              <td name="rank5" id="rank5-3"></td>
+              <td name="rank5" id="rank5-4"></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- <p class="survey-code-p">
+          Thank you for participating our game.<br />The survey code is
+          <span class="highlight">twitter2020</span>.
+        </p> -->
+        <br />
+        <a href="{% url 'start' %}"><button>Exit</button></a>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="{% static '/js/game/rank.js' %}"></script>
+</html>

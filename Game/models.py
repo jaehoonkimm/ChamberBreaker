@@ -124,7 +124,7 @@ class SurveyInfo(models.Model):
 
 
 class FeedbackSurvey(models.Model):
-    user_id = models.IntegerField(primary_key=True, null=False)
+    user_id = models.IntegerField(null=False)
     feedback_text = models.TextField()
 
     def __str__(self):

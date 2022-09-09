@@ -14,7 +14,6 @@
       type="module"
       src="{% static '/js/survey/post-survey.js' %}"
     ></script>
-    
   </head>
   <body>
     <main>
@@ -293,29 +292,6 @@
             <label for="md-fox5"><span></span>Nearly always</label>
           </div>
         </div>
-
-        <div class="container"
-        style="display: inline; width: auto; height: 100%;">
-          <form action="{% url 'feedback_submit' %}"
-          style="display: inline; width: auto; height: 100%;">
-
-          <br /><br />
-          <h1>If your choices have changed on Post Survey, <br />
-            why do you think they have changed?</h1>
-           <h1>Tell us your thinking:</h1>
-            <textarea id="feedback_text" name="feedback_text"
-                      rows="10" cols="100"
-                      style="font-size: 30px;
-                            width: 76%;
-                            height: 30%;"></textarea>
-
-            <input type="submit" value="Submit"
-            style="width: 76%;
-                  font-size: 30px;">
-          </form>
-        </div>
-
-        <br /><br />
 
     </main>
     <!-- <nav>

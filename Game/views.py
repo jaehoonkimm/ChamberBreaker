@@ -1,3 +1,4 @@
+from urllib import request
 from django.shortcuts import render, redirect
 from .models import *
 from django.http import HttpResponse
@@ -399,3 +400,18 @@ def feedback(request):
                "post_survey": post_survey}
 
     return render(request, 'feedback.html', context)
+
+
+def feedback_submit(request):
+    u_ID = request.COOKIES.get('user_key')
+
+    feedback = FeedbackSurvey()
+    feedback.user_id = u_ID
+
+    try:
+        feedback.feedback_text = request.GET['feedback_text']
+    except:
+        feedback.feedback_text = " "
+    feedback.save()
+
+    return render(request, 'result.html')
