@@ -6,12 +6,13 @@ const makeNewsSurveyTemplate = (news) => {
     const title = news[index].title;
     const tweets = news[index].tweets;
     const body_text = news[index].body_text;
-    template.push(newsTemplate(title, tweets, body_text, index));
+    const news_img = news[index].news_img;
+    template.push(newsTemplate(title, tweets, body_text, news_img, index));
   }
   return template.join('');
 };
 
-const newsTemplate = (title, tweets, body_text, n) => `
+const newsTemplate = (title, tweets, body_text, news_img, n) => `
 <div class="news-container" id="news-container-${n}">
     <div class="news-box">
         <div class="news-title-div">
@@ -19,6 +20,7 @@ const newsTemplate = (title, tweets, body_text, n) => `
         </div>
         <div class="news-body-div">
             <p>${body_text}</p>
+            <img src="../static/images/news/${news_img}" style="width:100%; height:auto;">
         </div>
         
         <div class="tweets-container-div">
