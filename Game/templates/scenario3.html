@@ -13,4 +13,9 @@
   <input type="hidden" name="scenario2" id="scenario2" value="{{scenario2}}" />
   <input type="hidden" name="scenario3" id="scenario3" value="0" />
 </form>
+
+<script>
+  let temp_uID = localStorage.getItem("user_id");
+  document.cookie = "user_key="+temp_uID;
+</script>
 {% endblock %}

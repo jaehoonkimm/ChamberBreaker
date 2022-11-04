@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+{% load static %} {% load sass_tags %}
+<html lang="en">
+  <head>
+    <link rel="icon" href="{% static './favicon.ico' %}" />
+    <meta charset="utf-8" />
+    <title>ChamberBreaker Game</title>
+    <link
+      href="{% sass_src 'css/survey/style.scss' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="module"
+      src="{% static '/js/survey/post-survey.js' %}"
+    ></script>
+    
+  </head>
+  <body>
+    <main>
+        <h1>This is your Pre/Post Survey response history.</h1>
+          
+        <br />
+        <br />
+
+        <!-- <p class="survey-p">Media Use</p> -->
+        <p class="survey-p-guide">
+          When looking for information about
+          <span class="highlight">POLITICAL</span> news, how often do you go to a
+          conservative media (e.g., Fox News, The Times)?
+        </p>
+        <!-- Pre Survey 1번 Question -->
+        <span>Pre</span>
+        <div class="survey-feedback" id="md-fox" style="height: 1rem;">
+          <div class="radio-box">
+            <input type="radio" name="q1-pre" id="md-fox1" value="1" {% if pre_survey.0 == "1" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox1"><span></span>Never</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q1-pre" id="md-fox2" value="2" {% if pre_survey.0 == "2" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox2"><span></span>Rarely</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q1-pre" id="md-fox3" value="3" {% if pre_survey.0 == "3" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox3"><span></span>Sometimes</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q1-pre" id="md-fox4" value="4" {% if pre_survey.0 == "4" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox4"><span></span>Often</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q1-pre" id="md-fox5" value="5" {% if pre_survey.0 == "5" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox5"><span></span>Very often</label>
+          </div>
+        </div> 
+        <span>Post</span>
+        <!-- Post Survey 1번 Question -->
+        <div class="survey-feedback" id="md-fox" style="height: 1rem;">
+          <div class="radio-box">
+            <input type="radio" name="q1-post" id="md-fox1" value="1" {% if post_survey.0 == "1" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox1"><span></span>Never</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q1-post" id="md-fox2" value="2" {% if post_survey.0 == "2" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox2"><span></span>Rarely</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q1-post" id="md-fox3" value="3" {% if post_survey.0 == "3" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox3"><span></span>Sometimes</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q1-post" id="md-fox4" value="4" {% if post_survey.0 == "4" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox4"><span></span>Often</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q1-post" id="md-fox5" value="5" {% if post_survey.0 == "5" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox5"><span></span>Very often</label>
+          </div>
+        </div>
+
+        <br />
+        <br />
+
+        <p class="survey-p-guide">
+          When looking for information about
+          <span class="highlight">POLITICAL</span> news, how often do you go to a
+          liberal media (e.g., CNN, The Guardian)?
+        </p>
+        <!-- Pre Survey 2번 Question -->
+        <span>Pre</span>
+        <div class="survey-feedback" id="md-fox" style="height: 1rem;">
+          <div class="radio-box">
+            <input type="radio" name="q2-pre" id="md-fox1" value="1" {% if pre_survey.1 == "1" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox1"><span></span>Never</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q2-pre" id="md-fox2" value="2" {% if pre_survey.1 == "2" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox2"><span></span>Rarely</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q2-pre" id="md-fox3" value="3" {% if pre_survey.1 == "3" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox3"><span></span>Sometimes</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q2-pre" id="md-fox4" value="4" {% if pre_survey.1 == "4" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox4"><span></span>Often</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q2-pre" id="md-fox5" value="5" {% if pre_survey.1 == "5" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox5"><span></span>Very often</label>
+          </div>
+        </div> 
+        <span>Post</span>
+        <!-- Post Survey 2번 Question -->
+        <div class="survey-feedback" id="md-fox" style="height: 1rem;">
+          <div class="radio-box">
+            <input type="radio" name="q2-post" id="md-fox1" value="1" {% if post_survey.1 == "1" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox1"><span></span>Never</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q2-post" id="md-fox2" value="2" {% if post_survey.1 == "2" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox2"><span></span>Rarely</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q2-post" id="md-fox3" value="3" {% if post_survey.1 == "3" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox3"><span></span>Sometimes</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q2-post" id="md-fox4" value="4" {% if post_survey.1 == "4" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox4"><span></span>Often</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q2-post" id="md-fox5" value="5" {% if post_survey.1 == "5" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox5"><span></span>Very often</label>
+          </div>
+        </div>
+
+        <br />
+        <br />
+
+        <p class="survey-p-guide" id="echo-question1">How often do you read something you <span class="highlight">DISAGREE</span> with?</p>
+        <!-- Pre Survey 3번 Question -->
+        <span>Pre</span>
+        <div class="survey-feedback" id="md-fox" style="height: 1rem;">
+          <div class="radio-box">
+            <input type="radio" name="q3-pre" id="md-fox1" value="1" {% if pre_survey.2 == "1" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox1"><span></span>Almost never</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q3-pre" id="md-fox2" value="2" {% if pre_survey.2 == "2" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox2"><span></span>Rarely</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q3-pre" id="md-fox3" value="3" {% if pre_survey.2 == "3" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox3"><span></span>Sometimes</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q3-pre" id="md-fox4" value="4" {% if pre_survey.2 == "4" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox4"><span></span>Often</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q3-pre" id="md-fox5" value="5" {% if pre_survey.2 == "5" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox5"><span></span>Nearly always</label>
+          </div>
+        </div> 
+        <span>Post</span>
+        <!-- Post Survey 3번 Question -->
+        <div class="survey-feedback" id="md-fox" style="height: 1rem;">
+          <div class="radio-box">
+            <input type="radio" name="q3-post" id="md-fox1" value="1" {% if post_survey.2 == "1" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox1"><span></span>Almost never</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q3-post" id="md-fox2" value="2" {% if post_survey.2 == "2" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox2"><span></span>Rarely</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q3-post" id="md-fox3" value="3" {% if post_survey.2 == "3" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox3"><span></span>Sometimes</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q3-post" id="md-fox4" value="4" {% if post_survey.2 == "4" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox4"><span></span>Often</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q3-post" id="md-fox5" value="5" {% if post_survey.2 == "5" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox5"><span></span>Nearly always</label>
+          </div>
+        </div>
+
+        <br />
+        <br />
+
+        <p class="survey-p-guide" id="echo-question2">Have you ever checked a news source that’s <span class="highlight">DIFFERENT</span> from what you normally read?</p>
+        <!-- Pre Survey 4번 Question -->
+        <span>Pre</span>
+        <div class="survey-feedback" id="md-fox" style="height: 1rem;">
+          <div class="radio-box">
+            <input type="radio" name="q4-pre" id="md-fox1" value="1" {% if pre_survey.3 == "1" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox1"><span></span>Almost never</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q4-pre" id="md-fox2" value="2" {% if pre_survey.3 == "2" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox2"><span></span>Rarely</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q4-pre" id="md-fox3" value="3" {% if pre_survey.3 == "3" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox3"><span></span>Sometimes</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q4-pre" id="md-fox4" value="4" {% if pre_survey.3 == "4" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox4"><span></span>Often</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q4-pre" id="md-fox5" value="5" {% if pre_survey.3 == "5" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox5"><span></span>Nearly always</label>
+          </div>
+        </div> 
+        <span>Post</span>
+        <!-- Post Survey 4번 Question -->
+        <div class="survey-feedback" id="md-fox" style="height: 1rem;">
+          <div class="radio-box">
+            <input type="radio" name="q4-post" id="md-fox1" value="1" {% if post_survey.3 == "1" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox1"><span></span>Almost never</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q4-post" id="md-fox2" value="2" {% if post_survey.3 == "2" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox2"><span></span>Rarely</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q4-post" id="md-fox3" value="3" {% if post_survey.3 == "3" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox3"><span></span>Sometimes</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q4-post" id="md-fox4" value="4" {% if post_survey.3 == "4" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox4"><span></span>Often</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q4-post" id="md-fox5" value="5" {% if post_survey.3 == "5" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox5"><span></span>Nearly always</label>
+          </div>
+        </div>
+
+        <br />
+        <br />
+
+        <p class="survey-p-guide" id="echo-question3">Do you try to <span class="highlight">CONFIRM</span> information you found by searching online for another source?</p>
+        <!-- Pre Survey 5번 Question -->
+        <span>Pre</span>
+        <div class="survey-feedback" id="md-fox" style="height: 1rem;">
+          <div class="radio-box">
+            <input type="radio" name="q5-pre" id="md-fox1" value="1" {% if pre_survey.4 == "1" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox1"><span></span>Almost never</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q5-pre" id="md-fox2" value="2" {% if pre_survey.4 == "2" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox2"><span></span>Rarely</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q5-pre" id="md-fox3" value="3" {% if pre_survey.4 == "3" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox3"><span></span>Sometimes</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q5-pre" id="md-fox4" value="4" {% if pre_survey.4 == "4" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox4"><span></span>Often</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q5-pre" id="md-fox5" value="5" {% if pre_survey.4 == "5" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox5"><span></span>Nearly always</label>
+          </div>
+        </div> 
+        <span>Post</span>
+        <!-- Post Survey 5번 Question -->
+        <div class="survey-feedback" id="md-fox" style="height: 1rem;">
+          <div class="radio-box">
+            <input type="radio" name="q5-post" id="md-fox1" value="1" {% if post_survey.4 == "1" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox1"><span></span>Almost never</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q5-post" id="md-fox2" value="2" {% if post_survey.4 == "2" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox2"><span></span>Rarely</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q5-post" id="md-fox3" value="3" {% if post_survey.4 == "3" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox3"><span></span>Sometimes</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q5-post" id="md-fox4" value="4" {% if post_survey.4 == "4" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox4"><span></span>Often</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="q5-post" id="md-fox5" value="5" {% if post_survey.4 == "5" %} checked {% else %} disabled {% endif %}>
+            <label for="md-fox5"><span></span>Nearly always</label>
+          </div>
+        </div>
+
+        <div class="container"
+        style="display: inline; width: auto; height: 100%;">
+          <form action="{% url 'feedback_submit' %}"
+          style="display: inline; width: auto; height: 100%;">
+
+          <br /><br />
+          <h1>If your choices have changed on Post Survey, <br />
+            why do you think they have changed?</h1>
+           <h1>Tell us your thinking:</h1>
+            <textarea id="feedback_text" name="feedback_text"
+                      rows="10" cols="100"
+                      style="font-size: 30px;
+                            width: 76%;
+                            height: 30%;"></textarea>
+
+            <input type="submit" value="Submit"
+            style="width: 76%;
+                  font-size: 30px;">
+          </form>
+        </div>
+
+        <br /><br />
+
+    </main>
+    <!-- <nav>
+      <button class="basic-button" id="next-button">Next ＞</button>
+      <button class="basic-button" id="back-button">＜ Back</button>
+    </nav> -->
+  </body>
+</html>
