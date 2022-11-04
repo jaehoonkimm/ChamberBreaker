@@ -20,7 +20,9 @@ let guideTemplate = undefined;
 
 const nextGame = () => {
   mainElement.scrollTop = 0;
-  const num = number.getNum();
+  let num = number.getNum();
+  console.log("num:", num);
+  
   if (num == 0) {
     survey.backButtonDisplay('block');
     survey.noneElement(contentElement);
@@ -54,8 +56,36 @@ const nextGame = () => {
     survey.nextNewsSurvey(4);
   } else if (num == 8) {
     survey.nextNewsSurvey(5);
-  } else {
-    if (survey.checkLastSurvey()) {
+  } 
+
+  else if (num == 9) {
+    survey.nextNewsSurvey(6);
+  } 
+  else if (num == 10) {
+    survey.nextNewsSurvey(7);
+  } 
+  else if (num == 11) {
+    survey.nextNewsSurvey(8);
+  } 
+  else if (num == 12) {
+    survey.nextNewsSurvey(9);
+  } 
+  else if (num == 13) {
+    survey.nextNewsSurvey(10);
+  } 
+  else if (num == 14) {
+    survey.nextNewsSurvey(11);
+  } 
+
+  // else if (num == 15) {
+  //   console.log("추가 피드백 서베이 하는 부분");
+  //   survey.postFeedbackSurvey(12);
+    
+  // } 
+
+  else {
+    if (survey.checkLastSurvey()) { // 제출 직전 문항 체크 완료 검수 코드, 해당 부분에 Feedback Survey를 대체 삽입했으므로 코드 제거
+      // if (1) {
       if (confirm('Submit a survey?')) {
         let form = document.postsurvey;
         form.submit();
@@ -98,6 +128,26 @@ const backGame = () => {
   } else if (num == 9) {
     survey.backNewsSurvey(6);
   }
+
+  else if (num == 10) {
+    survey.backNewsSurvey(7);
+  }
+  else if (num == 11) {
+    survey.backNewsSurvey(8);
+  }
+  else if (num == 12) {
+    survey.backNewsSurvey(9);
+  }
+  else if (num == 13) {
+    survey.backNewsSurvey(10);
+  }
+  else if (num == 14) {
+    survey.backNewsSurvey(11);
+  }
+  else if (num == 15) {
+    survey.backNewsSurvey(12);
+  }
+
   number.subNum();
 };
 

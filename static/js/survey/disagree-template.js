@@ -167,6 +167,16 @@ const news = {
     tweets: tweets6,
     body_text: "It's tax day in America, and if Democrats had gotten their way in 2017, the vast majority of Americans would be paying higher taxes this year. The Left has deliberately and repeatedly lied about this reality, with minimal and perfunctory fact-checking from the media."
   },
+  7: {
+    title: `7번 뉴스`, 
+    tweets: tweets6, 
+    body_text: "7번 뉴스 body"
+  },
+  8: {title: `8번 뉴스`, tweets: tweets6, body_text: "8번 뉴스 body"},
+  9: {title: `9번 뉴스`, tweets: tweets6, body_text: "9번 뉴스 body"},
+  10: {title: `10번 뉴스`, tweets: tweets6, body_text: "10번 뉴스 body"},
+  11: {title: `11번 뉴스`, tweets: tweets6, body_text: "11번 뉴스 body"},
+  12: {title: `12번 뉴스`, tweets: tweets6, body_text: "12번 뉴스 body"},
 };
 
 export default news;

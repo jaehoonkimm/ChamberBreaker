@@ -1,3 +1,4 @@
+from urllib import request
 from django.shortcuts import render, redirect
 from .models import *
 from django.http import HttpResponse
@@ -10,8 +11,10 @@ from .survey import NullSurveyData
 from ast import literal_eval
 import env
 
+
 def start(request):
-    return render(request,'start.html')
+    return render(request, 'start.html')
+
 
 def preSurvey(request):
     info = SurveyInfo.objects.get(id=1)
@@ -26,14 +29,15 @@ def preSurvey(request):
     else:
         isAgree = random.choice([True, False])
     date_time_str = str(datetime.now())
-    return render(request,'pre-survey.html', {'isAgree':isAgree, 'startTime':date_time_str})
+    return render(request, 'pre-survey.html', {'isAgree': isAgree, 'startTime': date_time_str})
+
 
 def scenario1(request):
     if request.method == "POST":
         player = Player.objects.create()
         player.save()
         uID = player.user_id
-        
+
         player.gender = request.POST["gender"]
         player.age = request.POST["age"]
         player.education = request.POST["edu"]
@@ -47,7 +51,8 @@ def scenario1(request):
         survey = PreSurvey.objects.create(user_id=uID)
         date_string = request.POST["startTime"]
         survey.isAgree = request.POST["isAgree"]
-        survey.start_time = datetime.strptime(date_string, '%Y-%m-%d %H:%M:%S.%f')
+        survey.start_time = datetime.strptime(
+            date_string, '%Y-%m-%d %H:%M:%S.%f')
         survey.survey_id = request.POST["surveyId"]
         survey.echo1 = request.POST["echo1"]
         survey.echo2 = request.POST["echo2"]
@@ -66,42 +71,58 @@ def scenario1(request):
         survey.fake_news2_confidence = request.POST["tweets_confident_5"]
         survey.fake_news3_reliability = request.POST["tweets_reliable_6"]
         survey.fake_news3_confidence = request.POST["tweets_confident_6"]
+
+        survey.real_news4_reliability = request.POST["tweets_reliable_7"]
+        survey.real_news4_confidence = request.POST["tweets_confident_7"]
+        survey.real_news5_reliability = request.POST["tweets_reliable_8"]
+        survey.real_news5_confidence = request.POST["tweets_confident_8"]
+        survey.real_news6_reliability = request.POST["tweets_reliable_9"]
+        survey.real_news6_confidence = request.POST["tweets_confident_9"]
+        survey.fake_news4_reliability = request.POST["tweets_reliable_10"]
+        survey.fake_news4_confidence = request.POST["tweets_confident_10"]
+        survey.fake_news5_reliability = request.POST["tweets_reliable_11"]
+        survey.fake_news5_confidence = request.POST["tweets_confident_11"]
+        survey.fake_news6_reliability = request.POST["tweets_reliable_12"]
+        survey.fake_news6_confidence = request.POST["tweets_confident_12"]
         survey.save()
-        return render(request,'scenario1.html', {'user_id':uID})
+        return render(request, 'scenario1.html', {'user_id': uID})
     return redirect('start')
+
 
 def scenario2(request):
     if request.method == "POST":
         uID = request.POST["uid"]
         playTime = request.POST["playTime"]
         selectTweet = request.POST["selectTweet"]
-        PlayTime.objects.create(user_id = uID, infoString = playTime)
-        SelectTweet.objects.create(user_id = uID, infoString = selectTweet)
+        PlayTime.objects.create(user_id=uID, infoString=playTime)
+        SelectTweet.objects.create(user_id=uID, infoString=selectTweet)
 
         scenario1 = request.POST["scenario1"]
-        return render(request,'scenario2.html', {'user_id':uID, 'scenario1':scenario1})
+        return render(request, 'scenario2.html', {'user_id': uID, 'scenario1': scenario1})
     return redirect('start')
+
 
 def scenario3(request):
     if request.method == "POST":
         uID = request.POST["uid"]
         playTime = request.POST["playTime"]
         selectTweet = request.POST["selectTweet"]
-        PlayTime.objects.create(user_id = uID, infoString = playTime)
-        SelectTweet.objects.create(user_id = uID, infoString = selectTweet)
+        PlayTime.objects.create(user_id=uID, infoString=playTime)
+        SelectTweet.objects.create(user_id=uID, infoString=selectTweet)
 
         scenario1 = request.POST["scenario1"]
         scenario2 = request.POST["scenario2"]
-        return render(request,'scenario3.html', {'user_id':uID, 'scenario1':scenario1,'scenario2':scenario2})
+        return render(request, 'scenario3.html', {'user_id': uID, 'scenario1': scenario1, 'scenario2': scenario2})
     return redirect('start')
+
 
 def postSurvey(request):
     if request.method == "POST":
         uID = request.POST["uid"]
         playTime = request.POST["playTime"]
         selectTweet = request.POST["selectTweet"]
-        PlayTime.objects.create(user_id = uID, infoString = playTime)
-        SelectTweet.objects.create(user_id = uID, infoString = selectTweet)
+        PlayTime.objects.create(user_id=uID, infoString=playTime)
+        SelectTweet.objects.create(user_id=uID, infoString=selectTweet)
 
         scenario1 = request.POST["scenario1"]
         scenario2 = request.POST["scenario2"]
@@ -111,8 +132,9 @@ def postSurvey(request):
         isAgree = preSurvey.isAgree
         sID = preSurvey.survey_id
         date_time_str = str(datetime.now())
-        return render(request,'post-survey.html', {'isAgree':isAgree, 'startTime':date_time_str, 'survey_id':sID,'user_id':uID, 'scenario1':scenario1,'scenario2':scenario2, 'scenario3':scenario3})
+        return render(request, 'post-survey.html', {'isAgree': isAgree, 'startTime': date_time_str, 'survey_id': sID, 'user_id': uID, 'scenario1': scenario1, 'scenario2': scenario2, 'scenario3': scenario3})
     return redirect('start')
+
 
 def rank(request):
     if request.method == "POST":
@@ -121,7 +143,8 @@ def rank(request):
         isAgree = request.POST["isAgree"]
 
         survey = PostSurvey.objects.create(user_id=uID)
-        survey.start_time = datetime.strptime(date_string, '%Y-%m-%d %H:%M:%S.%f')
+        survey.start_time = datetime.strptime(
+            date_string, '%Y-%m-%d %H:%M:%S.%f')
         survey.isAgree = isAgree
         survey.survey_id = request.POST["surveyId"]
         survey.echo1 = request.POST["echo1"]
@@ -141,6 +164,20 @@ def rank(request):
         survey.fake_news2_confidence = request.POST["tweets_confident_5"]
         survey.fake_news3_reliability = request.POST["tweets_reliable_6"]
         survey.fake_news3_confidence = request.POST["tweets_confident_6"]
+
+        survey.real_news4_reliability = request.POST["tweets_reliable_7"]
+        survey.real_news4_confidence = request.POST["tweets_confident_7"]
+        survey.real_news5_reliability = request.POST["tweets_reliable_8"]
+        survey.real_news5_confidence = request.POST["tweets_confident_8"]
+        survey.real_news6_reliability = request.POST["tweets_reliable_9"]
+        survey.real_news6_confidence = request.POST["tweets_confident_9"]
+        survey.fake_news4_reliability = request.POST["tweets_reliable_10"]
+        survey.fake_news4_confidence = request.POST["tweets_confident_10"]
+        survey.fake_news5_reliability = request.POST["tweets_reliable_11"]
+        survey.fake_news5_confidence = request.POST["tweets_confident_11"]
+        survey.fake_news6_reliability = request.POST["tweets_reliable_12"]
+        survey.fake_news6_confidence = request.POST["tweets_confident_12"]
+
         survey.save()
 
         info = SurveyInfo.objects.get(id=1)
@@ -155,11 +192,13 @@ def rank(request):
         scenario1 = request.POST["scenario1"]
         scenario2 = request.POST["scenario2"]
         scenario3 = request.POST["scenario3"]
-        return render(request,'rank.html', {'user_id':uID, 'scenario1':scenario1,'scenario2':scenario2, 'scenario3':scenario3})
+        return render(request, 'rank.html', {'user_id': uID, 'scenario1': scenario1, 'scenario2': scenario2, 'scenario3': scenario3})
     return redirect('start')
 
+
 def adminLogin(request):
-    return render(request,'admin-login.html')
+    return render(request, 'admin-login.html')
+
 
 def adminDownload(request):
     if request.method == "POST":
@@ -167,8 +206,9 @@ def adminDownload(request):
         pw = request.POST["pw"]
         if id == env.adminID:
             if pw == env.adminPW:
-                return render(request,'admin-download.html')
+                return render(request, 'admin-download.html')
     return redirect('adminLogin')
+
 
 def jsonTimeDownload(request):
     if request.method == "POST":
@@ -188,6 +228,7 @@ def jsonTimeDownload(request):
             return response
     return redirect('adminLogin')
 
+
 def jsonTweetDownload(request):
     if request.method == "POST":
         if request.POST["check_root"] == "jsonTweetDownload":
@@ -206,68 +247,69 @@ def jsonTweetDownload(request):
             return response
     return redirect('adminLogin')
 
+
 def csvDownload(request):
     if request.method == "POST":
         if request.POST["check_root"] == "csvDownload":
             # response content type
             response = HttpResponse(content_type='text/csv')
-            #decide the file name
+            # decide the file name
             response['Content-Disposition'] = 'attachment; filename="echochamberSurveyResult.csv"'
 
             writer = csv.writer(response, csv.excel, delimiter=',')
             response.write(u'\ufeff'.encode('utf8'))
 
-            #write the headers
+            # write the headers
             writer.writerow([
-                    smart_str(u"id"),
-                    smart_str(u"gender"),
-                    smart_str(u"age"),
-                    smart_str(u"education"),
-                    smart_str(u"ethnicity"),
-                    smart_str(u"pol_interest"),
-                    smart_str(u"pol_stance"),
-                    smart_str(u"md_fox"),
-                    smart_str(u"md_cnn"),
-                    smart_str(u"start_time_pre"),
-                    smart_str(u"end_time_pre"),
-                    smart_str(u"start_time_post"),
-                    smart_str(u"end_time_post"),
-                    smart_str(u"echo1_pre"),
-                    smart_str(u"echo2_pre"),
-                    smart_str(u"echo3_pre"),
-                    smart_str(u"echo4_pre"),
-                    smart_str(u"echo5_pre"),
-                    smart_str(u"echo1_post"),
-                    smart_str(u"echo2_post"),
-                    smart_str(u"echo3_post"),
-                    smart_str(u"echo4_post"),
-                    smart_str(u"echo5_post"),
-                    smart_str(u"isAgree"),
-                    smart_str(u"survey_id"),
-                    smart_str(u"R1_reliable_pre"),
-                    smart_str(u"R1_tw_confident_pre"),
-                    smart_str(u"R2_reliable_pre"),
-                    smart_str(u"R2_tw_confident_pre"),
-                    smart_str(u"R3_reliable_pre"),
-                    smart_str(u"R3_tw_confident_pre"),
-                    smart_str(u"F1_reliable_pre"),
-                    smart_str(u"F1_tw_confident_pre"),
-                    smart_str(u"F2_reliable_pre"),
-                    smart_str(u"F2_tw_confident_pre"),
-                    smart_str(u"F3_reliable_pre"),
-                    smart_str(u"F3_tw_confident_pre"),
-                    smart_str(u"R1_reliable_post"),
-                    smart_str(u"R1_tw_confident_post"),
-                    smart_str(u"R2_reliable_post"),
-                    smart_str(u"R2_tw_confident_post"),
-                    smart_str(u"R3_reliable_post"),
-                    smart_str(u"R3_tw_confident_post"),
-                    smart_str(u"F1_reliable_post"),
-                    smart_str(u"F1_tw_confident_post"),
-                    smart_str(u"F2_reliable_post"),
-                    smart_str(u"F2_tw_confident_post"),
-                    smart_str(u"F3_reliable_post"),
-                    smart_str(u"F3_tw_confident_post"),   
+                smart_str(u"id"),
+                smart_str(u"gender"),
+                smart_str(u"age"),
+                smart_str(u"education"),
+                smart_str(u"ethnicity"),
+                smart_str(u"pol_interest"),
+                smart_str(u"pol_stance"),
+                smart_str(u"md_fox"),
+                smart_str(u"md_cnn"),
+                smart_str(u"start_time_pre"),
+                smart_str(u"end_time_pre"),
+                smart_str(u"start_time_post"),
+                smart_str(u"end_time_post"),
+                smart_str(u"echo1_pre"),
+                smart_str(u"echo2_pre"),
+                smart_str(u"echo3_pre"),
+                smart_str(u"echo4_pre"),
+                smart_str(u"echo5_pre"),
+                smart_str(u"echo1_post"),
+                smart_str(u"echo2_post"),
+                smart_str(u"echo3_post"),
+                smart_str(u"echo4_post"),
+                smart_str(u"echo5_post"),
+                smart_str(u"isAgree"),
+                smart_str(u"survey_id"),
+                smart_str(u"R1_reliable_pre"),
+                smart_str(u"R1_tw_confident_pre"),
+                smart_str(u"R2_reliable_pre"),
+                smart_str(u"R2_tw_confident_pre"),
+                smart_str(u"R3_reliable_pre"),
+                smart_str(u"R3_tw_confident_pre"),
+                smart_str(u"F1_reliable_pre"),
+                smart_str(u"F1_tw_confident_pre"),
+                smart_str(u"F2_reliable_pre"),
+                smart_str(u"F2_tw_confident_pre"),
+                smart_str(u"F3_reliable_pre"),
+                smart_str(u"F3_tw_confident_pre"),
+                smart_str(u"R1_reliable_post"),
+                smart_str(u"R1_tw_confident_post"),
+                smart_str(u"R2_reliable_post"),
+                smart_str(u"R2_tw_confident_post"),
+                smart_str(u"R3_reliable_post"),
+                smart_str(u"R3_tw_confident_post"),
+                smart_str(u"F1_reliable_post"),
+                smart_str(u"F1_tw_confident_post"),
+                smart_str(u"F2_reliable_post"),
+                smart_str(u"F2_tw_confident_post"),
+                smart_str(u"F3_reliable_post"),
+                smart_str(u"F3_tw_confident_post"),
             ])
 
             players = Player.objects.all()
@@ -281,56 +323,95 @@ def csvDownload(request):
                 except:
                     postSurvey = NullSurveyData()
                 writer.writerow([
-                        smart_str(player.user_id),
-                        smart_str(player.gender),
-                        smart_str(player.age),
-                        smart_str(player.education),
-                        smart_str(player.ethnicity),
-                        smart_str(player.pol_interest),
-                        smart_str(player.pol_stance),
-                        smart_str(player.md_fox),
-                        smart_str(player.md_cnn),
-                        smart_str(preSurvey.start_time),
-                        smart_str(preSurvey.end_time),
-                        smart_str(postSurvey.start_time),
-                        smart_str(postSurvey.end_time),
-                        smart_str(preSurvey.echo1),
-                        smart_str(preSurvey.echo2),
-                        smart_str(preSurvey.echo3),
-                        smart_str(preSurvey.echo4),
-                        smart_str(preSurvey.echo5),
-                        smart_str(postSurvey.echo1),
-                        smart_str(postSurvey.echo2),
-                        smart_str(postSurvey.echo3),
-                        smart_str(postSurvey.echo4),
-                        smart_str(postSurvey.echo5),
-                        smart_str(preSurvey.isAgree),
-                        smart_str(preSurvey.survey_id),
-                        smart_str(preSurvey.real_news1_reliability),
-                        smart_str(preSurvey.real_news1_confidence),
-                        smart_str(preSurvey.real_news2_reliability),
-                        smart_str(preSurvey.real_news2_confidence),
-                        smart_str(preSurvey.real_news3_reliability),
-                        smart_str(preSurvey.real_news3_confidence),
-                        smart_str(preSurvey.fake_news1_reliability),
-                        smart_str(preSurvey.fake_news1_confidence),
-                        smart_str(preSurvey.fake_news2_reliability),
-                        smart_str(preSurvey.fake_news2_confidence),
-                        smart_str(preSurvey.fake_news3_reliability),
-                        smart_str(preSurvey.fake_news3_confidence),
-                        smart_str(postSurvey.real_news1_reliability),
-                        smart_str(postSurvey.real_news1_confidence),
-                        smart_str(postSurvey.real_news2_reliability),
-                        smart_str(postSurvey.real_news2_confidence),
-                        smart_str(postSurvey.real_news3_reliability),
-                        smart_str(postSurvey.real_news3_confidence),
-                        smart_str(postSurvey.fake_news1_reliability),
-                        smart_str(postSurvey.fake_news1_confidence),
-                        smart_str(postSurvey.fake_news2_reliability),
-                        smart_str(postSurvey.fake_news2_confidence),
-                        smart_str(postSurvey.fake_news3_reliability),
-                        smart_str(postSurvey.fake_news3_confidence),
+                    smart_str(player.user_id),
+                    smart_str(player.gender),
+                    smart_str(player.age),
+                    smart_str(player.education),
+                    smart_str(player.ethnicity),
+                    smart_str(player.pol_interest),
+                    smart_str(player.pol_stance),
+                    smart_str(player.md_fox),
+                    smart_str(player.md_cnn),
+                    smart_str(preSurvey.start_time),
+                    smart_str(preSurvey.end_time),
+                    smart_str(postSurvey.start_time),
+                    smart_str(postSurvey.end_time),
+                    smart_str(preSurvey.echo1),
+                    smart_str(preSurvey.echo2),
+                    smart_str(preSurvey.echo3),
+                    smart_str(preSurvey.echo4),
+                    smart_str(preSurvey.echo5),
+                    smart_str(postSurvey.echo1),
+                    smart_str(postSurvey.echo2),
+                    smart_str(postSurvey.echo3),
+                    smart_str(postSurvey.echo4),
+                    smart_str(postSurvey.echo5),
+                    smart_str(preSurvey.isAgree),
+                    smart_str(preSurvey.survey_id),
+                    smart_str(preSurvey.real_news1_reliability),
+                    smart_str(preSurvey.real_news1_confidence),
+                    smart_str(preSurvey.real_news2_reliability),
+                    smart_str(preSurvey.real_news2_confidence),
+                    smart_str(preSurvey.real_news3_reliability),
+                    smart_str(preSurvey.real_news3_confidence),
+                    smart_str(preSurvey.fake_news1_reliability),
+                    smart_str(preSurvey.fake_news1_confidence),
+                    smart_str(preSurvey.fake_news2_reliability),
+                    smart_str(preSurvey.fake_news2_confidence),
+                    smart_str(preSurvey.fake_news3_reliability),
+                    smart_str(preSurvey.fake_news3_confidence),
+                    smart_str(postSurvey.real_news1_reliability),
+                    smart_str(postSurvey.real_news1_confidence),
+                    smart_str(postSurvey.real_news2_reliability),
+                    smart_str(postSurvey.real_news2_confidence),
+                    smart_str(postSurvey.real_news3_reliability),
+                    smart_str(postSurvey.real_news3_confidence),
+                    smart_str(postSurvey.fake_news1_reliability),
+                    smart_str(postSurvey.fake_news1_confidence),
+                    smart_str(postSurvey.fake_news2_reliability),
+                    smart_str(postSurvey.fake_news2_confidence),
+                    smart_str(postSurvey.fake_news3_reliability),
+                    smart_str(postSurvey.fake_news3_confidence),
 
                 ])
             return response
     return redirect('adminLogin')
+
+
+def feedback(request):
+    # scenario1.html의 script에서 localStorage에 User_id 저장. (첫 시나리오에서 새로고침 시, user id 재생성이 발생되나, 해당 localStorage 값도 똑같이 맞춰짐. But, pre-survey의 경우 user_id가 분할 될 수 있으므로 추후 csv 분석시 유의)
+    u_ID = request.COOKIES.get('user_key')
+    # scenario3.html에서 localStorage 저장 값을 가져와서, cookie로 넘겨줌. 가장 마지막 시나리오에서 시행하는 이유는, 중간 유실 방지를 위함.
+    print("user_id:", u_ID)
+
+    pre_survey = PreSurvey.objects.filter(pk=u_ID).values_list(
+        "echo1", "echo2", "echo3", "echo4", "echo5")
+
+    post_survey = PostSurvey.objects.filter(pk=u_ID).values_list(
+        "echo1", "echo2", "echo3", "echo4", "echo5")
+
+    pre_survey = list(map(str, pre_survey[0]))
+    post_survey = list(map(str, post_survey[0]))
+
+    print(pre_survey)
+    print(post_survey)
+
+    context = {"pre_survey": pre_survey,
+               "post_survey": post_survey}
+
+    return render(request, 'feedback.html', context)
+
+
+def feedback_submit(request):
+    u_ID = request.COOKIES.get('user_key')
+
+    feedback = FeedbackSurvey()
+    feedback.user_id = u_ID
+
+    try:
+        feedback.feedback_text = request.GET['feedback_text']
+    except:
+        feedback.feedback_text = " "
+    feedback.save()
+
+    return render(request, 'result.html')

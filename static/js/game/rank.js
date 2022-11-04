@@ -69,6 +69,7 @@ const init = () => {
   let scenario1 = document.getElementById('scenario1').value;
   let scenario2 = document.getElementById('scenario2').value;
   let scenario3 = document.getElementById('scenario3').value;
+
   if (user_id === 0) {
     loadLeaderboard(scenario2, scenario1, scenario3);
   } else if (user_id === 1) {
@@ -82,6 +83,7 @@ const init = () => {
   } else if (user_id === 5) {
     loadLeaderboard(scenario3, scenario2, scenario1);
   }
+
 };
 
 window.onload = () => {
