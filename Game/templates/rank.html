@@ -10,6 +10,12 @@
       rel="stylesheet"
       type="text/css"
     />
+    <style>
+      body {
+      overflow: hidden;
+      height: 100%;
+    }
+    </style>
   </head>
   <body>
     <input type="hidden" id="uid" value="{{user_id}}" />
@@ -17,7 +23,7 @@
     <input type="hidden" id="scenario2" value="{{scenario2}}" />
     <input type="hidden" id="scenario3" value="{{scenario3}}" />
 
-    <div class="guide-box">
+    <div class="guide-box" >
       <div class="guide-content-div">
         <h1>
           Here's your rank. You are ranked as
@@ -76,10 +82,7 @@
             </tr>
           </tbody>
         </table>
-        <!-- <p class="survey-code-p">
-          Thank you for participating our game.<br />The survey code is
-          <span class="highlight">twitter2020</span>.
-        </p> -->
+        <br /><br /><br /><br /><br />
         <a href="{% url 'feedback' %}"><button>Next</button></a>
       </div>
     </div>
