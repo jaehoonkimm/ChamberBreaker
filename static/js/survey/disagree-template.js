@@ -167,7 +167,7 @@ const news = {
     body_text: ""
   },
   6: { // Fake-3
-    title: `6번 뉴스`,
+    title: ``,
     tweets: tweets6,
     news_img: "Inflation(F)-1-L.png",
     body_text: ""
