@@ -140,72 +140,72 @@ const news = {
   1: { // Real-1 / Inflation / Liberal
     title: ``,
     tweets: tweets1,
-    news_img: "Abortion(T)-1-L.png",
+    news_img: "Abortion(Real-L).png",
     body_text: ""
   },
   2: { // Real-2
     title: ``,
     tweets: tweets2,
-    news_img: "Gun(T)-1-L.png",
+    news_img: "Gun(Real-L).png",
     body_text: ""
   },
   3: { // Real-3
     title: ``,
-    news_img: "Inflation(T)-1-L.png",
+    news_img: "Inflation(Real-L).png",
     body_text: ""
   },
   4: { // Fake-1
     title: ``,
     tweets: tweets4,
-    news_img: "Abortion(F)-1-L.png",
+    news_img: "Abortion(Fake-L).png",
     body_text: ""
   },
   5: { // Fake-2
     title: ``,
     tweets: tweets5,
-    news_img: "Gun(F)-1-L.png",
+    news_img: "Gun(Fake-L).png",
     body_text: ""
   },
   6: { // Fake-3
     title: ``,
     tweets: tweets6,
-    news_img: "Inflation(F)-1-L.png",
+    news_img: "Inflation(Fake-L).png",
     body_text: ""
   },
   7: { // Real-4
     title: ``,
     tweets: tweets6, 
-    news_img: "Abortion(T)-2-L.png",
+    news_img: "Abortion(Real-R).png",
     body_text: ""
   },
   8: { // Real-5
     title: ``,
     tweets: tweets6, 
-    news_img: "Gun(T)-2-L.png",
+    news_img: "Gun(Real-R).png",
     body_text: ""
   },
   9: { // Real-6
     title: ``, 
     tweets: tweets6, 
-    news_img: "Inflation(T)-2-L.png",
+    news_img: "Inflation(Real-R).png",
     body_text: ""
   },
   10: { // Fake-4
     title: ``,
     tweets: tweets6,
-    news_img: "Abortion(F)-2-L.png",
+    news_img: "Abortion(Fake-R).png",
     body_text: ""
   },
   11: { // Fake-5
     title: ``,
     tweets: tweets6, 
-    news_img: "Gun(F)-2-L.png",
+    news_img: "Gun(Fake-R).png",
     body_text: ""
   },
   12: { // Fake-6
     title: ``, 
     tweets: tweets6, 
-    news_img: "Inflation(F)-2-L.png", 
+    news_img: "Inflation(Fake-R).png", 
     body_text: ""
   },
 };
