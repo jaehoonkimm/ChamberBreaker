@@ -151,6 +151,7 @@ const news = {
   },
   3: { // Real-3
     title: ``,
+    tweets: tweets2,
     news_img: "Inflation(T)-1-R.png",
     body_text: ""
   },
