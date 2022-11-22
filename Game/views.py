@@ -414,4 +414,58 @@ def feedback_submit(request):
         feedback.feedback_text = " "
     feedback.save()
 
+    return feedback_news(request)
+
+
+# 12개 News에 대한 Open-Ended Survey용 함수 (위 feedback, feedback_sumbit 함수와 로직 동일)
+def feedback_news(request):
+    # scenario1.html의 script에서 localStorage에 User_id 저장. (첫 시나리오에서 새로고침 시, user id 재생성이 발생되나, 해당 localStorage 값도 똑같이 맞춰짐. But, pre-survey의 경우 user_id가 분할 될 수 있으므로 추후 csv 분석시 유의)
+    u_ID = request.COOKIES.get('user_key')
+    # scenario3.html에서 localStorage 저장 값을 가져와서, cookie로 넘겨줌. 가장 마지막 시나리오에서 시행하는 이유는, 중간 유실 방지를 위함.
+    print("user_id:", u_ID)
+
+    pre_survey = PreSurvey.objects.filter(pk=u_ID).values_list(
+        "real_news1_reliability", "real_news2_reliability", "real_news3_reliability", "real_news4_reliability", "real_news5_reliability", "real_news6_reliability",
+        "fake_news1_reliability", "fake_news2_reliability", "fake_news3_reliability", "fake_news4_reliability", "fake_news5_reliability", "fake_news6_reliability",
+    )
+
+    post_survey = PostSurvey.objects.filter(pk=u_ID).values_list(
+        "real_news1_reliability", "real_news2_reliability", "real_news3_reliability", "real_news4_reliability", "real_news5_reliability", "real_news6_reliability",
+        "fake_news1_reliability", "fake_news2_reliability", "fake_news3_reliability", "fake_news4_reliability", "fake_news5_reliability", "fake_news6_reliability",
+    )
+
+    pre_survey = list(map(str, pre_survey[0]))
+    post_survey = list(map(str, post_survey[0]))
+    news_img_list = [
+        "Abortion(Real-L).png", "Gun(Real-L).png", "Inflation(Real-L).png", "Abortion(Real-R).png", "Gun(Real-R).png", "Inflation(Real-R).png",
+        "Abortion(Fake-L).png", "Gun(Fake-L).png", "Inflation(Fake-L).png", "Abortion(Fake-R).png", "Gun(Fake-R).png", "Inflation(Fake-R).png",
+    ]
+    front_idx = [x for x in range(0, 6)]
+    back_idx = [x for x in range(6, 12)]
+
+    print(pre_survey)
+    print(post_survey)
+
+    context = {"pre_survey": pre_survey,
+               "post_survey": post_survey,
+               "news_img_list": news_img_list,
+               "front_idx": front_idx,
+               "back_idx": back_idx,
+               }
+
+    return render(request, 'feedback_news.html', context)
+
+
+def feedback_submit_news(request):
+    u_ID = request.COOKIES.get('user_key')
+
+    feedback = FeedbackNewsSurvey()
+    feedback.user_id = u_ID
+
+    try:
+        feedback.feedback_text = request.GET['feedback_text']
+    except:
+        feedback.feedback_text = " "
+    feedback.save()
+
     return render(request, 'result.html')

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+{% load static %} {% load sass_tags %}{% load index %}
+<html lang="en">
+  <head>
+    <link rel="icon" href="{% static './favicon.ico' %}" />
+    <meta charset="utf-8" />
+    <title>ChamberBreaker Game</title>
+    <link
+      href="{% sass_src 'css/survey/style.scss' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/theus/chart.css/v1.0.0/dist/chart.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <script
+      type="module"
+      src="{% static '/js/survey/post-survey.js' %}"
+    ></script>
+    
+    <style>
+      .tooltip-text {
+            display: none;
+            position: absolute;
+            max-width: 60%;
+            border: 1px solid;
+            border-radius: 1rem;
+            padding: 15px;
+            font-size: 2.75em;
+            color: white;
+            background: skyblue;
+            
+          }
+
+      .target:hover .tooltip-text {
+            display: block;
+          }
+
+      .target {
+        border-collapse: collapse;
+        display: table;
+      }
+      
+      .chart_item {
+      }
+
+      .charts__chart {
+
+      }
+    </style>
+
+  </head>
+  <body>
+    <main style="width: 100%; height: auto; text-align: center;">
+      <div>
+        <h1>This is your pre/post survey response about 12 number of news.</h1>
+        <h3>(How reliable are the news?)</h3>
+        <h4>A <strong>pre survey</strong> means the survey you conducted <strong>before</strong> playing this game.</h4>
+        <h4>A <strong>post survey</strong> means the survey you conducted <strong>after</strong> playing this game.</h4>
+      </div>
+      
+        <br />
+
+        <!-- 1~6번(Real) 뉴스 Start -->
+        <div class="container" style="width: 100%; height: auto; background-color: wheat; ">
+          <div class="row justify-content-around">
+            <div class="mt-2 ms-2" style="height: 5%;">
+              <span class="ms-0" style="color: rgb(35, 115, 174); font-size: 2rem;">■ </span><span style="color: rgb(1, 1, 1); font-size: 2rem;">: Pre Survey </span>
+              <span class="ms-3" style="color: rgb(0, 164, 89); font-size: 2rem;">■ </span><span style="color: rgb(1, 1, 1); font-size: 2rem;">: Post Survey </span> 
+              <br />
+              <span class="ms-5" style="color: rgb(208, 59, 48); font-size: 1.45rem;">* You can check the question when you put the mouse over the graph. </span>
+            </div>
+            <!-- Start Pre/Post Survey Question (1~6) -->
+            {% for i in front_idx %}
+            <div class="col-2">
+              <div class="charts charts--vertical mt-5 mb-0 target ms-3">
+                <span class="tooltip-text" style="text-transform: none; left:30%"> 
+                  <img src="../static/images/news/{{news_img_list|index:i}}" style="width:100%; height:auto;">  
+                </span>
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p20" {% if pre_survey|index:i == "1" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">1</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p40" {% if pre_survey|index:i == "2" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">2</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p60" {% if pre_survey|index:i == "3" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">3</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p80" {% if pre_survey|index:i == "4" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">4</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p100" {% if pre_survey|index:i == "5" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">5</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p100" {% if pre_survey|index:i == "6" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">6</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p100" {% if pre_survey|index:i == "7" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">7</span>
+                </div><!-- /.chart_item charts__chart -->
+
+                <!-- Post Q -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p20" {% if post_survey|index:i == "1" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">1</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Post Q -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p40" {% if post_survey|index:i == "2" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">2</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Post Q -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p60" {% if post_survey|index:i == "3" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">3</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Post Q -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p80" {% if post_survey|index:i == "4" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">4</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Post Q -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p100" {% if post_survey|index:i == "5" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">5</span>
+                </div><!-- /.chart_item charts__chart -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p100" {% if post_survey|index:i == "6" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">6</span>
+                </div><!-- /.chart_item charts__chart -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p100" {% if post_survey|index:i == "7" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">7</span>
+                </div><!-- /.chart_item charts__chart -->
+                <div class="charts__chart chart--p100 chart--xs ms-0 invisible"></div><!-- graph 수치 5가 아닐 시 바닥에 붙이기 위한 dummy graph -->
+              </div>
+            </div>
+            {% endfor %}
+            <!-- End Pre/Post Survey Question (1~6) -->
+          </div>
+        </div>
+        <div class="container " style="width: 100%; min-height: 50px; text-align: center;">
+          <div class="row justify-content-around " style="font-size: 2rem; text-align: left;">
+            {% for i in front_idx %}
+            <div class="col-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               Q-{{i|add:1}}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <!-- 1~6번(Real) 뉴스 창 End -->
+        
+        <!-- 7~12번(Fake) 뉴스 Start -->
+        <div class="container" style="width: 100%; height: auto; background-color: wheat; ">
+          <div class="row justify-content-around">
+            <div class="mt-2 ms-2" style="height: 5%;">
+              <span class="ms-0" style="color: rgb(35, 115, 174); font-size: 2rem;">■ </span><span style="color: rgb(1, 1, 1); font-size: 2rem;">: Pre Survey </span>
+              <span class="ms-3" style="color: rgb(0, 164, 89); font-size: 2rem;">■ </span><span style="color: rgb(1, 1, 1); font-size: 2rem;">: Post Survey </span> 
+              <br />
+              <span class="ms-5" style="color: rgb(208, 59, 48); font-size: 1.45rem;">* You can check the question when you put the mouse over the graph. </span>
+            </div>
+            <!-- Start Pre/Post Survey Question (7~12) -->
+            {% for i in back_idx %}
+            <div class="col-2">
+              <div class="charts charts--vertical mt-5 mb-0 target ms-3">
+                <span class="tooltip-text" style="text-transform: none; left:30%"> 
+                  <img src="../static/images/news/{{news_img_list|index:i}}" style="width:100%; height:auto;">  
+                </span>
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p20" {% if pre_survey|index:i == "1" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">1</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p40" {% if pre_survey|index:i == "2" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">2</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p60" {% if pre_survey|index:i == "3" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">3</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p80" {% if pre_survey|index:i == "4" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">4</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p100" {% if pre_survey|index:i == "5" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">5</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p100" {% if pre_survey|index:i == "6" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">6</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Pre Q -->
+                <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p100" {% if pre_survey|index:i == "7" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">7</span>
+                </div><!-- /.chart_item charts__chart -->
+
+                <!-- Post Q -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p20" {% if post_survey|index:i == "1" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">1</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Post Q -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p40" {% if post_survey|index:i == "2" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">2</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Post Q -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p60" {% if post_survey|index:i == "3" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">3</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Post Q -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p80" {% if post_survey|index:i == "4" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">4</span>
+                </div><!-- /.chart_item charts__chart -->
+                <!-- Post Q -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p100" {% if post_survey|index:i == "5" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">5</span>
+                </div><!-- /.chart_item charts__chart -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p100" {% if post_survey|index:i == "6" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">6</span>
+                </div><!-- /.chart_item charts__chart -->
+                <div class="chart_item charts__chart chart--green chart--hover chart--xl chart--p100" {% if post_survey|index:i == "7" %}  {% else %} style="display:none;" {% endif %}>
+                  <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">7</span>
+                </div><!-- /.chart_item charts__chart -->
+                <div class="charts__chart chart--p100 chart--xs ms-0 invisible"></div><!-- graph 수치 5가 아닐 시 바닥에 붙이기 위한 dummy graph -->
+              </div>
+            </div>
+            {% endfor %}
+            <!-- End Pre/Post Survey Question (7~12) -->
+
+
+          </div>
+        </div>
+        <div class="container " style="width: 100%; min-height: 50px; text-align: center;">
+          <div class="row justify-content-around " style="font-size: 2rem; text-align: left;">
+            {% for i in back_idx %}
+            <div class="col-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               Q-{{i|add:1}}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <!-- 7~12번(Fake) 뉴스 창 End -->
+
+
+        <div class="container"
+        style="display: inline; width: auto; height: 100%; text-align: center;">
+          <form action="{% url 'feedback_submit_news' %}"
+          style="display: inline; width: auto; height: 100%;">
+
+          <br />
+          <h1> Please tell us why you changed your scores <br />
+            between pre and post-surveys.
+            </h1><br />
+           <div>
+              <textarea id="feedback_text" name="feedback_text"
+                        rows="10" cols="100"
+                        style="font-size: 30px;
+                              width: 70%;
+                              height: 30%;
+                              "></textarea>
+
+              <input class="btn btn-primary" type="submit" value="Submit  Button"
+              style="width: 70%;
+                    font-size: 30px;">
+            </div>
+          </form>
+        </div>
+
+        <br /><br />
+
+    </main>
+    <!-- <nav>
+      <button class="basic-button" id="next-button">Next ＞</button>
+      <button class="basic-button" id="back-button">＜ Back</button>
+    </nav> -->
+  </body>
+</html>
