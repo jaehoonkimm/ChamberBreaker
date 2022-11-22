@@ -129,3 +129,11 @@ class FeedbackSurvey(models.Model):
 
     def __str__(self):
         return str(self.user_id)
+
+
+class FeedbackNewsSurvey(models.Model):
+    user_id = models.IntegerField(null=False)
+    feedback_text = models.TextField()
+
+    def __str__(self):
+        return str(self.user_id)

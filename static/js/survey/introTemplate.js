@@ -3,8 +3,8 @@ const guideMessage = [
     An echo chamber effect refers to a phenomenon in which people tend to group with like-minded people and expose themselves to
     information and ideas they agree with more often.<br /><br />After the game, we hope you know more about the echo-chamber effect.</p>`,
   `<p class="explain-p">Before playing a game,<br>we want to know about you a little bit more.</p>`,
-  `<p class="explain-p">Great! One more thing before we start the game.<br><br>We will give you one news headline and five related tweets,
-    and ask you to evaluate their reliability.<br><br>And this will be done six times.</p>`,
+  `<p class="explain-p">Great! One more thing before we start the game.<br><br>We will give you twelve news,
+    and ask you to evaluate their reliability.<br><br>And this will be done twelve times.</p>`,
   `<p class="explain-p">Now, time to play the game!</p>`,
   `<p class="explain-p">In this game, you will be playing as <span>@Johndoe</span>.<img class="profile-img" src="../static/images/johndoe.png" /><br /><br />
         <span>@Johndoe</span> is a member of an SNS community, where community members share ideas about various societal issues.<br /><br />

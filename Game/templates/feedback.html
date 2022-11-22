@@ -30,6 +30,7 @@
             font-size: 2.75em;
             color: white;
             background: skyblue;
+            
           }
 
       .target:hover .tooltip-text {
@@ -37,8 +38,8 @@
           }
 
       .target {
-        border-collapse:collapse;
-    display : table;
+        border-collapse: collapse;
+        display: table;
       }
       
       .chart_item {
@@ -53,9 +54,11 @@
   <body>
     <main style="width: 100%; height: auto; text-align: center;">
       <div>
-        <h1>This is your Pre/Post Survey response history.</h1>
+        <h1>This is your Pre/Post survey response history.</h1>
+        <h4>A <strong>pre survey</strong> means the survey you conducted <strong>before</strong> playing this game.</h4>
+        <h4>A <strong>post survey</strong> means the survey you conducted <strong>after</strong> playing this game.</h4>
       </div>
-        <br />
+      
         <br />
 
         <div class="container" style="width: 100%; height: auto; background-color: wheat; ">
@@ -63,14 +66,15 @@
             <div class="mt-2 ms-2" style="height: 5%;">
               <span class="ms-0" style="color: rgb(35, 115, 174); font-size: 2rem;">■ </span><span style="color: rgb(1, 1, 1); font-size: 2rem;">: Pre Survey </span>
               <span class="ms-3" style="color: rgb(0, 164, 89); font-size: 2rem;">■ </span><span style="color: rgb(1, 1, 1); font-size: 2rem;">: Post Survey </span> 
-              <span class="ms-5" style="color: rgb(208, 59, 48); font-size: 1.0rem;">* You can check the question when you put the mouse over the graph. </span>
+              <br />
+              <span class="ms-5" style="color: rgb(208, 59, 48); font-size: 1.45rem;">* You can check the question when you put the mouse over the graph. </span>
             </div>
             <!-- Start Pre/Post Survey 1번 Question -->
             <div class="col-2">
-              <div class="charts charts--vertical mt-5  mb-0 target ms-3" style="">
-                <span class="tooltip-text"> When looking for information about
+              <div class="charts charts--vertical mt-5 mb-0 target ms-3">
+                <span class="tooltip-text" style="text-transform: none;"> When looking for information about
                   POLITICAL news, how often do you go to a
-                  conservative media <br /> (e.g., Fox News, The Times) ?</span>
+                  conservative media (e.g., Fox News, The Times) ?</span>
                 <!-- Pre Q -->
                 <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p20" {% if pre_survey.0 == "1" %}  {% else %} style="display:none;" {% endif %}>
                   <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">1</span>
@@ -118,7 +122,7 @@
             <!-- Start Pre/Post Survey 2번 Question -->
             <div class="col-2">
               <div class="charts charts--vertical mt-5 ms-4 mb-0 target">
-                <span class="tooltip-text" style="left:25%"> When looking for information about
+                <span class="tooltip-text" style="left:25%; text-transform: none;"> When looking for information about
                   POLITICAL news, how often do you go to a
                   liberal media <br /> (e.g., CNN, The Guardian) ?</span>
                 <!-- Pre Q -->
@@ -167,7 +171,7 @@
             <!-- Start Pre/Post Survey 3번 Question -->
             <div class="col-2">
               <div class="charts charts--vertical mt-5 ms-4 mb-0 target">
-                <span class="tooltip-text" style="left: 25%;"> How often do you read something you DISAGREE with?</span>
+                <span class="tooltip-text" style="left: 25%; text-transform: none;"> How often do you read something you DISAGREE with?</span>
                 <!-- Pre Q -->
                 <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p20" {% if pre_survey.2 == "1" %}  {% else %} style="display:none;" {% endif %}>
                   <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">1</span>
@@ -215,7 +219,7 @@
             <!-- Start Pre/Post Survey 4번 Question -->
             <div class="col-2">
               <div class="charts charts--vertical mt-5 ms-4 mb-0 target">
-                <span class="tooltip-text" style="left: 30%;"> Have you ever checked a news source that’s DIFFERENT from what you normally read?</span>
+                <span class="tooltip-text" style="left: 30%; text-transform: none;"> Have you ever checked a news source that’s DIFFERENT from what you normally read?</span>
                 <!-- Pre Q -->
                 <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p20" {% if pre_survey.3 == "1" %}  {% else %} style="display:none;" {% endif %}>
                   <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">1</span>
@@ -262,7 +266,7 @@
             <!-- Start Pre/Post Survey 5번 Question -->
             <div class="col-2">
               <div class="charts charts--vertical mt-5 ms-4 mb-0 target">
-                <span class="tooltip-text" style="left: 30%;"> Do you try to CONFIRM information you found by searching online for another source?</span>
+                <span class="tooltip-text" style="left: 30%; text-transform: none;"> Do you try to CONFIRM information you found by searching online for another source?</span>
                 <!-- Pre Q -->
                 <div class="chart_item charts__chart chart--blue chart--hover chart--xl chart--p20" {% if pre_survey.4 == "1" %}  {% else %} style="display:none;" {% endif %}>
                   <span class="charts__percent" style="font-size: 1.5rem; text-align: center; -webkit-transform:rotate(0deg);">1</span>
@@ -335,10 +339,10 @@
           <form action="{% url 'feedback_submit' %}"
           style="display: inline; width: auto; height: 100%;">
 
-          <br /><br /><br /><br /><br /><br />
-          <h1>If your choices have changed on Post Survey, <br />
-            why do you think they have changed?</h1>
-           <h1>Tell us your thinking:</h1><br />
+          <br />
+          <h1> Please tell us why you changed your scores <br />
+            between pre and post-surveys.
+            </h1><br />
            <div>
               <textarea id="feedback_text" name="feedback_text"
                         rows="10" cols="100"

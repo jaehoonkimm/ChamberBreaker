@@ -26,8 +26,6 @@ form div { width: 100%; }
 
 .survey-div { display: flex; max-height: 65px; min-height: 50px; width: 90%; background: rgba(0, 140, 255, 0.247); border-radius: 40px; padding: 25px; margin-left: 0px; }
 
-.survey-feedback { display: flex; max-height: 35px; min-height: 30px; width: 70%; background: rgba(0, 140, 255, 0.247); border-radius: 30px; padding: 25px; margin-left: 50px; }
-
 .radio-box { display: inline-block; flex: 1; text-align: center; position: relative; padding-top: 5px; margin-bottom: auto; }
 
 input[type='radio'] { display: none; }
@@ -59,8 +57,6 @@ input[type='radio'] + label span, input[type='radio']:checked + label span { -we
 .news-survey-content-div { padding-top: 10px; }
 
 .news-title-div p { margin: 15px 0px; font-weight: bold; font-size: 32px; }
-
-.news-body-div p { font-size: 20px; }
 
 .news-box { -webkit-box-shadow: 8px 8px 15px -8px #7a7a7a; -moz-box-shadow: 8px 8px 15px -8px #7a7a7a; box-shadow: 8px 8px 15px -8px #7a7a7a; background-color: #f0f0f0; padding: 20px 10px 20px 40px; margin: 30px 20px 10px 0px; border-radius: 12px; width: auto; }
 

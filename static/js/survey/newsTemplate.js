@@ -20,7 +20,7 @@ const makeNewsSurveyTemplate = (news) => {
           </div>
           <div class="news-body-div">
               <p>${body_text}</p>
-              <img src="../static/images/news/${news_img}" style="width:100%; height:auto;">
+              <img src="../static/images/news/${news_img}" style="width:100%; height:100%;">
           </div>
           
           <div class="tweets-container-div">
@@ -54,7 +54,7 @@ const makeNewsSurveyTemplate = (news) => {
   };
   
   const tweetsQuestionTemplate = (n) => `
-  <p class="survey-p-guide">How reliable are <span>the tweets</span>?</p>
+  <p class="survey-p-guide">How reliable are <span>the news</span>?</p>
   <div class="survey-div" id="tweets_reliable_${n}">
       <div class="radio-box">
           <input type="radio" name="tweets_reliable_${n}" id="tr1-${n}" value="1" />
