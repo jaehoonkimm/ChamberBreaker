@@ -54,7 +54,7 @@ const newsTweetTemplate = (tweets, n) => {
 };
 
 const tweetsQuestionTemplate = (n) => `
-<p class="survey-p-guide">How reliable are <span>the tweets</span>?</p>
+<p class="survey-p-guide">How reliable are <span>the news</span>?</p>
 <div class="survey-div" id="tweets_reliable_${n}">
     <div class="radio-box">
         <input type="radio" name="tweets_reliable_${n}" id="tr1-${n}" value="1" />
