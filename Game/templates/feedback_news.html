@@ -35,6 +35,7 @@
 
       .target:hover .tooltip-text {
             display: block;
+            z-index: 10;
           }
 
       .target {
@@ -69,7 +70,7 @@
               <span class="ms-0" style="color: rgb(35, 115, 174); font-size: 2rem;">■ </span><span style="color: rgb(1, 1, 1); font-size: 2rem;">: Pre Survey </span>
               <span class="ms-3" style="color: rgb(0, 164, 89); font-size: 2rem;">■ </span><span style="color: rgb(1, 1, 1); font-size: 2rem;">: Post Survey </span> 
               <br />
-              <span class="ms-5" style="color: rgb(208, 59, 48); font-size: 1.45rem;">* You can check the question when you put the mouse over the graph. </span>
+              <span class="ms-5" style="color: rgb(208, 59, 48); font-size: 1.45rem;">* You can check the news when you put the mouse over the graph. </span>
             </div>
             <!-- Start Pre/Post Survey Question (1~6) -->
             {% for i in front_idx %}
@@ -162,7 +163,7 @@
               <span class="ms-0" style="color: rgb(35, 115, 174); font-size: 2rem;">■ </span><span style="color: rgb(1, 1, 1); font-size: 2rem;">: Pre Survey </span>
               <span class="ms-3" style="color: rgb(0, 164, 89); font-size: 2rem;">■ </span><span style="color: rgb(1, 1, 1); font-size: 2rem;">: Post Survey </span> 
               <br />
-              <span class="ms-5" style="color: rgb(208, 59, 48); font-size: 1.45rem;">* You can check the question when you put the mouse over the graph. </span>
+              <span class="ms-5" style="color: rgb(208, 59, 48); font-size: 1.45rem;">* You can check the news when you put the mouse over the graph. </span>
             </div>
             <!-- Start Pre/Post Survey Question (7~12) -->
             {% for i in back_idx %}
