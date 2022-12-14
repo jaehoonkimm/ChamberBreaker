@@ -19,7 +19,7 @@ export const contentHTML = [
    <img src="../static/images/tax-cut/keyword_R.png" class="keyword-img"/>
    <br /><br />
    <p>Click “Next” to see tweet examples from community members.</p>`,
-  `<p id="before-example-explain">Below are the examples of <span class="highlight">strong tweets</span>. You should find them to fall your community members into the echo chamber.</p>
+  `<p id="before-example-explain">Below are the examples of <span class="highlight">strong tweets</span>. You should find them to have your community members fall into the echo chamber.</p>
     <div id="example-tweet-1">
         ${exampleTweetTemplate(example1)}
     </div>
