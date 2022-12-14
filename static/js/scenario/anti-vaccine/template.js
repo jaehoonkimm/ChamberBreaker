@@ -15,7 +15,7 @@ export const contentHTML = [
   `<div class="scenario-title">Scenario - Social boundary<br />(Abortion)</div>`,
   `<p>Social boundary is one of the characteristics of an echo chamber group, where one's beliefs or opinions are strongly bounded or formed by a group.</p>`,
   `<p>Social boundary occurs when community members interact only among themselves, and the members tend to use negative expressions and hate speech. For example,</p><div class='inner-explain-content'>Angrier than other groups<br>Evokes intentional acts, statements and hindering<br>Emphasizes opposite side</div><p>Click “Next” to see tweet examples from community members.</p>`,
-  `<p id="before-example-explain">Below are the examples of <span class="highlight">strong tweets</span>. You should find them to fall your community members into the echo chamber.</p>
+  `<p id="before-example-explain">Below are the examples of <span class="highlight">strong tweets</span>. You should find them to have your community members fall into the echo chamber.</p>
     <div id="example-tweet-1">
         ${exampleTweetTemplate(example1)}
     </div>

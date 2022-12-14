@@ -1,6 +1,6 @@
 html, body { font-family: 'Helvetica'; display: flex; width: 100%; height: 100%; margin: 0px; }
 
-.basic-button { width: auto; height: 100px; padding: 15px 30px 15px 30px; font-size: 38px; text-align: center; color: white; border: none; box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.151); background-color: #237fbc; cursor: pointer; }
+.basic-button { width: auto; height: 100px; padding: 15px 30px 15px 30px; font-size: 38px; text-align: center; color: white; border: none; box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.151); background-color: #237fbc; cursor: pointer; z-index: 15;}
 
 .basic-button:hover { background-color: #104e77; }
 
