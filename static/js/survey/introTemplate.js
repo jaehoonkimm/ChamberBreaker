@@ -14,7 +14,7 @@ const guideMessage = [
     <p class="gauge-explain-p">You can check “<span class="highlight">Echo Chamber Gauge</span>” to track your progress on echo-chamberness. The higher the score is, the better you are doing your job. If you
     get more than <span class="highlight">700</span> points, you succeed in your task in this scenario.</p>`,
   `<img src="../static/images/survey/reliability-gauge.jpg" class="gauge-img" />
-    <p class="gauge-explain-p">You can check “<span>Reliability Gauge</span>” to track your trustworthiness from community members. The higher the score is, the reliable you are. If the score becomes
+    <p class="gauge-explain-p">You can check “<span>Reliability Gauge</span>” to track your trustworthiness from community members. The higher the score is, the more reliable you are. If the score becomes
     <span>zero</span>, you fail your task in this scenario.</p>`,
   `<p class="explain-p">For each scenario, make sure you complete the task within <span class="highlight">five</span> trials.</p>
     <img src="../static/images/survey/remain.jpg"/>`,
