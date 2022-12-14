@@ -169,7 +169,7 @@ const changeEchoMessage = () => {
   document.getElementById('echo-question3').innerHTML =
     'Will you try to CONFIRM information you found by searching online for another source?';
   document.getElementById('echo-question4').innerHTML =
-    'Will you try to CONFIRM information by checking a major offline news medium?';
+    'Will you try to CONFIRM information by checking a major offline news media?';
   document.getElementById('echo-question5').innerHTML =
     'How often will you discover something that CHANGED your opinion on an issue?';
 };
