@@ -1,6 +1,7 @@
 html, body { font-family: 'Helvetica'; display: flex; width: 100%; height: 100%; margin: 0px; }
 
-.basic-button { width: auto; height: 100px; padding: 15px 30px 15px 30px; font-size: 38px; text-align: center; color: white; border: none; box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.151); background-color: #237fbc; cursor: pointer; z-index: 15; }
+/* .basic-button { width: auto; height: 100px; padding: 15px 30px 15px 30px; font-size: 38px; text-align: center; color: white; border: none; box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.151); background-color: #237fbc; cursor: pointer; z-index: 15; } */
+.basic-button { width: auto; height: 100px; padding: 15px 30px 15px 30px; font-size: 38px; text-align: center; color: white; border: none; box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.151); background-color: #237fbc; cursor: pointer; }
 
 .basic-button:hover { background-color: #104e77; }
 
@@ -62,7 +63,8 @@ input[type='radio'] + label span, input[type='radio']:checked + label span { -we
 
 .news-box span { font-size: 28px; }
 
-.tweets-container-div { height: auto; overflow: auto; padding-right: 10px; width: auto; }
+/* .tweets-container-div { height: auto; overflow: auto; padding-right: 10px; width: auto; } */
+.tweets-container-div { height: 360px; overflow: auto; padding-right: 10px; width: auto; }
 
 .tweet-card-div { -webkit-box-shadow: 8px 8px 15px -8px #7a7a7a; -moz-box-shadow: 8px 8px 15px -8px #7a7a7a; box-shadow: 8px 8px 15px -8px #7a7a7a; background-color: rgba(0, 140, 255, 0.247); padding: 10px; margin: 10px 0px; border-radius: 12px; width: auto; }
 

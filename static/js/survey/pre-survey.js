@@ -54,9 +54,13 @@ const nextGame = () => {
     }
   } else if (num == 7) {
     survey.noneElement(contentElement);
-    survey.flexElement(formElement);
-    survey.flexElement(newsElement);
-    survey.showFirstNewsSurvey();
+    // survey.flexElement(formElement);
+    // survey.flexElement(newsElement);
+    // survey.showFirstNewsSurvey();
+    survey.noneElement(formElement);
+    survey.noneElement(newsElement);
+    nextGuide();
+    document.presurvey.submit();
   } else if (num == 8) {
     survey.nextNewsSurvey(1);
   } else if (num == 9) {
