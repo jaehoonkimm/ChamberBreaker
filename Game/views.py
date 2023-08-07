@@ -59,31 +59,57 @@ def scenario1(request):
         survey.echo3 = request.POST["echo3"]
         survey.echo4 = request.POST["echo4"]
         survey.echo5 = request.POST["echo5"]
-        survey.real_news1_reliability = request.POST["tweets_reliable_1"]
-        survey.real_news1_confidence = request.POST["tweets_confident_1"]
-        survey.real_news2_reliability = request.POST["tweets_reliable_2"]
-        survey.real_news2_confidence = request.POST["tweets_confident_2"]
-        survey.real_news3_reliability = request.POST["tweets_reliable_3"]
-        survey.real_news3_confidence = request.POST["tweets_confident_3"]
-        survey.fake_news1_reliability = request.POST["tweets_reliable_4"]
-        survey.fake_news1_confidence = request.POST["tweets_confident_4"]
-        survey.fake_news2_reliability = request.POST["tweets_reliable_5"]
-        survey.fake_news2_confidence = request.POST["tweets_confident_5"]
-        survey.fake_news3_reliability = request.POST["tweets_reliable_6"]
-        survey.fake_news3_confidence = request.POST["tweets_confident_6"]
+        # survey.real_news1_reliability = request.POST["tweets_reliable_1"]
+        # survey.real_news1_confidence = request.POST["tweets_confident_1"]
+        # survey.real_news2_reliability = request.POST["tweets_reliable_2"]
+        # survey.real_news2_confidence = request.POST["tweets_confident_2"]
+        # survey.real_news3_reliability = request.POST["tweets_reliable_3"]
+        # survey.real_news3_confidence = request.POST["tweets_confident_3"]
+        # survey.fake_news1_reliability = request.POST["tweets_reliable_4"]
+        # survey.fake_news1_confidence = request.POST["tweets_confident_4"]
+        # survey.fake_news2_reliability = request.POST["tweets_reliable_5"]
+        # survey.fake_news2_confidence = request.POST["tweets_confident_5"]
+        # survey.fake_news3_reliability = request.POST["tweets_reliable_6"]
+        # survey.fake_news3_confidence = request.POST["tweets_confident_6"]
 
-        survey.real_news4_reliability = request.POST["tweets_reliable_7"]
-        survey.real_news4_confidence = request.POST["tweets_confident_7"]
-        survey.real_news5_reliability = request.POST["tweets_reliable_8"]
-        survey.real_news5_confidence = request.POST["tweets_confident_8"]
-        survey.real_news6_reliability = request.POST["tweets_reliable_9"]
-        survey.real_news6_confidence = request.POST["tweets_confident_9"]
-        survey.fake_news4_reliability = request.POST["tweets_reliable_10"]
-        survey.fake_news4_confidence = request.POST["tweets_confident_10"]
-        survey.fake_news5_reliability = request.POST["tweets_reliable_11"]
-        survey.fake_news5_confidence = request.POST["tweets_confident_11"]
-        survey.fake_news6_reliability = request.POST["tweets_reliable_12"]
-        survey.fake_news6_confidence = request.POST["tweets_confident_12"]
+        # survey.real_news4_reliability = request.POST["tweets_reliable_7"]
+        # survey.real_news4_confidence = request.POST["tweets_confident_7"]
+        # survey.real_news5_reliability = request.POST["tweets_reliable_8"]
+        # survey.real_news5_confidence = request.POST["tweets_confident_8"]
+        # survey.real_news6_reliability = request.POST["tweets_reliable_9"]
+        # survey.real_news6_confidence = request.POST["tweets_confident_9"]
+        # survey.fake_news4_reliability = request.POST["tweets_reliable_10"]
+        # survey.fake_news4_confidence = request.POST["tweets_confident_10"]
+        # survey.fake_news5_reliability = request.POST["tweets_reliable_11"]
+        # survey.fake_news5_confidence = request.POST["tweets_confident_11"]
+        # survey.fake_news6_reliability = request.POST["tweets_reliable_12"]
+        # survey.fake_news6_confidence = request.POST["tweets_confident_12"]
+        survey.real_news1_reliability = 0
+        survey.real_news1_confidence = 0
+        survey.real_news2_reliability = 0
+        survey.real_news2_confidence = 0
+        survey.real_news3_reliability = 0
+        survey.real_news3_confidence = 0
+        survey.fake_news1_reliability = 0
+        survey.fake_news1_confidence = 0
+        survey.fake_news2_reliability = 0
+        survey.fake_news2_confidence = 0
+        survey.fake_news3_reliability = 0
+        survey.fake_news3_confidence = 0
+
+        survey.real_news4_reliability = 0
+        survey.real_news4_confidence = 0
+        survey.real_news5_reliability = 0
+        survey.real_news5_confidence = 0
+        survey.real_news6_reliability = 0
+        survey.real_news6_confidence = 0
+        survey.fake_news4_reliability = 0
+        survey.fake_news4_confidence = 0
+        survey.fake_news5_reliability = 0
+        survey.fake_news5_confidence = 0
+        survey.fake_news6_reliability = 0
+        survey.fake_news6_confidence = 0
+
         survey.save()
         return render(request, 'scenario1.html', {'user_id': uID})
     return redirect('start')
@@ -152,31 +178,56 @@ def rank(request):
         survey.echo3 = request.POST["echo3"]
         survey.echo4 = request.POST["echo4"]
         survey.echo5 = request.POST["echo5"]
-        survey.real_news1_reliability = request.POST["tweets_reliable_1"]
-        survey.real_news1_confidence = request.POST["tweets_confident_1"]
-        survey.real_news2_reliability = request.POST["tweets_reliable_2"]
-        survey.real_news2_confidence = request.POST["tweets_confident_2"]
-        survey.real_news3_reliability = request.POST["tweets_reliable_3"]
-        survey.real_news3_confidence = request.POST["tweets_confident_3"]
-        survey.fake_news1_reliability = request.POST["tweets_reliable_4"]
-        survey.fake_news1_confidence = request.POST["tweets_confident_4"]
-        survey.fake_news2_reliability = request.POST["tweets_reliable_5"]
-        survey.fake_news2_confidence = request.POST["tweets_confident_5"]
-        survey.fake_news3_reliability = request.POST["tweets_reliable_6"]
-        survey.fake_news3_confidence = request.POST["tweets_confident_6"]
+        # survey.real_news1_reliability = request.POST["tweets_reliable_1"]
+        # survey.real_news1_confidence = request.POST["tweets_confident_1"]
+        # survey.real_news2_reliability = request.POST["tweets_reliable_2"]
+        # survey.real_news2_confidence = request.POST["tweets_confident_2"]
+        # survey.real_news3_reliability = request.POST["tweets_reliable_3"]
+        # survey.real_news3_confidence = request.POST["tweets_confident_3"]
+        # survey.fake_news1_reliability = request.POST["tweets_reliable_4"]
+        # survey.fake_news1_confidence = request.POST["tweets_confident_4"]
+        # survey.fake_news2_reliability = request.POST["tweets_reliable_5"]
+        # survey.fake_news2_confidence = request.POST["tweets_confident_5"]
+        # survey.fake_news3_reliability = request.POST["tweets_reliable_6"]
+        # survey.fake_news3_confidence = request.POST["tweets_confident_6"]
 
-        survey.real_news4_reliability = request.POST["tweets_reliable_7"]
-        survey.real_news4_confidence = request.POST["tweets_confident_7"]
-        survey.real_news5_reliability = request.POST["tweets_reliable_8"]
-        survey.real_news5_confidence = request.POST["tweets_confident_8"]
-        survey.real_news6_reliability = request.POST["tweets_reliable_9"]
-        survey.real_news6_confidence = request.POST["tweets_confident_9"]
-        survey.fake_news4_reliability = request.POST["tweets_reliable_10"]
-        survey.fake_news4_confidence = request.POST["tweets_confident_10"]
-        survey.fake_news5_reliability = request.POST["tweets_reliable_11"]
-        survey.fake_news5_confidence = request.POST["tweets_confident_11"]
-        survey.fake_news6_reliability = request.POST["tweets_reliable_12"]
-        survey.fake_news6_confidence = request.POST["tweets_confident_12"]
+        # survey.real_news4_reliability = request.POST["tweets_reliable_7"]
+        # survey.real_news4_confidence = request.POST["tweets_confident_7"]
+        # survey.real_news5_reliability = request.POST["tweets_reliable_8"]
+        # survey.real_news5_confidence = request.POST["tweets_confident_8"]
+        # survey.real_news6_reliability = request.POST["tweets_reliable_9"]
+        # survey.real_news6_confidence = request.POST["tweets_confident_9"]
+        # survey.fake_news4_reliability = request.POST["tweets_reliable_10"]
+        # survey.fake_news4_confidence = request.POST["tweets_confident_10"]
+        # survey.fake_news5_reliability = request.POST["tweets_reliable_11"]
+        # survey.fake_news5_confidence = request.POST["tweets_confident_11"]
+        # survey.fake_news6_reliability = request.POST["tweets_reliable_12"]
+        # survey.fake_news6_confidence = request.POST["tweets_confident_12"]
+        survey.real_news1_reliability = 0
+        survey.real_news1_confidence = 0
+        survey.real_news2_reliability = 0
+        survey.real_news2_confidence = 0
+        survey.real_news3_reliability = 0
+        survey.real_news3_confidence = 0
+        survey.fake_news1_reliability = 0
+        survey.fake_news1_confidence = 0
+        survey.fake_news2_reliability = 0
+        survey.fake_news2_confidence = 0
+        survey.fake_news3_reliability = 0
+        survey.fake_news3_confidence = 0
+
+        survey.real_news4_reliability = 0
+        survey.real_news4_confidence = 0
+        survey.real_news5_reliability = 0
+        survey.real_news5_confidence = 0
+        survey.real_news6_reliability = 0
+        survey.real_news6_confidence = 0
+        survey.fake_news4_reliability = 0
+        survey.fake_news4_confidence = 0
+        survey.fake_news5_reliability = 0
+        survey.fake_news5_confidence = 0
+        survey.fake_news6_reliability = 0
+        survey.fake_news6_confidence = 0
 
         survey.save()
 
@@ -414,7 +465,8 @@ def feedback_submit(request):
         feedback.feedback_text = " "
     feedback.save()
 
-    return feedback_news(request)
+    # return feedback_news(request)
+    return render(request, 'result.html')
 
 
 # 12개 News에 대한 Open-Ended Survey용 함수 (위 feedback, feedback_sumbit 함수와 로직 동일)

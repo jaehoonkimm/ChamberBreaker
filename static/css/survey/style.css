@@ -1,6 +1,6 @@
 html, body { font-family: 'Helvetica'; display: flex; width: 100%; height: 100%; margin: 0px; }
 
-.basic-button { width: auto; height: 100px; padding: 15px 30px 15px 30px; font-size: 38px; text-align: center; color: white; border: none; box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.151); background-color: #237fbc; cursor: pointer; z-index: 15;}
+.basic-button { width: auto; height: 100px; padding: 15px 30px 15px 30px; font-size: 38px; text-align: center; color: white; border: none; box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.151); background-color: #237fbc; cursor: pointer; }
 
 .basic-button:hover { background-color: #104e77; }
 
@@ -25,8 +25,6 @@ form div { width: 100%; }
 .explain-p { width: 90%; }
 
 .survey-div { display: flex; max-height: 65px; min-height: 50px; width: 90%; background: rgba(0, 140, 255, 0.247); border-radius: 40px; padding: 25px; margin-left: 0px; }
-
-.survey-feedback { display: flex; max-height: 35px; min-height: 30px; width: 70%; background: rgba(0, 140, 255, 0.247); border-radius: 30px; padding: 25px; margin-left: 50px; }
 
 .radio-box { display: inline-block; flex: 1; text-align: center; position: relative; padding-top: 5px; margin-bottom: auto; }
 
@@ -60,13 +58,11 @@ input[type='radio'] + label span, input[type='radio']:checked + label span { -we
 
 .news-title-div p { margin: 15px 0px; font-weight: bold; font-size: 32px; }
 
-.news-body-div p { font-size: 20px; }
-
 .news-box { -webkit-box-shadow: 8px 8px 15px -8px #7a7a7a; -moz-box-shadow: 8px 8px 15px -8px #7a7a7a; box-shadow: 8px 8px 15px -8px #7a7a7a; background-color: #f0f0f0; padding: 20px 10px 20px 40px; margin: 30px 20px 10px 0px; border-radius: 12px; width: auto; }
 
 .news-box span { font-size: 28px; }
 
-.tweets-container-div { height: auto; overflow: auto; padding-right: 10px; width: auto; }
+.tweets-container-div { height: 360px; overflow: auto; padding-right: 10px; width: auto; }
 
 .tweet-card-div { -webkit-box-shadow: 8px 8px 15px -8px #7a7a7a; -moz-box-shadow: 8px 8px 15px -8px #7a7a7a; box-shadow: 8px 8px 15px -8px #7a7a7a; background-color: rgba(0, 140, 255, 0.247); padding: 10px; margin: 10px 0px; border-radius: 12px; width: auto; }
 

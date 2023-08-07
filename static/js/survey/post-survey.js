@@ -36,16 +36,25 @@ const nextGame = () => {
     );
   } else if (num == 2) {
     if (survey.checkSurvey(['echo4', 'echo5'])) {
-      survey.noneElementById('echochamber2');
-      survey.noneElement(formElement);
-      survey.flexElement(contentElement);
-      nextGuide();
+      // survey.noneElementById('echochamber2');
+      // survey.noneElement(formElement);
+      // survey.flexElement(contentElement);
+      // nextGuide();
+      if (confirm('Submit a survey?')) {
+        let form = document.postsurvey;
+        form.submit();
+      } else {
+        number.subNum();
+      }
     }
   } else if (num == 3) {
     survey.noneElement(contentElement);
-    survey.flexElement(formElement);
-    survey.flexElement(newsElement);
-    survey.showFirstNewsSurvey();
+    // survey.flexElement(formElement);
+    // survey.flexElement(newsElement);
+    // survey.showFirstNewsSurvey();
+    survey.noneElement(formElement);
+    survey.noneElement(newsElement);
+    
   } else if (num == 4) {
     survey.nextNewsSurvey(1);
   } else if (num == 5) {
